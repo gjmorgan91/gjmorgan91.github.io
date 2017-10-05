@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Hire Greg!</title>
+		<meta name="landing" content="initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../public/css/website.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../public/js/portfolio.js"></script>
+		<style type="text/css">
+			html { 
+				text-align: left; 
+				color: rgb(80,80,80);
+				font-family: "Slabo 27px";
+				font-size: 14.5px;
+			}
+
+			body {
+				margin: 0;
+			}
+
+			@font-face {
+			  font-family: 'Open Sans';
+			  font-style: normal;
+			  font-weight: 400;
+			  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+			}
+
+			@font-face {
+			  font-family: 'Slabo 27px';
+			  font-style: normal;
+			  font-weight: 400;
+			  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(https://fonts.gstatic.com/s/slabo27px/v3/PuwvqkdbcqU-fCZ9Ed-b7QzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+			}
+
+			header {
+				width: 100%;
+				height: 300px;
+				text-align: center;
+				padding: 150px 0px;
+				font-family: "Open Sans";
+				font-weight: 300;
+				box-shadow: 0px 2px 10px rgba(50,50,50,0.5);
+			}
+
+			header, footer {
+				background-color: rgb(230,230,233);
+			}
+
+			header h1 {
+				color: rgb(50,50,50);
+				font-weight: bold;
+			}
+
+			header h3 {
+				vertical-align: text-bottom;
+				font-style: normal;
+			}
+
+			h1 {
+				font-size: 4.2rem;
+			    line-height: 110%;
+			    margin: 2.1rem 0 1.68rem 0;
+			    font-weight: 400;
+			}
+
+			h4 {
+				font-size: 2.28rem;
+			    line-height: 110%;
+			    margin: 1.14rem 0 .912rem 0;
+			    font-weight: 400;
+			}
+
+			h5 {
+				font-size: 1.64rem;
+			    line-height: 110%;
+			    margin: .82rem 0 .656rem 0;
+			    font-weight: 400;
+			}
+
+			h6 {
+				font-size: 1rem;
+			    line-height: 110%;
+			    margin: .5rem 0 .4rem 0;
+			    font-weight: 400;
+			}
+
+			.hidden {
+				opacity: 0.0;
+				text-align: right;
+				transition: all 0.5s;
+				-webkit-transition: all 0.5s;
+			}
+
+			.section {
+				margin: 200px 200px;
+				padding: 100px 50px;
+				border: 1px solid rgba(50,50,53,0.75);;
+				border-left: 5px solid rgba(50,50,53,0.75);
+				transition: all 0.5s;
+				-webkit-transition: all 0.5s;
+			}
+
+			.section:hover {
+				box-shadow: 0px 2px 10px rgba(50,50,53,0.5);
+			}
+
+			.section:hover .hidden {
+				opacity: 1.0;
+			}
+
+			.inlineref {
+				color: inherit;
+				transition: all 0.5s;
+				-webkit-transition: all 0.5s;
+			}
+
+			.section:hover .inlineref {
+				color: rgb(90,140,250);
+			}
+
+			a {
+				color: rgb(90,140,250);
+				text-decoration: none;
+			}
+
+			footer {
+				text-align: left;
+				padding: 3px 10px;
+				font-family: "Open Sans";
+				box-shadow: 0px -2px 10px rgba(50,50,53,0.5);
+			}
+
+			.italic {
+				font-style: italic;
+			}
+
+			header .italic {
+				font-weight: 200;
+				color: rgb(120,120,123);
+			}
+		</style>
+		<script type="text/javascript">
+			var TxtRotate = function(el, toRotate, period) {
+			  this.toRotate = toRotate;
+			  this.el = el;
+			  this.loopNum = 0;
+			  this.period = parseInt(period, 10) || 2000;
+			  this.txt = '';
+			  this.tick();
+			  this.isDeleting = false;
+			};
+
+			TxtRotate.prototype.tick = function() {
+			  var i = this.loopNum % this.toRotate.length;
+			  var fullTxt = this.toRotate[i];
+
+			  if (this.isDeleting) {
+			    this.txt = fullTxt.substring(0, this.txt.length - 1);
+			  } else {
+			    this.txt = fullTxt.substring(0, this.txt.length + 1);
+			  }
+
+			  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+			  var that = this;
+			  var delta = 200 - Math.random() * 100;
+
+			  if (this.isDeleting) { delta /= 2; }
+
+			  if (!this.isDeleting && this.txt === fullTxt) {
+			    delta = this.period;
+			    this.isDeleting = true;
+			  } else if (this.isDeleting && this.txt === '') {
+			    this.isDeleting = false;
+			    this.loopNum++;
+			    delta = 500;
+			  }
+
+			  setTimeout(function() {
+			    that.tick();
+			  }, delta);
+			};
+
+			window.onload = function() {
+			  var elements = document.getElementsByClassName('txt-rotate');
+			  for (var i=0; i<elements.length; i++) {
+			    var toRotate = elements[i].getAttribute('data-rotate');
+			    var period = elements[i].getAttribute('data-period');
+			    if (toRotate) {
+			      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+			    }
+			  }
+			  // INJECT CSS
+			  var css = document.createElement("style");
+			  css.type = "text/css";
+			  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+			  document.body.appendChild(css);
+			};
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Greg<em class=italic>ory</em> Morgan</h1>
+			<h4>I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " designer.", "n engineer.", "n architect.", " graphic designer.", " dog mom.", " programmer.", "leader.", " SoCal native.", " friend." ]'></span></h4>
+		</header>
+
+		<div class="section" id="resume">
+			<h5>Seeking employment in visual/graphic design, product design and management, data visualization, software development.</h5>
+			<a class="hidden">View my resume.</a>
+		</div>
+
+		<div class="section" id="coverletter">
+			<h5>Started when I was drafting and designing in high school. Studied architecture and interior design. Moved to teaching graphic communications with the emphasis on using digital tools to generate, real-scale models and drawings for communicating design process and products. Enter UCSD to understand human cognition on a more rigorous level, while focusing on learning computer science skills. Became the branding chair for the Virtual Reality Club at UCSD and was first to hold the position.</h5>
+			<a class="hidden">About me.</a>
+		</div>
+
+		<div class="section" id="portfolio">
+			<h5>Current highlights of my progression from architecture to product development.</h5>
+			<a class="hidden">Gander a mon portfolio.</a>
+		</div>
+
+		<div class="section" id="contact">
+			<h5>Please <a class="inlineref" href="contact.html">contact</a> me for all inquiries, job offers, and complements about my dog.</h5>
+		</div>
+
+		<footer>
+			<h6>This site is continually being iterated, and new content is added all the time. Please check back for more.</h6>
+		</footer>
+	</body>
+</html>
