@@ -151,6 +151,24 @@ a {
 	text-decoration: none;
 }
 
+.imagecontainer {
+	padding: 0 5px;
+}
+
+#portfolio a {
+	color: rgb(80,80,80);
+	padding: 5px 20px;
+	margin: 0 5px;
+	color: rgb(0,0,0);
+	border-radius: 1rem;
+	background-color: rgb(150,150,150);
+}
+
+.section img {
+	width: 100%;
+	height: auto;
+}
+
 footer {
 	text-align: left;
 	padding: 3px 10px;
