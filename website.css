@@ -80,6 +80,39 @@ h6, #detail {
     padding: 0 15px;
 }
 
+.links {
+	position: relative;
+	top: 200px;
+}
+
+.links a {
+	padding: 5px 20px;
+	margin: 0 5px;
+	color: rgb(80,80,80);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-radius: 1rem;
+}
+
+.links a:hover {
+	background-color: rgb(150,150,150);
+	color: rgb(0,0,0);
+}
+
+#coverletter, #resume, #portfolio, #contact {
+	margin: 50px 0px;
+	padding: 30px 0;
+}
+
+#resume .row h6 a {
+	color: rgb(80,80,80);
+	padding: 5px 20px;
+	margin: 0 5px;
+	color: rgb(0,0,0);
+	border-radius: 1rem;
+	background-color: rgb(150,150,150);
+}
+
 .hidden {
 	opacity: 0.0;
 	text-align: right;
@@ -88,8 +121,8 @@ h6, #detail {
 }
 
 .section {
-	margin: 200px 150px;
-	padding: 100px 20px;
+	margin: 0px 150px;
+	padding: 0px 20px;
 	border-left: 5px solid rgba(50,50,53,0.75);
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -136,6 +169,10 @@ header .italic {
 
 .inline {
 	display: inline;
+}
+
+b {
+	font-style: capitalize;
 }
 
 #map {

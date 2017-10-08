@@ -92,8 +92,8 @@ function initMap() { //the search function for getting an airport
             width: 270,
             maxWidth: 270
           });
-	UCSDinfowindow.setContent('<h6 style="font-family: inherit; font-size: 0.75rem; line-height: 110%; margin: .5rem 0 .4rem 0; font-weight: 400; padding: 0px;">University of California, San Diego</h6>');
-	PCCinfowindow.setContent('<h6 style="font-family: inherit; font-size: 0.75rem; line-height: 110%; margin: .5rem 0 .4rem 0; font-weight: 400; padding: 0px;">Pasadena City College</h6>');
+	UCSDinfowindow.setContent('<h6 style="font-size: 0.75rem; line-height: 110%; margin: 0; font-weight: 400; padding: 0px; overflow: hidden;"><b>University of California, San Diego</b></h6>');
+	PCCinfowindow.setContent('<h6 style="font-size: 0.75rem; line-height: 110%; margin: 0; font-weight: 400; padding: 0px; overflow: hidden;"><b>Pasadena City College</b></h6>');
 	UCSDinfowindow.open(map,UCSDmarker);
 	PCCinfowindow.open(map,PCCmarker);
 };
