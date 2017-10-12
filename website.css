@@ -3,6 +3,8 @@ html {
 	color: rgb(80,80,80);
 	font-family: "Slabo 27px";
 	font-size: 14.5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 
 body {
@@ -73,8 +75,8 @@ h5 {
 
 h6, #detail {
 	font-family: 'Slabo 27px';
-	font-size: 1rem;
-    line-height: 110%;
+	font-size: 1.05rem;
+    line-height: 120%;
     margin: .5rem 0 .4rem 0;
     font-weight: 400;
     padding: 0 15px;
@@ -121,12 +123,16 @@ h6, #detail {
 }
 
 .section {
-	margin: 0px 150px;
-	padding: 0px 20px;
+	/*margin: 0px 150px;*/
+	padding: 10px 20px !important;
 	border-left: 5px solid rgba(50,50,53,0.75);
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	max-width: 950px;
+	/*max-width: 950px;*/
+}
+
+.s0, .m0, .l0 {
+	width: 0px;
 }
 
 .section:hover {
@@ -170,6 +176,10 @@ a {
 	color: rgba(80,80,80,0.5);
 }
 
+.italic {
+	font-style: italic;
+}
+
 .section img {
 	width: 100%;
 	height: auto;
@@ -187,6 +197,18 @@ footer {
 	font-style: italic;
 }
 
+.bold {
+	font-weight: bold;
+}
+
+.highlight {
+	font-style: normal !important;
+}
+/*
+.bold, .highlight {
+	background-color: rgba(255,255,0,0.5);
+}*/
+
 header .italic {
 	font-weight: 200;
 	color: rgb(120,120,123);
@@ -202,7 +224,7 @@ b {
 
 #map {
 	margin-right: 20px;
-	height: 300px;
+	height: 380px;
 	width: auto;
 }
 
