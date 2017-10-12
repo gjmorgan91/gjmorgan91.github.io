@@ -71,6 +71,7 @@ h5 {
     line-height: 110%;
     margin: .82rem 0 .656rem 0;
     font-weight: 400;
+    padding: 15px;
 }
 
 h6, #detail {
