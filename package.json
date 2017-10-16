@@ -1,14 +1,12 @@
 {
-  "name": "gjmorgan91.github.io",
+  "name": "gregmorgan",
   "version": "0.0.1",
   "author": "Greg Morgan",
-
   "repository": {
     "type": "git",
-    "url": "https://github.com/gjmorgan91/gjmorgan91.github.io"
+    "url": "git+https://github.com/gjmorgan91/gjmorgan91.github.io.git"
   },
   "license": "MIT",
-
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -17,9 +15,18 @@
     "express": "3.x",
     "express3-handlebars": "*",
     "mongodb": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "engines": {
     "node": "0.10.x"
-  }  
+  },
+  "description": "This is my person website build.",
+  "bugs": {
+    "url": "https://github.com/gjmorgan91/gjmorgan91.github.io/issues"
+  },
+  "homepage": "https://github.com/gjmorgan91/gjmorgan91.github.io#readme",
+  "main": "app.js",
+  "devDependencies": {}
 }

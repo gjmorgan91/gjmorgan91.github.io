@@ -224,8 +224,9 @@ b {
 }
 
 #map {
+	margin-top: 30px;
 	margin-right: 20px;
-	height: 380px;
+	height: 420px;
 	width: auto;
 }
 
