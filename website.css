@@ -108,18 +108,17 @@ h6, #detail {
 
 .svg {
 	position: absolute;
-	bottom: 76px;
+	top: 0px;
 	display: inline;
-	white-space: none;
 }
 
 .dog {
-	right: -2%;
+	right: -8%;
 	z-index: -2;
 }
 
 .greg {
-	left: -2%;
+	left: -8%;
 	z-index: -1;
 }
 
