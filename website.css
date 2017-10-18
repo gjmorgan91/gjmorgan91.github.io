@@ -2,9 +2,9 @@ html {
 	text-align: left; 
 	color: rgb(80,80,80);
 	font-family: "Slabo 27px";
-	font-size: 14.5px;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+	text-shadow: 1px 1px 15px rgba(52,50,50,0.1);
 }
 
 body {
@@ -30,14 +30,14 @@ body {
 }
 
 h1 {
-	font-size: 4.2rem;
+	font-size: 5rem;
     line-height: 110%;
     margin: 2.1rem 0 1.68rem 0;
     font-weight: 400;
 }
 
 h4 {
-	font-size: 2.28rem;
+	font-size: 3.5rem;
     line-height: 110%;
     margin: 1.14rem 0 .912rem 0;
     font-weight: 400;
@@ -45,14 +45,14 @@ h4 {
 
 h5 {
 	font-family: 'Open Sans';
-	font-size: 1.64rem;
+	font-size: 2rem;
     line-height: 110%;
     margin: .82rem 0 .656rem 0;
     font-weight: 400;
     padding: 15px;
 }
 
-h6, #detail {
+h6, #detail, li {
 	font-family: 'Slabo 27px';
 	font-size: 1.3rem;
     line-height: 120%;
@@ -95,7 +95,7 @@ h6, #detail {
 }
 
 .links a {
-	padding: 5px 25px;
+	padding: 5px 20px;
 	margin: 0px;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -218,16 +218,27 @@ h6, #detail {
 /*////////// BODY OF THE SITE //////////*/
 
 #coverletter, #resume, #portfolio, #contact {
-	margin: 50px 0px;
-	padding: 30px 0;
+	margin: 80px 0px;
+	padding: 50px 0;
 }
 
-#resume h6 a {
+/*#resume h6 a {
 	color: rgb(80,80,80);
 	padding: 5px 20px;
 	margin: 0 5px;
 	border-radius: 1rem;
 	background-color: rgb(150,150,150);
+}*/
+
+.highlight {
+	background-color: rgba(200,150,155,0.5);
+	font-style: normal;
+}
+
+.ucsd, .pcc {
+	height: 120px;
+	width: auto;
+	text-align: center;
 }
 
 .hidden {
@@ -239,7 +250,7 @@ h6, #detail {
 
 .section {
 	/*margin: 0px 150px;*/
-	padding: 10px 20px !important;
+	padding: 40px 0px !important;
 	/*border-left: 5px solid rgba(50,50,53,0.75);*/
 	/*transition: all 0.5s;
 	-webkit-transition: all 0.5s;*/
@@ -273,7 +284,7 @@ a {
 	padding: 0 5px;
 }
 
-#portfolio a {
+#portfolio a, #resume a {
 	color: rgb(80,80,80);
 	padding: 5px 20px;
 	margin: 0 5px;
@@ -295,10 +306,6 @@ a {
 	width: 100%;
 	height: auto;
 	max-width: 1200px;
-}
-
-.italic {
-	font-style: italic;
 }
 
 .bold {
@@ -339,4 +346,8 @@ footer {
 	padding: 3px 10px;
 	font-family: "Open Sans";
 	box-shadow: 0px -2px 10px rgba(50,50,53,0.5);
+}
+
+footer h6 {
+	font-size: 1rem;
 }
