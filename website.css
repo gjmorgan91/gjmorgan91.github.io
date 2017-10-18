@@ -170,6 +170,10 @@ h6, #detail {
 	color: rgb(120,120,123);
 }
 
+.header h1, .header h4 {
+	z-index: 100;
+}
+
 /*.links {
 	position: sticky;
 	top: 0px;
@@ -186,16 +190,15 @@ h6, #detail {
 	position: absolute;
 	bottom: 0px;
 	display: inline;
+	z-index: -10;
 }
 
 .dog {
 	right: 0px;
-	z-index: -2;
 }
 
 .greg {
 	left: 0px;
-	z-index: -1;
 }
 
 /*////////// SECTION DIVIDER //////////*/
