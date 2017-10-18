@@ -213,13 +213,13 @@ window.onload = function() {
       
       // If they scrolled down and are past the navbar, add class .nav-up.
       // This is necessary so you never see what is "behind" the navbar.
-      if (st <= 800) {
+      if (st <= 700) {
         $('.links').addClass('top');
       }
       if (st > lastScrollTop && st > navbarHeight){
           // Scroll Down
           $('.links').removeClass('nav-down').addClass('nav-up');
-          if (st > 800) {
+          if (st > 700) {
             $('.links').removeClass('top');
           }
       } else {
@@ -227,7 +227,7 @@ window.onload = function() {
           if(st + $(window).height() < $(document).height()) {
               $('.links').removeClass('nav-up').addClass('nav-down');
           }
-          if (st > 800) {
+          if (st > 700) {
             $('.links').removeClass('top');
           }
       }
