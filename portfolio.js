@@ -188,6 +188,36 @@ TxtRotate.prototype.tick = function() {
 
 window.onload = function() {
 
+  $(".mail").hover(function(){
+        $(".fa-envelope").css("color", "rgb(199,22,16)");
+        }, function(){
+        $(".fa-envelope").css("color", "rgb(80,80,80)");
+    });
+
+  $(".fa-github").hover(function(){
+        $(this).css("color", "#4078c0");
+        }, function(){
+        $(this).css("color", "rgb(80,80,80)");
+    });
+
+  $(".fa-linkedin-square").hover(function(){
+        $(this).css("color", "rgb(0,119,181)");
+        }, function(){
+        $(this).css("color", "rgb(80,80,80)");
+    });
+
+  $(".fb").hover(function(){
+        $(".fb").css("color", "rgb(59,89,152)");
+        }, function(){
+        $(".fb").css("color", "rgb(80,80,80)");
+    });
+
+  $(".fa-instagram").hover(function(){
+        $(this).css("color", "rgb(138,58,185)");
+        }, function(){
+        $(this).css("color", "rgb(80,80,80)");
+    });
+
   var didScroll;
   var lastScrollTop = 0;
   var delta = 5;
