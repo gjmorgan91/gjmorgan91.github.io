@@ -1,3 +1,5 @@
+var smoothScrollProgress = true;
+
 /* Smooth scrolling
    Changes links that link to other parts of this page to scroll
    smoothly to those links rather than jump to them directly, which
@@ -29,6 +31,8 @@ var ss = {
   },
 
   smoothScroll: function(e) {
+    smoothScrollProgress = false;
+    console.log('set progress to false');
     // This is an event handler; get the clicked on element,
     // in a cross-browser fashion
     if (window.event) {
@@ -82,8 +86,7 @@ var ss = {
     cypos = ss.getCurrentYPos();
   
     ss_stepsize = parseInt((desty-cypos)/ss.STEPS);
-    ss.INTERVAL =
-setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
+    ss.INTERVAL = setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
   
     // And stop the actual click happening
     if (window.event) {
@@ -144,7 +147,8 @@ ss.STEPS = 25;
 
 ss.addEvent(window,"load",ss.fixAllLinks);
 
-/** **/
+
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -206,10 +210,10 @@ window.onload = function() {
         $(this).css("color", "rgb(80,80,80)");
     });
 
-  $(".fb").hover(function(){
-        $(".fb").css("color", "rgb(59,89,152)");
+  $(".fa-facebook-square").hover(function(){
+        $(this).css("color", "rgb(59,89,152)");
         }, function(){
-        $(".fb").css("color", "rgb(80,80,80)");
+        $(this).css("color", "rgb(80,80,80)");
     });
 
   $(".fa-instagram").hover(function(){
@@ -236,32 +240,39 @@ window.onload = function() {
 
   function hasScrolled() {
       var st = $(this).scrollTop();
+      console.log('scroll happening1');
       
       // Make sure they scroll more than delta
-      if(Math.abs(lastScrollTop - st) <= delta)
-          return;
+      if(Math.abs(lastScrollTop - st) <= delta) {
+        lastScrollTop = st;
+        smoothScrollProgress = true;
+        return;
+      }
       
       // If they scrolled down and are past the navbar, add class .nav-up.
       // This is necessary so you never see what is "behind" the navbar.
-      if (st <= 700) {
-        $('.links').addClass('top');
+      if (smoothScrollProgress) {
+        if (st <= 700) {
+          $('.links').addClass('top');
+        }
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('.links').removeClass('nav-down').addClass('nav-up');
+            if (st > 700) {
+              $('.links').removeClass('top');
+            }
+            console.log('scroll happening down');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('.links').removeClass('nav-up').addClass('nav-down');
+            }
+            if (st > 700) {
+              $('.links').removeClass('top');
+            }
+            console.log('scroll happening up');
+        }
       }
-      if (st > lastScrollTop && st > navbarHeight){
-          // Scroll Down
-          $('.links').removeClass('nav-down').addClass('nav-up');
-          if (st > 700) {
-            $('.links').removeClass('top');
-          }
-      } else {
-          // Scroll Up
-          if(st + $(window).height() < $(document).height()) {
-              $('.links').removeClass('nav-up').addClass('nav-down');
-          }
-          if (st > 700) {
-            $('.links').removeClass('top');
-          }
-      }
-      
       lastScrollTop = st;
   }
 
