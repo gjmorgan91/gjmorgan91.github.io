@@ -117,8 +117,19 @@ h6, #detail, li {
 
 .nav a:hover {
 	background-color: rgb(150,183,159);
-	color: white;
+	/*color: white;*/
 	box-shadow: 0px 0px 15px rgba(100,101,100,0.1);
+}
+
+.back_text {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	text-decoration: none;
+	font-style: normal;
+}
+
+.back:hover .back_text {
+	color: white;
 }
 
 .back:hover .fa {
@@ -149,7 +160,7 @@ a {
 }
 
 .gif_holder {
-	background-color: rgba(194,203,165,0.5);
+	background-color: rgba(194,203,165,0.75);
 }
 
 .pic {
