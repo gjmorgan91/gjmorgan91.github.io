@@ -4,7 +4,7 @@
 
 	<head>
 		<title>GJM: Pocket Pup</title>
-		<link rel="shortcut icon" type="image/x-icon" href="public/images/png/swarley_favicon.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="../public/images/png/swarley_favicon.png" />
 		<meta name="landing" content="initial-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="../public/css/projects.css">
 		<link rel="stylesheet" type="text/css" href="../public/css/row_col_container.css">
@@ -32,9 +32,20 @@
 	<body>
 		<header class="nav nav-down">
 			<div class="row">
-				<div class="col s12 m12 l6">
+				<div class="col s12 m12 l12">
 					<div class="back col s3 m3 l3">
-						<a href="../index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i><em class="back_text">Back</em></a>
+						<button><a href="../index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>Back</a></button>
+					</div>
+					<div class="back proj col s3 m3 l3">
+						<div class="dropdown">
+							<button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i>Project List</button>
+							<div id="myDropdown" class="dropdown-content">
+								<a href="ptt.html">Paint the Town</a>
+							    <a class="active" href="#">Pocket Pup</a>
+							    <a href="wanderlust.html">Wanderlust</a>
+							    <a href="pokemongo.html">PokemonGo</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

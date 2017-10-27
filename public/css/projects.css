@@ -62,6 +62,15 @@ h6, #detail, li {
     padding: 0 15px;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
+button {
+	border-style: none;
+}
+
 /*////////// NAVBAR //////////*/
 
 .nav {
@@ -75,14 +84,11 @@ h6, #detail, li {
 	width: 100%;
 }
 
-/*////////// NAVBAR TRANSITION //////////*/
-
-.nav-up {
-    top: -80px;
-    box-shadow: none;
-    text-shadow: none;
-    background-color: rgba(250,250,250,0.9);
+.proj {
+	float: right !important;
 }
+
+/*////////// NAVBAR TRANSITION //////////*/
 
 .nav-down {
 	text-shadow: none;
@@ -90,13 +96,7 @@ h6, #detail, li {
 	box-shadow: 1px 1px 3px rgba(100,101,100,0.5);
 }
 
-.top {
-	background-color: rgba(50,50,50,0);
-	box-shadow: none;
-	text-shadow: 1px 1px 15px rgba(52,50,50,0.1);
-}
-
-.nav a {
+.nav button {
 	padding: 5px 20px;
 	margin: 0px;
 	transition: all 0.5s;
@@ -107,40 +107,37 @@ h6, #detail, li {
 	font-size: 1.1rem;
 }
 
-.nav-up a, .nav-down a {
+button, a {
 	color: rgb(80,80,80);
 }
 
-.top a {
-	color: rgba(20,20,23,0.9);
-}
-
-.nav a:hover {
+.nav button:hover {
 	background-color: rgb(150,183,159);
-	/*color: white;*/
 	box-shadow: 0px 0px 15px rgba(100,101,100,0.1);
 }
 
-.back_text {
+button:hover {
+	color: white;
+}
+
+button a {
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	text-decoration: none;
-	font-style: normal;
 }
 
-.back:hover .back_text {
+button:hover a {
 	color: white;
 }
 
-.back:hover .fa {
+button:hover .fa {
 	color: white;
 }
 
-.back .fa {
+button .fa{
 	padding-right: 10px;
 }
 
-a {
+button, a {
 	text-decoration: none;
 }
 
@@ -183,4 +180,66 @@ a {
 	color: rgba(80,80,80,0.5);
 	font-size: 1rem !important;
 }
+
+
+/*//////////PTT/////////*/
+
+.img_container {
+	height: 275px;
+	width: auto;
+	overflow: hidden;
+	margin: 20px;
+}
+
+.header_img {
+	position: relative;
+	top: -210px;
+}
+
+/*STUFF FROM W3 FOR THE DROPDOWN */
+
+.active {
+	background-color: rgba(50,83,59,1);
+	color: white !important;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: rgb(150,183,159);
+}
+
+.dropdown-content .active:hover {
+	background-color: rgba(100,133,109,1);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+	display:block;
+}
+
 
