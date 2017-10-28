@@ -90,7 +90,6 @@ button h6 {
 
 .proj {
 	padding: 30px 0px !important;
-	height: 750px;
 }
 
 /*////////// NAVBAR //////////*/
@@ -309,7 +308,9 @@ a {
 }
 
 .imagecontainer {
-	padding: 0 5px;
+	padding: 5px 5px 0px 5px;
+	height: auto;
+	width: auto;
 }
 
 #portfolio .ref, #resume a {
@@ -325,6 +326,20 @@ a {
 	font-style: italic;
 	color: rgba(80,80,80,0.5);
 	font-size: 1rem !important;
+}
+
+.imagecontainer, .proj_content {
+	box-shadow: 0rem 0rem 0rem black;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+
+.proj:hover .imagecontainer{
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.proj:hover .proj_content{
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 .italic {
