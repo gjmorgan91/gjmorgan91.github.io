@@ -328,7 +328,7 @@ a {
 	font-size: 1rem !important;
 }
 
-.imagecontainer, .proj_content {
+/*.imagecontainer, .proj_content {
 	box-shadow: 0rem 0rem 0rem black;
 	transition: all 0.2s;
 	-webkit-transition: all 0.2s;
@@ -340,7 +340,7 @@ a {
 
 .proj:hover .proj_content{
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-}
+}*/
 
 .italic {
 	font-style: italic;
