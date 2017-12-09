@@ -156,14 +156,40 @@ button, a {
 	padding: 10px 20px;
 }
 
-.gif_holder {
+.gif_holder.pocketpup {
 	background-color: rgba(194,203,165,0.75);
 }
 
-.pic {
-	padding: 10px 130px;
+.gif_holder.wanderlust {
+	background-color: rgba(235,145,97,0.75);
+	height: 380px;
+}
+
+.gif_holder.chronicle {
+	/*background-color: rgba(199,41,36,0.7);*/
+	height: 380px;
+}
+
+.pic.pocketpup {
+	padding: 10px 115px;
 	width: 50%;
 	height: auto;
+}
+
+.pic.wanderlust {
+	padding: 60px 13px;
+	width: 95%;
+	height: auto;
+}
+
+.pic.chronicle {
+	padding: 30px 13px;
+	width: 100%;
+	height: auto;
+}
+
+.wanderlust.quarter {
+	width: 100%;
 }
 
 .ref {
@@ -179,6 +205,43 @@ button, a {
 	font-style: italic;
 	color: rgba(80,80,80,0.5);
 	font-size: 1rem !important;
+}
+
+.section {
+	padding: 5px 5px;
+}
+
+.subsection.pocketpup {
+	border-left: solid 3px rgba(194,203,165,0.75);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.subsection.wanderlust {
+	border-left: solid 3px rgba(235,145,97,0.75);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.subsection.chronicle {
+	border-left: solid 3px rgba(199,41,36,0.7);
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 50px;
+}
+
+.enlarge {
+	position: relative;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+	z-index: 1;
+}
+
+.enlarge:hover {
+	width: 200%;
+	z-index: 2;
 }
 
 

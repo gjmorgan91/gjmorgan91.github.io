@@ -43,13 +43,178 @@
 								<a href="ptt.html">Paint the Town</a>
 							    <a href="pocketpup.html">Pocket Pup</a>
 							    <a class="active" href="#">Wanderlust</a>
-							    <a href="pokemongo.html">PokemonGo</a>
+							    <a href="chronicle.html">Chronicle</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
+
+		<div class="page_top row">
+			<div class="section col s12 m10 l10 offset-m1 offset-l1">
+				<div class="col s12 m6 l6 gif_holder wanderlust">
+					<img class="pic wanderlust" src="../public/images/gif/wanderlust_overview_low.gif">
+				</div>
+				<div class="col s12 m6 l6">
+					<div class="content">
+						<h4>Wanderlust</h4>
+						<h6>Web app designed to simplify the travel planning experience through the implementation  of explicit user expectations, minimal inputs, and an emphasis on contextual information.</h6><br>
+						<!-- <a href="https://pocketpup.herokuapp.com" target="_blank">Demo Here</a> --><br><br>
+						<h6><em class="italic">HTML / CSS / Javascript / Google Maps/Places API / Materialize</em></h6>
+						<a class="ref" href="https://github.com/gjmorgan91/Wanderlust" target="_blank">View on Github</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page_body row">
+			<div class="row">
+				<div class="col s12 m8 l8 offset-m1 offset-l1">
+					<h5>Overview</h5>
+					<p>Wanderlust was built to provide travel booking options for consumers who rather travel and explore new places than have a predetermined destination in mind. We provide this through gathering minimal user input for only the most important information; how much they want to spend, when they want to travel, and where they want to depart from. By emphasizing the map, Wanderlust hopes to promote exploration and new ideas for traveling.</p>
+					<div class="row subsection wanderlust">
+						<h6>My Contributions:</h6>
+						<p>For this project, I worked as the Front End Developer and curated the User Experience for the application. My team and I developed the idea and did sketches of low fidelity user tracks through the site before designating roles. I worked primiarily with HTML, CSS, and Javascript where I implemented the Google Maps API and Google Places API to make all map visualizations and functionality.</p>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m8 l8 offset-m1 offset-l1">
+					<h5>Proposal</h5>
+					<h6>Competetive Analysis</h6>
+					<div class="row">
+						<div class="col s12 m6 l6">
+							<p>Similar products that we looked at included Google Flights and SkyScanner. We liked the interface of Google Flights where it displayed destinations and prices given a departing airport on a world map. However, Google Maps required a specific date input to search for flights, making it hard to search for when the cheapest departing date to anywhere would be. SkyScanner had a "Everywhere" option available for their destination input and allowed searching by month rather than a specific day. The search results were returned in a list form ordered by country. When a country's tab was clicked, then a dropdown would display the cities available.</p>
+							<p>Rather than a list interface like this, we'd feature a map interface where people can see the cheapest flights given only a departing airport. This visualization will also allow people to see where exactly in the world the destination is located, which gives information about how far the destination is relative to the user's location, what region of the world it's in, etc. Our primary users will be college students and other people who share flexible schedules, low funds, and an itch to explore the world.</p>
+						</div>
+						<div class="col s12 m6 l6">
+							<img class="wanderlust half" src="../public/images/png/wanderlust_6.jpeg">
+							<p>Caption: initial storyboards show college age user gaining real world experiences through the use of travel booking product that catered to their college age budget.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m8 l8 offset-m1 offset-l1">
+					<h5>Prototype</h5>
+					<p>Over a 6 week implementation period I developed the application and its experience. I worked in a process that involved weekly goal setting, facilitating feedback from peers, and so on.</p>
+					<h6>Sketches</h6>
+					<div class="row">
+						<div class="col s12 m6 l6">
+							<div class="section">
+								<img src="../public/images/png/wanderlust_4.jpeg">
+								<p>How the product would function after a valid search has been made. The criteria for the search is shown at the bottom along with ways to manipulate it and set overlays for the map while all destinations are visualized on the map as connected curves from the departing airport (converging lines) to the destinations.</p>
+							</div>
+						</div>
+						<div class="col s12 m6 l6">
+							<div class="section">
+								<img src="../public/images/png/wanderlust_5.jpeg">
+								<p>The UI would also support a list view of the flights and their destinations in order to provide ease of comparrison between options provided to the user. Here they are given an overview of the of the flight and links to additional information about the destination.</p>
+							</div>
+						</div>
+					</div>
+					<p>Our sketches aimed to help me understand how to balance the UI via giving the map heirarchy over the form elements.</p>
+					<div class="row">
+						<div class="col s12 m4 l4">
+							<div class="section">
+								<img class="enlarge" src="../public/images/png/wanderlust_7.jpeg">
+								<p></p>
+							</div>
+						</div>
+						<div class="col s12 m4 l4">
+							<div class="section">
+								<img class="enlarge" src="../public/images/png/wanderlust_8.jpeg">
+								<p></p>
+							</div>
+						</div>
+						<div class="col s12 m4 l4">
+							<div class="section">
+								<img class="enlarge" src="../public/images/png/wanderlust_9.jpeg">
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<p>An additional round of sketching was done in order to structure the progression of the user from first openning to the page to getting to the results. The decision for this process was to prompt the user with a single step in order to gain the focus of the user and reduce confusion.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m8 l8 offset-m1 offset-l1">
+					<h5>Implementation</h5>
+					<h6>User Interface</h6>
+					<p>I implemented 3 main UI components in order to fulfil 3 separate tasks through the traversal of the application.</p>
+					<div class="row subsection wanderlust">
+						<div class="col s4 m4 l4">
+							<div class="section">
+								<h6>Modals</h6>
+								<p>I utilized modals to attract the attention of the user by not letting them progress without addressing the modal. Additionally, the focus of the application was the map, modals allowed an obstruction of it that did not completely remove the map from sight.</p>
+							</div>
+						</div>
+						<div class="col s4 m4 l4">
+							<div class="section">
+								<h6>Static Header</h6>
+								<p>With the map being the center of focus, I wanted consistency and clarity with the inputs of the user and to allow changes to be made throughout the process. The header provided this by retaining the importance of the map.</p>
+							</div>
+						</div>
+						<div class="col s4 m4 l4">
+							<div class="section">
+								<h6>Pop Ups</h6>
+								<p>Information about the flights itself was done using pop ups. The implementation was feuled both by their inherent affordance for being removed and the ease of implementation with our suite of tools. Allowing them to be toggled as hidden and shown, meant their relevance for the user could be controlled.</p>
+							</div>
+						</div>
+					</div>
+					<h6>User Control</h6>
+					<p>Curating the experience was an important design element. We were conceiving this idea for both experiences and novice travel booking users. I approached this by lowering the curve to begin searching through priming the user on the task they are being confronted with, keeping inputs explicit and minimal, as well as removing unnecesary map features that cluttered the UI.</p>
+					<div class="row subsection wanderlust">
+						<h6>Scale and Context</h6>
+						<div class="col s4 m4 l4">
+							<div class="section">
+								<img class="wanderlust quarter" src="../public/images/png/wanderlust_1.png">
+								<p><b>Travel Overview</b></p>
+								<p>On the furthest level, the user is shown the context of the destinations as they relate, proximally to their departing location. This scale provides minimal flight information and destination information. It is meant to give an overview of flights to promote thoughts about the possibilities for the user.</p>
+							</div>
+						</div>
+						<div class="col s4 m4 l4">
+							<div class="section">
+								<img class="wanderlust quarter" src="../public/images/png/wanderlust_2.png">
+								<p><b>Destination</b></p>
+								<p>By interacting with the locations pin, the user is brought inwards. Now they are given flight specific information as well as options for proceeding to purchase the flight. Information overlays can be toggled from here to get understand the city.</p>
+							</div>
+						</div>
+						<div class="col s4 m4 l4">
+							<div class="section">
+								<img class="wanderlust quarter" src="../public/images/png/wanderlust_3.png">
+								<p><b>Commuter Experience</b></p>
+								<p>Furthest in is the first person perspective. Taking advantage of Google's Street View, the user can walk the streets of the city, understand the atmosphere, and begin to communicate the experience of the city.</p>
+							</div>
+						</div>
+					</div>
+					<p></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m8 l8 offset-m1 offset-l1">
+					<h5>Critique</h5>
+					<p>There are prominent areas of improvement for the project given more time is put into it:</p> 
+					<div class="subsection wanderlust">
+						<h6>Forms</h6>
+						<p>One of the first is the form functionality of the site. The goal was to reduce form input and add for more user control. Forms are slow and limiting in terms of additional information that can be conveyed. On a future implementation, I would choose to remove text inputs with sliders. This element would allow for the upper and lower ends of budget input into a single UI element while also having a 2D axis to display values across. In our case, showing a histogram of flights that fall between those price ranges would help the user be more informed as their choose the price the first time around.</p>
+					</div>
+					<div class="subsection wanderlust">
+						<h6>Map Visualization</h6>
+						<p>As seen in some of the sketches early on, I had the intention of providing cost information as a visualization of the curves on the map. When a flight meets the search criteria, it is color coded based on its price. This was one of the first implementations I planned to provide coded metrics for flight information.</p>
+					</div>
+					<div class="subsection wanderlust">
+						<h6>Comparison</h6>
+						<p>In its current state, comparison between flights is done in a brute force approach. Users must click on every point on the screen if they want to get all the information. Implementing a list form of the results would allow users to quickly compare results based on summaries of the flights. For further comparison between a smaller sample, a modal which had more information would appear to provide more in depth comparison.</p>
+					</div>
+					<div class="subsection wanderlust">
+						<h6>Departing Input</h6>
+						<p>What I believe to be equally important to budget and time is the departing airport. Currently, it is not handled in the initial input prompt from the application. This slows down the process and relies on the user to investigate the header when given access to the map portion in order to diagnose for themselves why they have no results. I would add an additional modal component to the beginning which would prompt the user with airports around their current location, but also provide a search bar to perform an airport search around another location. This would help to reach the goal of the user never interacting with the map without results present.</p>
+					</div>
+					
+					<p>Altogether the project was a challenging learning experience in which I was given the opportunity to hone my web development skills and really evolve the experience of an application from conception to implementation. While it was a great learning experience in terms of what I did, it provided great opportunity to be critical about my decisions and their effectiveness for our goals and the user's.</p>
+				</div>
+			</div>
+		</div>
 
 	</body>
 
