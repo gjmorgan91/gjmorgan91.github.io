@@ -90,6 +90,7 @@ button h6 {
 
 .proj {
 	padding: 30px 0px !important;
+	min-height: 775px !important;
 }
 
 /*////////// NAVBAR //////////*/
