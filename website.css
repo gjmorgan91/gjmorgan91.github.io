@@ -263,6 +263,10 @@ button h6 {
 	padding: 50px 0;
 }
 
+#contact {
+	padding: 0px;
+}
+
 .highlight {
 	background-color: rgba(200,150,155,0.5);
 	font-style: normal;
