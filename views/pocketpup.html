@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- I made a change -->
+
 <html>
 
 	<head>
@@ -8,6 +10,7 @@
 		<meta name="landing" content="initial-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="../public/css/projects.css">
 		<link rel="stylesheet" type="text/css" href="../public/css/row_col_container.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -38,7 +41,7 @@
 					</div>
 					<div class="back proj col s3 m3 l3">
 						<div class="dropdown">
-							<button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i>Project List</button>
+							<button onclick="dropDown()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i>Project List</button>
 							<div id="myDropdown" class="dropdown-content">
 								<a href="ptt.html">Paint the Town</a>
 							    <a class="active" href="#">Pocket Pup</a>
@@ -60,10 +63,19 @@
 					<div class="content">
 						<h4>Pocket Pup</h4>
 						<h6>Web app used to help better prepare and train dog owners through simulating situations based on their own pet’s needs.</h6><br>
-						<!-- <a href="https://pocketpup.herokuapp.com" target="_blank">Demo Here</a> --><br><br>
+						<!-- <a href="https://pocketpup.herokuapp.com" target="_blank">Demo Here</a> -->
 						<h6><em class="italic">HTML / CSS / JavaScript / Node / Express / Adobe Illustrator / Adobe Photoshop</em></h6>
-						<h6 class="disclaimer">All credit for the background art to Neko Atsume.</h6><br><br>
-						<a class="ref" href="https://github.com/gjmorgan91/PocketPup" target="_blank">View on Github</a>
+						<h6 class="disclaimer">All credit for the background art to Neko Atsume.</h6><br>
+						<div class="col s6 m6 l6">
+							<div class="button_container fullwidth">
+								<button class="primary fullwidth" type="button"><a  href="https://pocketpup.herokuapp.com" target="_blank"><h6>Demo App</h6></a></button>
+							</div>
+						</div>
+						<div class="col s6 m6 l6">
+							<div class="button_container fullwidth">
+								<button class="secondary fullwidth" type="button"><a  href="https://github.com/gjmorgan91/PocketPup" target="_blank"><h6>Github Repo</h6></a></button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -75,15 +87,15 @@
 					<p>We began our process through a need finding study aimed towards dog owners. We conducted 3 interviews to develop personas to use throughout our design process.</p>
 					<div class="row subsection pocketpup">
 						<div class="col s4 m4 l4">
-							<h6>Jamison and Madix</h6>
+							<h6><b>Jamison and Madix</b></h6>
 							<p>Jamison, age 22, has a 2 year old german shepheard named Madix. Jamison enjoys training his dog, he feels it establishes a better relationship with them. He has problems with his dog towards some smaller ones and wants to break this behavior.</p>
 						</div>
 						<div class="col s4 m4 l4">
-							<h6>Andrew and Odin</h6>
+							<h6><b>Andrew and Odin</b></h6>
 							<p>Andrew, age 27, has a 1.5 year old huskie named Odin. Odin is less responsive to Andrew's commands and lacking some training. He enjoys playing with his dog and sees less benefit from continuous training.</p>
 						</div>
 						<div class="col s4 m4 l4">
-							<h6>Kevin and Athena</h6>
+							<h6><b>Kevin and Athena</b></h6>
 							<p>Kevin, age 42, has a 7 year old doberman named Athena. He is not proficcient with using technology, and his dog tends to be rather antisocial. She is very responsibe to him.</p>
 						</div>
 					</div>

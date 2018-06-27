@@ -1,6 +1,6 @@
 html { 
 	text-align: left; 
-	color: rgb(80,80,80);
+	color: rgb(0,42,60);
 	font-family: "Slabo 27px";
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -30,7 +30,10 @@ body {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700');
+
 h1 {
+	font-family: 'Raleway';
 	font-size: 5rem;
     line-height: 110%;
     margin: 2.1rem 0 1.68rem 0;
@@ -38,6 +41,7 @@ h1 {
 }
 
 h4 {
+	font-family: 'Raleway';
 	font-size: 3.5rem;
     line-height: 110%;
     margin: 1.14rem 0 .912rem 0;
@@ -54,9 +58,9 @@ h5 {
 }
 
 h6, #detail, li {
-	font-family: 'Slabo 27px';
+	font-family: 'Open Sans';
 	font-size: 1.3rem;
-    line-height: 110%;
+    line-height: 120%;
     margin: .5rem 0 .4rem 0;
     font-weight: 400;
     padding: 0 15px;
@@ -66,16 +70,58 @@ button {
 	padding: 5px;
 	margin: 10px 0px;
 	width: 100%;
-	border-style: none;
 	border-radius: 2rem;
-	background-color: rgba(150,150,150,0.8);
 	transition: all 0.5s;
+	transition-timing-function: ease-in-out;
 	-webkit-transition: all 0.5s;
 	font-size: 1.3rem;
 }
 
-button:hover {
-	background-color: rgba(150,150,150,1);
+button.primary {
+	border-style: solid;
+	border-color: rgba(52,100,140,1);
+	background-color: rgba(52,100,140,1);
+	border-width: 0.15rem;
+}
+
+button.secondary {
+	border-style: solid;
+	border-color: rgba(227,95,113,1);
+	background-color: white;
+	border-width: 0.15rem;
+}
+
+button.primary h6 {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+button.primary h6 {
+	color: white;
+}
+
+button.seconday h6 {
+	color: black;
+}
+
+button.primary:hover {
+	background-color: rgba(12,60,100,1);
+}
+
+button.primary:hover h6 {
+	color: white;
+}
+
+button.secondary:hover {
+	background-color: rgba(227,95,113,1);
+}
+button.secondary:hover h6 {
+	color: white;
+}
+
+h5.section_title {
+	font-size: 3rem;
 }
 
 .button_container {
@@ -92,6 +138,25 @@ button h6 {
 .proj {
 	padding: 30px 0px !important;
 	min-height: 800px !important;
+}
+
+.highlight {
+	line-height: 2.3rem;
+	position: relative;
+	left: -0.5rem;
+	background-color: rgba(235,173,82,0.5);
+	font-style: normal;
+	color: white;
+	padding: 0.2rem 0.5rem;
+	z-index: -100;
+}
+
+.disclaimer {
+	color: rgba(80,80,80,0.5);
+}
+
+.header_container, .coverletter, .resume, .portfolio, .contact {
+	max-width: 1080px;
 }
 
 /*////////// NAVBAR //////////*/
@@ -148,7 +213,7 @@ button h6 {
 }
 
 .links a:hover {
-	background-color: rgb(150,183,159);
+	background-color: rgb(5,62,90);
 	color: white;
 	box-shadow: 0px 0px 15px rgba(100,101,100,0.1);
 }
@@ -184,7 +249,7 @@ button h6 {
 }
 
 .header_bg {
-	background-color: rgba(200,150,155,0.2);
+	background-color: rgba(52,100,140,0.2);
 	position: absolute;
 	top: 0px;
 	z-index: -100;
@@ -222,7 +287,7 @@ button h6 {
 
 .svg {
 	position: absolute;
-	bottom: 0px;
+	top: 85px;
 	display: inline;
 }
 
@@ -266,11 +331,6 @@ button h6 {
 
 #contact {
 	padding: 0px;
-}
-
-.highlight {
-	background-color: rgba(200,150,155,0.5);
-	font-style: normal;
 }
 
 .ucsd, .pcc {

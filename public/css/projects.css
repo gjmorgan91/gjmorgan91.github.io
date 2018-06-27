@@ -38,28 +38,34 @@ h1 {
 }
 
 h4 {
+	font-family: 'Raleway';
 	font-size: 3.5rem;
     line-height: 110%;
     margin: 1.14rem 0 .912rem 0;
     font-weight: 400;
+    padding: 0px;
 }
 
 h5 {
-	font-family: 'Open Sans';
+	font-family: 'Raleway';
 	font-size: 2rem;
     line-height: 110%;
     margin: .82rem 0 .656rem 0;
     font-weight: 400;
-    padding: 15px;
+    /*padding: 0px;*/
 }
 
-h6, #detail, li {
-	font-family: 'Slabo 27px';
+h6, #detail {
+	font-family: 'Open Sans';
 	font-size: 1.3rem;
     line-height: 120%;
     margin: .5rem 0 .4rem 0;
     font-weight: 400;
-    padding: 0 15px;
+    padding: 0px;
+}
+
+p, li {
+	font-family: 'Open Sans';
 }
 
 img {
@@ -69,6 +75,71 @@ img {
 
 button {
 	border-style: none;
+	cursor: pointer;
+}
+
+button h6 {
+	padding: 0 0rem;
+	font-size: 1rem;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+button {
+	padding: 5px;
+	margin: 10px 0px;
+	/*width: 100%;*/
+	border-radius: 2rem;
+	transition: all 0.5s;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: all 0.5s;
+	font-size: 1.3rem;
+}
+
+button.primary {
+	border-style: solid;
+	border-color: rgba(52,100,140,1);
+	background-color: rgba(52,100,140,1);
+	border-width: 0.15rem;
+}
+
+button.secondary {
+	border-style: solid;
+	border-color: rgba(227,95,113,1);
+	background-color: white;
+	border-width: 0.15rem;
+	color: black;
+}
+
+button.primary h6 {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+button.primary h6 {
+	color: white;
+}
+
+button.seconday h6 {
+	color: black;
+}
+
+button.primary:hover {
+	background-color: rgba(12,60,100,1);
+}
+
+button.primary:hover h6 {
+	color: white;
+}
+
+button.secondary:hover {
+	background-color: rgba(227,95,113,1);
+}
+button.secondary:hover h6 {
+	color: white;
 }
 
 /*////////// NAVBAR //////////*/
@@ -105,14 +176,15 @@ button {
 	font-family: "Open Sans";
 	font-weight: 600;
 	font-size: 1.1rem;
+	border: solid 0.1rem rgba(52,100,140,1);
 }
 
 button, a {
-	color: rgb(80,80,80);
+	color: rgba(52,100,140,1);
 }
 
 .nav button:hover {
-	background-color: rgb(150,183,159);
+	background-color: rgba(52,100,140,1);
 	box-shadow: 0px 0px 15px rgba(100,101,100,0.1);
 }
 
@@ -129,21 +201,12 @@ button:hover a {
 	color: white;
 }
 
-button:hover .fa {
-	color: white;
-}
-
 button .fa{
 	padding-right: 10px;
 }
 
 button, a {
 	text-decoration: none;
-}
-
-.fa {
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
 }
 
 /*//////////BODY OF THE PAGE//////////*/
@@ -156,13 +219,17 @@ button, a {
 	padding: 10px 20px;
 }
 
+.gif_holder {
+	margin-top: 2rem !important;
+}
+
 .gif_holder.pocketpup {
 	background-color: rgba(194,203,165,0.75);
 }
 
 .gif_holder.wanderlust {
 	background-color: rgba(235,145,97,0.75);
-	height: 380px;
+	max-height: 380px;
 }
 
 .gif_holder.chronicle {
@@ -171,19 +238,19 @@ button, a {
 }
 
 .pic.pocketpup {
-	padding: 10px 115px;
+	padding: 15px 25%;
 	width: 50%;
 	height: auto;
 }
 
 .pic.wanderlust {
-	padding: 60px 13px;
+	padding: 1rem 2.5%;
 	width: 95%;
 	height: auto;
 }
 
 .pic.chronicle {
-	padding: 30px 13px;
+	/*padding: 30px 13px;*/
 	width: 100%;
 	height: auto;
 }
@@ -208,13 +275,16 @@ button, a {
 }
 
 .section {
-	padding: 5px 5px;
+	padding: 1rem !important;
 }
 
 .subsection.pocketpup {
 	border-left: solid 3px rgba(194,203,165,0.75);
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
+}
+
+.subsection.pocketpup .col {
+	padding: 0 10px;
 }
 
 .subsection.wanderlust {
@@ -225,6 +295,13 @@ button, a {
 
 .subsection.chronicle {
 	border-left: solid 3px rgba(199,41,36,0.7);
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 50px;
+}
+
+.subsection.ptt {
+	border-left: solid 3px rgba(118,94,169,0.7);
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 50px;
@@ -251,18 +328,18 @@ button, a {
 	height: 275px;
 	width: auto;
 	overflow: hidden;
-	margin: 20px;
+	/*margin: 20px;*/
 }
 
 .header_img {
 	position: relative;
-	top: -210px;
+	top: -45px;
 }
 
 /*STUFF FROM W3 FOR THE DROPDOWN */
 
 .active {
-	background-color: rgba(50,83,59,1);
+	background-color: rgba(52,100,140,1);
 	color: white !important;
 }
 
@@ -293,16 +370,14 @@ button, a {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-	background-color: rgb(150,183,159);
+	background-color: rgba(102,150,190,1);
 }
 
 .dropdown-content .active:hover {
-	background-color: rgba(100,133,109,1);
+	background-color: rgba(102,150,190,1);
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
 	display:block;
 }
-
-
