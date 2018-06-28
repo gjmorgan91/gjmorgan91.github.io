@@ -155,8 +155,8 @@ button h6 {
 	color: rgba(80,80,80,0.5);
 }
 
-.header_container, .coverletter, .resume, .portfolio, .contact {
-	max-width: 1080px;
+.header_container, .coverletter, .resume, .portfolio, .contact. .svg_container {
+	max-width: 1400px;
 }
 
 /*////////// NAVBAR //////////*/
@@ -285,20 +285,31 @@ button h6 {
 
 /*////////// HEADER GRAPHIC //////////*/
 
+.svg_container {
+	position: relative;
+	top: -289px;
+	margin: auto !important;
+}
+
 .svg {
-	position: absolute;
-	top: 85px;
-	display: inline;
+	position: relative;
+	top: 0px;
+	display: inline-flex;
 }
 
 .dog {
 	right: 0px;
 	z-index: -11;
+	margin-left: auto;
+	display: flex;
+	top: -600px;
 }
 
 .greg {
 	left: 0px;
 	z-index: -10;
+	margin-right: auto;
+	display: flex;
 }
 
 /*////////// SECTION DIVIDER //////////*/
