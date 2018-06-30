@@ -66,6 +66,7 @@ h6, #detail {
 
 p, li {
 	font-family: 'Open Sans';
+	font-size: 1rem;
 }
 
 img {
@@ -76,11 +77,12 @@ img {
 button {
 	border-style: none;
 	cursor: pointer;
+	background-color: white;
 }
 
 button h6 {
 	padding: 0 0rem;
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 
 .fullwidth {
@@ -108,9 +110,9 @@ button.primary {
 button.secondary {
 	border-style: solid;
 	border-color: rgba(227,95,113,1);
+	color: rgba(227,95,113,1);
 	background-color: white;
 	border-width: 0.15rem;
-	color: black;
 }
 
 button.primary h6 {
@@ -121,10 +123,6 @@ button.primary h6 {
 
 button.primary h6 {
 	color: white;
-}
-
-button.seconday h6 {
-	color: black;
 }
 
 button.primary:hover {
@@ -180,7 +178,7 @@ button.secondary:hover h6 {
 }
 
 button, a {
-	color: rgba(52,100,140,1);
+	color: inherit;
 }
 
 .nav button:hover {
@@ -212,7 +210,7 @@ button, a {
 /*//////////BODY OF THE PAGE//////////*/
 
 .page_top {
-	margin-top: 20px;
+	margin: 2rem 0rem !important;
 }
 
 .content {
@@ -229,12 +227,20 @@ button, a {
 
 .gif_holder.wanderlust {
 	background-color: rgba(235,145,97,0.75);
-	max-height: 380px;
 }
 
 .gif_holder.chronicle {
 	/*background-color: rgba(199,41,36,0.7);*/
-	height: 380px;
+	
+}
+
+.gif_holder.ptt {
+
+}
+
+.pic {
+	display: block;
+	margin: auto;
 }
 
 .pic.pocketpup {
@@ -253,6 +259,10 @@ button, a {
 	/*padding: 30px 13px;*/
 	width: 100%;
 	height: auto;
+}
+
+.pic.ptt {
+
 }
 
 .wanderlust.quarter {
@@ -324,17 +334,17 @@ button, a {
 
 /*//////////PTT/////////*/
 
-.img_container {
+/*.img_container {
 	height: 275px;
 	width: auto;
 	overflow: hidden;
-	/*margin: 20px;*/
+	margin: 20px;
 }
 
 .header_img {
 	position: relative;
 	top: -45px;
-}
+}*/
 
 /*STUFF FROM W3 FOR THE DROPDOWN */
 
@@ -380,4 +390,10 @@ button, a {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
 	display:block;
+}
+
+footer {
+	background-color: rgba(250,250,250,0.9);
+	height: 3rem;
+	box-shadow: 1px -1px 3px rgba(100,101,100,0.5);
 }
