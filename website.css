@@ -496,6 +496,10 @@ b {
 	font-size: 2rem !important;
 }
 
+.contact button {
+	background-color: white;
+}
+
 .contact button, .contact a {
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
