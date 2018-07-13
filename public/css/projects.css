@@ -307,14 +307,14 @@ button, a {
 	border-left: solid 3px rgba(199,41,36,0.7);
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 }
 
 .subsection.ptt {
 	border-left: solid 3px rgba(118,94,169,0.7);
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 }
 
 .enlarge {
@@ -324,6 +324,10 @@ button, a {
 	transition-delay: 0.25s;
 	-webkit-transition-delay: 0.25s;
 	z-index: 1;
+}
+
+.subsection .row {
+	margin: 0px !important;
 }
 
 .enlarge:hover {

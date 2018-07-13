@@ -163,8 +163,24 @@ a {
 	color: rgba(80,80,80,0.5);
 }
 
+.disabled {
+	color: white !important;
+	background-color: rgba(150,150,150,0.5) !important;
+	border-color: rgba(50,50,50,0.5) !important;
+}
+
+.disabled:hover {
+	background-color: rgba(80,80,80,0.5) !important;
+	color: darkgrey !important;
+}
+
 .header_container, .coverletter, .resume, .portfolio, .contact. .svg_container {
 	max-width: 1400px;
+}
+
+.note {
+	font-style: italic;
+	color: rgba(227,95,113,1);
 }
 
 /*////////// NAVBAR //////////*/
