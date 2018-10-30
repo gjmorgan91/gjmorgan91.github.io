@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="792px" height="140px" viewBox="0 0 792 140" enable-background="new 0 0 792 140" xml:space="preserve">
+<rect x="200.121" y="16" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+<rect x="69.121" y="16" fill="none" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+<rect x="290.121" y="16" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+<rect x="380.121" y="16" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+<g>
+	<circle fill="#EF3B39" cx="97.29" cy="304.553" r="16.857"/>
+	<circle fill="#EF3B39" cx="97.29" cy="341.543" r="28.152"/>
+</g>
+<rect x="72.121" y="82" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 72.1211 95.356)" font-family="'Montserrat-Regular'" font-size="18">image </text>
+<rect x="68.805" y="254.195" fill="none" width="243.132" height="25.5"/>
+<text transform="matrix(1 0 0 1 68.8047 267.5513)" font-family="'Montserrat-Regular'" font-size="18">player paints an object</text>
+<rect x="641.121" y="114" fill="none" width="76" height="25"/>
+<text transform="matrix(1 0 0 1 641.1211 127.356)" font-family="'Montserrat-Regular'" font-size="18">material</text>
+<rect x="514.201" y="530.326" fill="none" width="76" height="25"/>
+<text transform="matrix(1 0 0 1 514.2012 543.6816)" font-family="'Montserrat-Regular'" font-size="18">material</text>
+<rect x="103.697" y="115" fill="none" width="323.848" height="25"/>
+<text transform="matrix(1 0 0 1 103.6973 128.356)" font-family="'Montserrat-Regular'" font-size="18">minimum requirement for painting</text>
+<rect x="203.121" y="82" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 203.1211 95.356)" fill="#FFFFFF" font-family="'Montserrat-Regular'" font-size="18">red a.</text>
+<rect x="293.121" y="82" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 293.1211 95.356)" fill="#FFFFFF" font-family="'Montserrat-Regular'" font-size="18">green a.</text>
+<rect x="383.121" y="82" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 383.1211 95.356)" fill="#FFFFFF" font-family="'Montserrat-Regular'" font-size="18">blue a.</text>
+<g>
+	<rect x="69.202" y="530.326" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 69.2017 543.6816)" font-family="'Montserrat-Regular'" font-size="18">image </text>
+</g>
+<g>
+	<rect x="200.202" y="530.326" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 200.2017 543.6816)" font-family="'Montserrat-Regular'" font-size="18">red a.</text>
+</g>
+<g>
+	<rect x="200.202" y="560.326" fill="none" width="262" height="42"/>
+	<text transform="matrix(1 0 0 1 200.2017 573.6816)"><tspan x="0" y="0" font-family="'Montserrat-Regular'" font-size="18">the stroke is reflected on the </tspan><tspan x="0" y="21.6" font-family="'Montserrat-Regular'" font-size="18">alpha limage</tspan></text>
+</g>
+<g>
+	<rect x="290.202" y="530.326" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 290.2017 543.6816)" font-family="'Montserrat-Regular'" font-size="18">green a.</text>
+</g>
+<g>
+	<rect x="380.202" y="530.326" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 380.2017 543.6816)" font-family="'Montserrat-Regular'" font-size="18">blue a.</text>
+</g>
+<rect x="509.121" y="16" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 509.1211 29.356)" font-family="'Montserrat-Regular'" font-size="18">normal</text>
+<rect x="509.121" y="49" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 509.1211 62.356)" font-family="'Montserrat-Regular'" font-size="18">reflective</text>
+<rect x="609.121" y="49" fill="none" width="18" height="25"/>
+<text transform="matrix(1 0 0 1 609.1211 62.356)" font-family="'Montserrat-Regular'" font-size="18">=</text>
+<rect x="480.121" y="49" fill="none" width="18" height="25"/>
+<text transform="matrix(1 0 0 1 480.1211 62.356)" font-family="'Montserrat-Regular'" font-size="18">+</text>
+<rect x="169.121" y="49" fill="none" width="18" height="25"/>
+<text transform="matrix(1 0 0 1 169.1211 62.356)" font-family="'Montserrat-Regular'" font-size="18">+</text>
+<rect x="509.121" y="82" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 509.1211 95.356)" font-family="'Montserrat-Regular'" font-size="18">emission</text>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="59.121" y1="98" x2="59.121" y2="107"/>
+<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="59.121,107 472.121,107 472.121,98 "/>
+<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="679.121" cy="57" r="41"/>
+<rect x="22.121" y="254.695" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 22.1211 268.0513)" font-family="'Montserrat-Regular'" font-size="18">1.</text>
+<rect x="68.805" y="409.695" fill="none" width="702.131" height="25.5"/>
+<text transform="matrix(1 0 0 1 68.8047 423.0508)" font-family="'Montserrat-Regular'" font-size="18">script changes pixels on the alpha image corresponding to the player’s color</text>
+<rect x="22.121" y="410.195" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 22.1211 423.5518)" font-family="'Montserrat-Regular'" font-size="18">2.</text>
+<g>
+	<rect x="200.202" y="442.021" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<rect x="69.202" y="442.021" fill="none" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<rect x="290.202" y="442.021" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<rect x="380.202" y="442.021" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<g>
+		<path d="M483.461,479.467h7.83v1.062h-7.83V479.467z M483.461,483.625h7.83v1.062h-7.83V483.625z"/>
+	</g>
+	<g>
+		<path d="M178.292,482.617h-3.348v3.276h-1.134v-3.276h-3.349v-1.062h3.349v-3.294h1.134v3.294h3.348V482.617z"/>
+	</g>
+	<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="552.201" cy="483.021" r="41"/>
+</g>
+<g>
+	
+		<rect x="148.517" y="299.814" fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" width="69.881" height="69.881"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" x1="218.397" y1="299.814" x2="230.517" y2="287.695"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" points="218.397,369.695 230.517,357.577 
+		230.517,287.695 160.635,287.695 148.517,299.814 	"/>
+</g>
+<line fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="271.952" y1="452.271" x2="210.452" y2="513.771"/>
+<path fill="none" stroke="#000000" stroke-width="0.9" stroke-miterlimit="10" stroke-dasharray="3.6,2.7" d="M158.601,364.878
+	c-1.152,0-2.303-0.439-3.182-1.317c-1.757-1.758-1.757-4.607,0-6.365l50.713-50.713c1.758-1.756,4.606-1.756,6.364,0
+	c1.757,1.758,1.757,4.607,0,6.365l-50.713,50.713C160.904,364.438,159.752,364.878,158.601,364.878z"/>
+<g>
+	<circle fill="#EF3B39" cx="97.29" cy="676.435" r="16.857"/>
+	<circle fill="#EF3B39" cx="97.29" cy="713.425" r="28.152"/>
+</g>
+<rect x="68.805" y="626.077" fill="none" width="435.122" height="25.5"/>
+<text transform="matrix(1 0 0 1 68.8047 639.4336)" font-family="'Montserrat-Regular'" font-size="18">object reflects the interaction in te game space</text>
+<rect x="22.121" y="626.577" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 22.1211 639.9336)" font-family="'Montserrat-Regular'" font-size="18">3.</text>
+<g>
+	
+		<rect x="148.517" y="671.696" fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" width="69.881" height="69.881"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" x1="218.397" y1="671.696" x2="230.517" y2="659.577"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" points="218.397,741.577 230.517,729.459 
+		230.517,659.577 160.635,659.577 148.517,671.696 	"/>
+</g>
+<path fill="#EF3B39" d="M158.601,736.76c-1.152,0-2.303-0.439-3.182-1.317c-1.757-1.758-1.757-4.607,0-6.365l50.713-50.712
+	c1.758-1.758,4.606-1.758,6.364,0c1.757,1.757,1.757,4.605,0,6.363l-50.713,50.714C160.904,736.32,159.752,736.76,158.601,736.76z"
+	/>
+<line fill="none" stroke="#EF3B39" stroke-width="10" stroke-miterlimit="10" x1="582.951" y1="452.271" x2="521.451" y2="513.771"/>
+<g>
+	<circle fill="#2E3286" cx="97.29" cy="821.935" r="16.857"/>
+	<circle fill="#2E3286" cx="97.29" cy="858.925" r="28.152"/>
+</g>
+<rect x="68.805" y="771.577" fill="none" width="413.156" height="25.5"/>
+<text transform="matrix(1 0 0 1 68.8047 784.9336)" font-family="'Montserrat-Regular'" font-size="18">another player interacts on the same object</text>
+<rect x="514.201" y="1067.708" fill="none" width="76" height="25"/>
+<text transform="matrix(1 0 0 1 514.2012 1081.0645)" font-family="'Montserrat-Regular'" font-size="18">material</text>
+<g>
+	<rect x="69.202" y="1067.708" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 69.2017 1081.0645)" font-family="'Montserrat-Regular'" font-size="18">image </text>
+</g>
+<g>
+	<rect x="200.202" y="1067.708" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 200.2017 1081.0645)" font-family="'Montserrat-Regular'" font-size="18">red a.</text>
+</g>
+<g>
+	<rect x="290.202" y="1067.708" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 290.2017 1081.0645)" font-family="'Montserrat-Regular'" font-size="18">green a.</text>
+</g>
+<g>
+	<rect x="380.202" y="1067.708" fill="none" width="84" height="25"/>
+	<text transform="matrix(1 0 0 1 380.2017 1081.0645)" font-family="'Montserrat-Regular'" font-size="18">blue a.</text>
+</g>
+<rect x="22.121" y="772.077" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 22.1211 785.4336)" font-family="'Montserrat-Regular'" font-size="18">4.</text>
+<rect x="68.805" y="927.077" fill="none" width="669.132" height="40.983"/>
+<text transform="matrix(1 0 0 1 68.8047 940.4336)"><tspan x="0" y="0" font-family="'Montserrat-Regular'" font-size="18">script changes the corresponding alpha image, not effecting the previous </tspan><tspan x="0" y="21.6" font-family="'Montserrat-Regular'" font-size="18">interactions</tspan></text>
+<rect x="22.121" y="927.577" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 22.1211 940.9336)" font-family="'Montserrat-Regular'" font-size="18">5.</text>
+<g>
+	<rect x="200.202" y="979.403" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<rect x="69.202" y="979.403" fill="none" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<rect x="290.202" y="979.403" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<rect x="380.202" y="979.403" stroke="#000000" stroke-miterlimit="10" width="82" height="82"/>
+	<g>
+		<path d="M483.461,1016.849h7.83v1.062h-7.83V1016.849z M483.461,1021.007h7.83v1.062h-7.83V1021.007z"/>
+	</g>
+	<g>
+		<path d="M178.292,1019.999h-3.348v3.276h-1.134v-3.276h-3.349v-1.062h3.349v-3.294h1.134v3.294h3.348V1019.999z"/>
+	</g>
+	<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="552.201" cy="1020.403" r="41"/>
+</g>
+<g>
+	
+		<rect x="148.517" y="817.196" fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" width="69.881" height="69.881"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" x1="218.397" y1="817.196" x2="230.517" y2="805.077"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" points="218.397,887.077 230.517,874.959 
+		230.517,805.077 160.635,805.077 148.517,817.196 	"/>
+</g>
+<line fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="271.952" y1="989.653" x2="210.452" y2="1051.153"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="390.452" y1="989.654" x2="451.951" y2="1051.153"/>
+<path fill="#EF3B39" d="M158.601,882.26c-1.152,0-2.303-0.439-3.182-1.317c-1.757-1.758-1.757-4.607,0-6.365l50.713-50.712
+	c1.758-1.758,4.606-1.758,6.364,0c1.757,1.757,1.757,4.605,0,6.363l-50.713,50.714C160.904,881.82,159.752,882.26,158.601,882.26z"
+	/>
+<path fill="none" stroke="#000000" stroke-width="0.9" stroke-miterlimit="10" stroke-dasharray="3.6,2.7" d="M213.813,877.76
+	c0,1.152-0.439,2.303-1.317,3.182c-1.758,1.758-4.607,1.758-6.365,0l-50.712-50.713c-1.758-1.758-1.758-4.605,0-6.363
+	c1.757-1.758,4.605-1.758,6.363,0l50.714,50.713C213.374,875.457,213.813,876.607,213.813,877.76z"/>
+<path fill="#2E3286" d="M213.813,1227.729c0,1.152-0.439,2.303-1.317,3.182c-1.758,1.758-4.607,1.758-6.365,0l-50.712-50.713
+	c-1.758-1.758-1.758-4.605,0-6.363c1.757-1.758,4.605-1.758,6.363,0l50.714,50.713
+	C213.374,1225.426,213.813,1226.576,213.813,1227.729z"/>
+<g>
+	<circle fill="#EF3B39" cx="97.29" cy="1171.903" r="16.857"/>
+	<circle fill="#EF3B39" cx="97.29" cy="1208.894" r="28.152"/>
+</g>
+<rect x="68.805" y="1101.546" fill="none" width="579.116" height="39.56"/>
+<text transform="matrix(1 0 0 1 68.8047 1114.9023)"><tspan x="0" y="0" font-family="'Montserrat-Regular'" font-size="18">object reflects both interactions, a new color is found within the </tspan><tspan x="0" y="21.6" font-family="'Montserrat-Regular'" font-size="18">intersection</tspan></text>
+<rect x="22.121" y="1102.046" fill="none" width="84" height="25"/>
+<text transform="matrix(1 0 0 1 22.1211 1115.4023)" font-family="'Montserrat-Regular'" font-size="18">6.</text>
+<g>
+	
+		<rect x="148.517" y="1167.165" fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" width="69.881" height="69.881"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" x1="218.397" y1="1167.165" x2="230.517" y2="1155.046"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.8522" stroke-miterlimit="10" points="218.397,1237.046 230.517,1224.928 
+		230.517,1155.046 160.635,1155.046 148.517,1167.165 	"/>
+</g>
+<path fill="#EF3B39" d="M158.601,1232.229c-1.152,0-2.303-0.439-3.182-1.317c-1.757-1.758-1.757-4.607,0-6.365l50.713-50.712
+	c1.758-1.758,4.606-1.758,6.364,0c1.757,1.757,1.757,4.605,0,6.363l-50.713,50.714
+	C160.904,1231.789,159.752,1232.229,158.601,1232.229z"/>
+<rect x="179.457" y="1197.872" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1164.2397 1922.5002)" fill="#B9529F" width="9" height="9"/>
+<line fill="none" stroke="#EF3B39" stroke-width="10" stroke-miterlimit="10" x1="582.951" y1="989.653" x2="521.451" y2="1051.153"/>
+<line fill="none" stroke="#2E3286" stroke-width="10" stroke-miterlimit="10" x1="582.951" y1="1051.153" x2="521.451" y2="989.653"/>
+<rect x="547.202" y="1015.404" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1664.2004 1351.4723)" fill="#B9529F" width="9.999" height="9.999"/>
+</svg>

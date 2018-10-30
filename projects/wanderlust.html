@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Wanderlust - GJM</title>
+		<link rel="stylesheet" type="text/css" href="../public/css/projects.css">
+	</head>
+
+	<body>
+
+		<div class="content wanderlust">
+
+			<div class="nav_container">
+				<nav>
+					<ul>
+						<p>sections</p>
+						<li><a href="#overview">overview</a></li>
+						<li><a href="#layout">layout</a></li>
+						<li><a href="#input">input</a></li>
+						<li><a href="#exploration">exploration</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header_background">
+				<div class="img_container">
+					<div class="rellax" data-rellax-speed="2">
+						<img src="../public/images/wanderlust/wanderlust_2.png">
+					</div>
+					<div class="background_color"></div>
+				</div>
+			</div>
+			
+			<div class="header">
+				<h1>Wanderlust</h1>
+				<h3>Front-end Web Development, Product Design</h3>
+				<p>Web app designed to simplify the travel planning experience through a map-centric, scalable approach.</p>
+				<span>
+					<a href="https://wanderlust-travelapp.herokuapp.com/">demo the app</a>
+					<a href="https://github.com/gjmorgan91/wanderlust">view github repo</a>
+					<a href="../index.html#projects">back</a>
+				</span>
+			</div>
+
+			<section class="overview row2" id="overview">
+				<h3>Overview</h3>
+				<p>Wanderlust was built to provide travel booking options for consumers who rather travel and explore new places than have a predetermined destination in mind. We provide this through gathering minimal user input for only the most important information; how much they want to spend, when they want to travel, and where they want to depart from. By emphasizing the map, Wanderlust hopes to promote exploration and new ideas for traveling.</p>
+				<div class="gif_container">
+					<img src="../public/images/wanderlust/macbook_background.png">
+					<div class="gif">
+						<img src="../public/images/wanderlust/wanderlust_overview.gif">
+					</div>
+				</div>
+			</section>
+
+			<section class="layout row3" id="layout">
+				<h3>layout</h3>
+				<p>Designed with a map-centric theme, Wanderlust aims to provide context along each step of the process through showing information relative to the map.</p>
+				<div class="grid col3">
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_sketch_4.jpeg">
+						<figcaption>
+							<h4>Modals</h4>
+							<p>I utilized modals to attract the attention of the user by not letting them progress without addressing the modal. Additionally, the focus of the application was the map, modals allowed an obstruction of it that did not completely remove the map from sight.</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_sketch_5.jpeg">
+						<figcaption>
+							<h4>Static Header</h4>
+							<p>With the map being the center of focus, I wanted consistency and clarity with the inputs of the user and to allow changes to be made throughout the process. The header provided this by retaining the importance of the map.</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_sketch_6.jpeg">
+						<figcaption>
+							<h4>Pop Ups</h4>
+							<p>Information about the flights itself was done using pop ups. The implementation was fueled both by their inherent affordance for being removed and the ease of implementation with our suite of tools. Allowing them to be toggled as hidden and shown, meant their relevance for the user could be controlled.</p>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+
+			<section class="input row4" id="input">
+				<h3>Input</h3>
+				<div class="grid col2">
+					<p>Wanderlust begins with the prompt about what travel info from the customer with be required; a range of prices and dates which they want. That, along with a departing location, are the minimum required information for potential flights to be shown.</p>
+					<img class="img_shadow" src="../public/images/wanderlust/wanderlust_11.png">
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_1.png">
+						<figcaption>Users set their search criteria through inputting their range of prices and dates for travel.</figcaption>
+					</figure>
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_4.png">
+						<figcaption>Inputting a departing area then allows the user to search for options within their needs.</figcaption>
+					</figure>
+				</div>
+			</section>
+
+			<div class="background grey row3"></div>
+			<div class="background grey row5"></div>
+
+			<section class="exploration row5" id="exploration">
+				<h3>Exploration</h3>
+				<p>Understanding the results of the search takes places on 3 different scales; departing to destinations, destination city-wide, and first-person perspective. Using Google Maps and Google Streetview, the users navigate using a familiar set of tools to achieve this.</p>
+				<div class="grid col3">
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_10.png">
+						<figcaption>
+							<p>Destinations are displayed as points on the map, connected by paths showing the relations to one another and the departing location.</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_8.png">
+						<figcaption>
+							<p>A single destination is show at a city-wide scale, providing context for its surroundings along with information about that booking.</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<img class="img_shadow" src="../public/images/wanderlust/wanderlust_9.png">
+						<figcaption>
+							<p>Providing a first-person perspective, users can explore the city and get as hands on as possible before traveling.</p>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+
+		</div>
+
+		<footer class="wanderlust">
+			<h3 class="contact_header">contact</h3>
+			<section class="contact_container">
+				<form action="mailto:greg@gjmorgan.com" method="post" enctype="text/plain" name="emailForm">
+					<div>
+						<input type="text" name="name" id="name"><p>name</p>
+						<input type="text" name="email" id="email"><p>email</p>
+						<input type="text" name="subject" id="subject"><p>subject</p><br/>
+						<input type="submit" name="submit" id="submit">
+					</div>
+					<div>
+						<textarea name="message" placeholder="let's connect" id="message"></textarea>
+					</div>
+				</form>
+				<div class="links">
+					<div>
+						<ul>
+							<p>external links</p>
+							<li><a href="https://linkedin.com/in/gjmorgan" target="_blank">linkedin</a></li>
+							<li><a href="https://github.com/gjmorgan91" target="_blank">github</a></li>
+							<li><a href="https://instagram.com/gjmorgan" target="_blank">instagram</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<br/><li><a href="../index.html">back to home</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<div class="contact_background"></div>
+		</footer>
+
+	</body>
+
+	<script type="text/javascript" src="../public/js/rellax.min.js"></script>
+	<script type="text/javascript" src="../public/js/index.js"></script>
+
+</html>

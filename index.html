@@ -1,38 +1,17 @@
 <!DOCTYPE html>
-
 <html>
 
 	<head>
+		<title>Greg Morgan: Portfolio</title>
+
+		<meta property="og:title" content="Greg Morgan: Portfolio" />
+		<meta name="og:description" content="Web portfolio for Greg Morgan. Developer and designer located in Denver, Colorado.">
 		<meta property="og:url" content="http://gjmorgan.com" />
-		<meta property="og:image" content="http://hackxr.io/public/img/png/gjm_small.png" />
-		<meta property="og:title" content="Greg Morgan: Portfolio"/>
-		<meta property="og:description" content="UX Designer, Graphic Design, Project Management, and Full Stack Developer." />
+  		<meta property="og:image" content="http://gjmorgan.com/public/images/site_thumbnail.png" />
+		<meta name="og:keywords" content="Developer,Designer,Design,Graphic Design,Web Development,Web Developer,Web Design,Graphic Design,Graphic Designer,Denver,Technology,Hire,For Hire">
 
-		<title>Greg J Morgan</title>
-		<link rel="shortcut icon" type="image/x-icon" href="public/images/png/swarley_favicon.png" />
-		<meta name="landing" content="initial-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="website.css">
-		<link rel="stylesheet" type="text/css" href="public/css/row_col_container.css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-107685063-1');
-		</script>
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-WTS59FW');</script>
-		<!-- End Google Tag Manager -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="portfolio.js"></script>
-		<!-- Global Site Tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107685063-1"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="public/favicon.png" />
+		<link rel="stylesheet" type="text/css" href="public/css/style.css">
 	</head>
 
 	<body>
@@ -42,467 +21,203 @@
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
-
-		<!-- NAV BAR -->
-		<header class="links nav-up top">
-			<div class="row">
-				<div class="col s12 m12 l6 offset-l3">
-					<div class="col s3 m3 l3">
-						<h6><a href="#coverletter">About Me</a></h6>
-					</div>
-					<div class="col s3 m3 l3">
-						<h6><a href="#resume">Resume</a></h6>
-					</div>
-					<div class="col s3 m3 l3">
-						<h6><a href="#portfolio">Portfolio</a></h6>
-					</div>
-					<div class="col s3 m3 l3">
-						<h6><a href="#contact">Contact</a></h6>
-					</div>
+		<div class="header" id="header">
+			<div class="header_content">
+				<h1 class="rellax" data-rellax-speed="0">Greg<em>ory</em> Morgan</h1>
+				<div class="subheader">
+					<h2 class="rellax" data-rellax-speed="0.5">Architect turned designer / developer</h2>
+					<h2 class="rellax" data-rellax-speed="0.5">Project Management, Web Development, Graphic Design</h2>
 				</div>
+				<nav>
+					<a href="#about" class="rellax" data-rellax-speed="1">about</a>
+					<a href="#projects" class="rellax" data-rellax-speed="1">projects</a>
+					<a href="#contact" class="rellax" data-rellax-speed="1">contact</a>
+				</nav>
 			</div>
-		</header>
+			<!-- <div class="header_background"> -->
+				<img class="header_background" src="public/svg/desk_illustration_whitebg.svg">
+			<!-- </div>
+ -->		</div>
 
-
-		<!-- HEADER GRAPHIC -->
-		<div class="header_container">
-			<div class="header">
-				<h1>Greg<em class=italic>ory</em> J Morgan</h1>
-				<div class="header_bg"></div>
-				<h4>I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " UX designer.", " project manager.", " full stack developer.", "n architect.", " graphic designer.", "front-end developer.", " dog mom." ]'></span></h4>
-				<div class="row svg_container">
-					<div class="col s12">
-						<object class="svg greg" type="image/svg+xml" data="public/images/svg/lowpoly_greg_nohat.svg">Your browser does not support SVGs</object>
-					<!-- </div>
-					<div class="col s6"> -->
-						<object class="svg dog" type="image/svg+xml" data="public/images/svg/lowpoly_swarley.svg">Your browser does not support SVGs</object>
-					</div>
-				</div>
+		<div class="content">
+			<h3 class="section about_header" id="about">about me</h3>
+			<div class="section about_content">
+				<p>My name is Gregory (I go by just ‘Greg’) Morgan. I am a designer and developer with a passion for bold colors and empathetic design. Born and raised in Los Angeles, California, I studied, practiced, and taught architecture and interior design before receiving my degree in Cognitive Science from the University of California San Diego. A new resident of the Greater Denver Area, I am looking for opportunities in project management, ui / ux, or web development.</p>
+				<a class="about_link" href="about.html">read more</a>
 			</div>
-		</div>
+			<div class="about_background"></div>
 
-
-		<!-- COVER LETTER / ABOUT ME -->
-		<div id="coverletter" class="row">
-			<div class="col s12 m10 l9 offset-m1 offset-l1">
-				<h5 class="section_title">About Me</h5>
-				<div class="row">
-					<div class="col m12 l10">
-						<h6>My name is <b>Greg Morgan.</b> I am a recent graduate of the University of California San Diego who has recently relocated to the Greater Denver Area. I have a total of 5 years of experience in architectural, graphic, game, and user experience design. I am passionate about building products that work to the benefit of its users whether it be typography or interfaces. I pride myself on strong interpersonal and leadership skills. I crave challenge and opportunity to learn new skills.</h6><br><br>
-					</div>
-					<!--<div class="col m12 l6">
-						<h6>I have spent my years of education absorbing <em class="bold">experience and skills</em>. As a designer and engineer, I am interested in taking a <em class="bold">multidiscipliary</em> approach to <em class="bold">user-centered solution</em> finding for a positive change in our world. I am looking for the space and the <em class="bold">team</em> that that I can grow alongside while I begin my next chapter in becoming an <em class="bold">expert</em>.</h6>
-					</div>-->
-				</div>
-			</div>
-		</div>
-
-
-		<!-- WORK EXPERIENCE -->
-		<div id="resume" class="row">
-			<div class="col s12 m10 l9 offset-m1 offset-l1">
-				<div class="row section">
-					<div class="row">
-						<h5 class="section_title">Education</h5>
-					</div>
-					<div class="row">
-						<div class="col s12 m12 l2">
-							<object class="ucsd" type="image/svg+xml" data="public/images/svg/ucsd.svg">Your browser does not support SVGs</object>
-						</div>
-						<div class="col s12 m12 l10 detail">
-							<h6><b>University of California San Diego, La Jolla, CA</b><br>
-							<b><em class="highlight">Bachelor of Science in Cognitive Science; Human-Computer Interaction</em></b><br>
-							Minor in Computer Science<br>
-							GPA: 3.2 / 4.0<br>
-							Student Organizations: Virtual Reality Club at UCSD <em class="disclaimer">(now TritonXR)</em>, Design.UCSD<br><br></h6>
-						</div>
-					</div>
-					<div clas="row">
-						<div class="col s12 m12 l2">
-							<object class="ucsd" type="image/svg+xml" data="public/images/svg/pcc.svg">Your browser does not support SVGs</object>
-						</div>
-						<div class="col s12 m12 l10 detail">
-							<h6><b>Pasadena City College, Pasadena, CA</b><br>
-							Focus: Architectural and Interior Design<br>
-							GPA: 3.6 / 4.0</h6>
-						</div>
-					</div>
-				</div>
-
-				<div class="row section">
-					<div class="row">
-						<h5 class="section_title">Leadership</h5>
-					</div>
-					<div class="row">
-						<div class="col s12 m12 l6 detail">
-							<h6>University of California San Diego, La Jolla, CA<br>
-							<b><em class="highlight">Branding Director, Hack XR</em></b><br>
-							Led all branding efforts for UCSD's first ever VR / AR Hackathon. Built the event's website, logo, and brand while also setting all deadlines for materials to be released to the public or ordered from vendors. As a member of the organizing committee for the event, I worked with my peers to give input on all other aspects of the event from sponsorships, vendors, and participant acceptances.</h6><br>
-							<h6><em class="italic">Won Outstanding Event Collaboration '18 with TESC (Triton Engineering Student Council)</em></h6><br><br>
-						</div>
-						<div class="col s12 m12 l6 detail">
-							<h6>University of California San Diego, La Jolla, CA<br>
-							<b><em class="highlight">Branding Chair, Virtual Reality Club at UCSD</em></b><br>
-							Managed a 7 member team in order to facilitate the production of all branding materials for our organization including all graphic design, posters, swag, website production, and photo / videography, as well as I order all branding material distributed. As first to hold the position, I developed the brand identity for the club as a whole with insight from the board.</h6><br>
-							<h6><em class="italic">Won Outstanding New Student Org '16 and Outstanding Student Org '17</em></h6><br><br>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col s12 m12 l6 detail">
-							<h6>Struere Architects, Los Angeles, CA<br>
-							<b><em class="highlight">Project Designer</em></b><br>
-							Assisted the design principal in the conceptualization and execution of design solutions through the use of both 3D and 2D digital representation. Met criteria through understanding client needs, building codes, and urban context. Additionally, I developed project proposals, lead student interns, and interacted with clients.</h6><br><br>
-						</div>
-						<div class="col s12 m12 l6 detail">
-							<h6>Pasadena City College, Pasadena, CA<br>
-							<b><em class="highlight">Teaching Assistant - Adv. Visual Communications</em></b><br>
-							Instructed students in advanced 3D modeling and digital drawing skills  using Rhinoceros 3D v5, Grasshopper 3D, and Adobe Suite CS6. Technical skills were focused towards communication complex 3D designs, effectively representing design ideas diagrammatically and technically, and how to expand on traditional graphical conventions.</h6><br>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- PROJECTS -->
-		<div id="portfolio" class="row">
-			<div class="section col s12 m10 l9 offset-m1 offset-l1">
-				<div class="row">
-					<h5 class="section_title">Projects</h5>
-				</div>
-				<div class="row">
-
-					<div class="row">
-						<!-- TRITONXR -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/tritonxr.png">
-							</div>
-							<div class="proj_content">
-								<h5>TritonXR Website</h5>
-								<h6><b><em class="highlight">Full Stack Web Developer</em></b></h6>
-								<h6>Building the website for TritonXR (formerly Virtual Reality Club at UCSD). Used for all recruiting of members, sponsors, as well as interested individuals who want to learn more about the organization, its leadership, and accomplishments.</h6><br><h6 class="note">This project is currently in development.</h6><br>
-								<h6><em class="italic">Node / Express / HTML / CSS / Javascript / Handlebars</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="secondary" type="button"><a href="http://github.com/gjmorgan91/tritonxr" target="_blank"><h6>Github Repo</h6></a></button>
-										</div>
-									</div>
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="disabled primary" type="button"><h6>Read More</h6></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- HELMSMEN -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/helmsmen.png">
-							</div>
-							<div class="proj_content">
-								<h5>Helmsmen; UCSD Navigation</h5>
-								<h6><b><em class="highlight">Lead Designer</em></b></h6>
-								<h6>Led a team of 4 designers on a human-centered research project in which we explore the trends of navigating the UCSD campus. Focusing on current students, the project performed interviews, held surveys, identified patterns, and, ultimately, proposed an intervention.</h6>
-								<br>
-								<h6><em class="italic">Interviews / Google Surveys / Sketching / Prototyping / Feedback Modeling</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="secondary" type="button"><a href="public/images/pdf/Helmsmen_report.pdf" target="_blank"><h6>Full Report</h6></a></button>
-										</div>
-									</div>
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="disabled primary" type="button"><h6>Read More</h6></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-						<!-- PAINT THE TOWN -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/PTT.png">
-							</div>
-							<div class="proj_content">
-								<h5>Paint the Town</h5>
-								<h6><b><em class="highlight">Project Lead, Lead Designer / Developer</em></b></h6>
-								<h6>A virtual reality experience for the Oculus Rift. Lead a team of 9 student developers over the course of an 8 months to make a social application in which players bring their surroundings into color.</h6><br>
-								<h6><em class="italic">Unity / Oculus Rift / Visual Studio / Blender / Adobe Photoshop / Adobe Illustrator / Slack / Trello</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a href="views/ptt.html"><h6>Read More</h6></a></button>
-										</div>
-									</div>
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="secondary" type="button"><a href="https://github.com/UCSDVR/Paint-the-Town/wiki" target="_blank"><h6>Github Wiki</h6></a></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- HACKXR -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/hackxr.png">
-							</div>
-							<div class="proj_content">
-								<h5>HackXR</h5>
-								<h6><b><em class="highlight">Branding Director</em></b></h6>
-								<h6>UCSD's first ever Virtual and Augmented Reality Hackathon. 36 hour long event which hosted 18 teams of 70 participants boasting 18 submissions at the end. I lead the branding, merchandising, advertsing, and web development for the event.</h6>
-								<br>
-								<h6><em class="italic">HTML / CSS / JS / Adobe Photoshop / Adobe Illustrator</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a href="http://hackxr.io" target="_blank"><h6>Event Site</h6></a></button>
-										</div>
-									</div>
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="secondary" type="button"><a href="https://hackxr.devpost.com" target="_blank"><h6>DevPost</h6></a></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="row">
-
-						<!-- CHRONICLE -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/chronicle.png">
-							</div>
-							<div class="proj_content">
-								<h5>Chronicle; Garnet, MT</h5>
-								<h6><b><em class="highlight">Illustrator, Concept Design, Visual Designer</em></b></h6>
-								<h6>Submission for the Disney Imagineering Competition for 2017. Imagined a ghost town rehabilitation that invovled an Augmented Reality experience.</h6><br>
-								<h6><em class="italic">Adobe Illustrator / Adobe Photoshop / Digital Painting / Rhino v5 / Grasshopper3D</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a href="views/chronicle.html" target="_blank"><h6>Read More</h6></a></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- VR CLUB -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/vrclub.png">
-							</div>
-							<div class="proj_content">
-								<h5>Virtual Reality Club at UCSD</h5>
-								<h6><b><em class="highlight">Branding / Graphic Designer</em></b></h6>
-								<h6>As the Branding Chair, I designed the org's logo, facebook banners, sponsorship packets, stickers, t-shirts, and any digital or physical representation.</h6><br>
-								<h6><em class="italic">Adobe Illustrator / Adobe Photoshop</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a href="http://vrclub.ucsd.edu" target="_blank"><h6>VR Club Website</h6></a></button>
-										</div>
-									</div>
-									<!-- <div class="col s6 m6 l6">
-										<div class="button_container">
-											<button type="button"><a href="views/vrclub.html"><h6>Read More</h6></a></button>
-										</div>
-									</div> -->
-								</div>
-							</div>
-						</div>
-					
-					</div>
-					<div class="row">
-
-						<!-- WANDERLUST -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/wanderlust.png">
-							</div>
-							<div class="proj_content">
-								<h5>Wanderlust</h5>
-								<h6><b><em class="highlight">Front End Development</em></b></h6>
-								<h6>Web app designed to simplify the travel planning experience through the implementation  of explicit user expectations, minimal inputs, and an emphasis on contextual information.</h6><br>
-								<h6><em class="italic">HTML / CSS / Javascript / Google Maps/Places API / Materialize</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a href="views/wanderlust.html"><h6>Read More</h6></a></button>
-										</div>
-									</div>
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="secondary" type="button"><a href="https://wanderlust-travelapp.herokuapp.com/" target="_blank"><h6>Demo App</h6></a></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- CAVR -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/cavr.png">
-							</div>
-							<div class="proj_content">
-								<h5>Cyber-Archaeology Hackathon</h5>
-								<h6><b><em class="highlight">Branding / Graphic Design</em></b></h6>
-								<h6>Developed the image and advertisements for a Cyber-Archaeology Virtual Reality Hackathon which aimed to promote sustainable archaeological practices and education through the use of virtual reality tools.</h6><br>
-								<h6><em class="italic">Adobe Illustrator / Adobe Photoshop</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button type="button" class="primary"><a href="https://vrarchaeology.devpost.com/" target="_blank"><h6>DevPost</h6></a></button>
-										</div>
-									</div>
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button type="button" class="secondary"><a href="https://ucsdnews.ucsd.edu/feature/hacking_into_a_lost_world" target="_blank"><h6>Article</h6></a></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-					</div>
-					<div class="row">
-
-						<!-- POCKET PUP -->
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/pocketpup.png">
-							</div>
-							<div class="proj_content">
-								<h5>Pocket Pup</h5>
-								<h6><b><em class="highlight">Full Stack Web Developer</em></b></h6>
-								<h6>Developed a web app used to help better prepare and train dog owners through simulating situations based on their own pet’s needs. Ran a user study, prototyped, and iterated to come to a final product.</h6><br>
-								<h6><em class="italic">HTML / CSS / JavaScript / Node / Express / Adobe Illustrator / Adobe Photoshop</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a  href="views/pocketpup.html" target=""><h6>Read More</h6></a></button>
-										</div>
-									</div>
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="secondary" type="button"><a  href="https://pocketpup.herokuapp.com" target="_blank"><h6>Demo App</h6></a></button>
-										</div>
-									</div>
-								</div>
-								<h6 class="disclaimer">All credit for the background art to Neko Atsume.</h6>
-							</div>
-						</div>
-
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/pokemongo.png">
-							</div>
-							<div class="proj_content">
-								<h5>Understanding Pokemon Go Occurrence Patterns</h5>
-								<h6><b><em class="highlight">Data Analysis and Visualization</em></b></h6>
-								<h6>Ran analysis on a data set of Pokemon Go occurrence events containing over 300k data points. Developed visualizations for research presentation for peer reviews.</h6><br>
-								<h6><em class="italic">MatLab / Adobe Illustrator / Grasshopper 3D</em></h6>
-								<div class="row">
-									<!-- <div class="col s6 m6 l6">
-										<div class="button_container">
-											<button type="button"><a href="views/pokemongo.html"><h6>Read More</h6></a></button>
-										</div>
-									</div> -->
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a href="public/images/pdf/pokemongo.pdf" target="_blank"><h6>View as PDF</h6></a></button>
-										</div>
-									</div>
-								</div>
-								<h6 class="disclaimer">I take no credit for the pixel art used.</h6>
-							</div>
-						</div>
-					
-					</div>
-					<div class="row">
-
-						<div class="col s12 m12 l6 proj">
-							<div class="imagecontainer">
-								<img src="public/images/png/portfolio.png">
-							</div>
-							<div class="proj_content">
-								<h5>Architectural Portfolio</h5>
-								<h6><b><em class="highlight">Architectural / Interior Designer</em></b></h6>
-								<h6>Selected works from my time studying architecture and interior design.</h6><br>
-								<h6><em class="italic">Rhinoceros 3D / Adobe Illustrator / Adobe Photoshop / Adobe InDesign</em></h6>
-								<div class="row">
-									<div class="col s12 m12 l6">
-										<div class="button_container">
-											<button class="primary" type="button"><a href="https://issuu.com/gjmorgan/docs/final_2" target="_blank"><h6>View on Issuu</h6></a></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-					</div>
-
-				</div>
+			<h3 class="projects_header section" id="projects">projects</h3>
+			<div class="projects_container section">
+				<figure>
+					<img src="public/images/helmsmen.png">
+					<figcaption>
+						<p class="project_title">Helmsmen</p>
+						<span>
+							<p>Project Lead / Designer</p>
+							<p>03/2018-06/2018</p>
+						</span>
+						<p>Led a team of 4 designers on a human-centered research project in which we explore the trends of navigating the UCSD campus.</p>
+						<a href="projects/helmsmen.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/PTT.png" alt="Paint the Town">
+					<figcaption>
+						<p class="project_title">Paint the Town</p>
+						<span>
+							<p>Project Lead</p>
+							<p>10/2017-06/2018</p>
+						</span>
+						<p>A virtual reality, social experience for the Oculus Rift in which players bring their surroundings into color.</p>
+						<a href="projects/ptt.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/hackxr.png">
+					<figcaption>
+						<p class="project_title">HackXR</p>
+						<span>
+							<p>Branding Director</p>
+							<p>11/2017-02/2018</p>
+						</span>
+						<p>Lead the branding, merchandising, advertsing, and web development for UCSD's first ever Virtual and Augmented Reality Hackathon.</p>
+						<a href="projects/hackxr.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/chronicle.png">
+					<figcaption>
+						<p class="project_title">Chronicle</p>
+						<span>
+							<p>Project Designer, Illustrator</p>
+							<p>09/2017-12/2017</p>
+						</span>
+						<p>Disney Imagineering Competition '17 submission. Imagined a ghost town rehabilitation that invovled an Augmented Reality experience.</p>
+						<a href="projects/chronicle.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/vrclub.png">
+					<figcaption>
+						<p class="project_title">VR Club at UCSD</p>
+						<span>
+							<p>Branding Chair</p>
+							<p>11/2016-06/2018</p>
+						</span>
+						<p>Designed the org's logo, facebook banners, sponsorship packets, stickers, t-shirts, and any digital or physical representation.</p>
+						<a href="projects/vrclub.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/wanderlust.png">
+					<figcaption>
+						<p class="project_title">Wanderlust</p>
+						<span>
+							<p>Front End Developer</p>
+							<p>03/2017-06/2017</p>
+						</span>
+						<p>Web app designed to simplify the travel planning experience through a map-centric, scalable approach.</p>
+						<a href="projects/wanderlust.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/cavr.png">
+					<figcaption>
+						<p class="project_title">Cyber-Arch VR Hackathon</p>
+						<span>
+							<p>Branding, Graphic Designer</p>
+							<p>02/2016-04/2016</p>
+						</span>
+						<p>Developed the image and advertisements for a Cyber-Archaeology Virtual Reality Hackathon which took place at UCSD.</p>
+						<a href="projects/cavr.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/pocketpup.png">
+					<figcaption>
+						<p class="project_title">Pocket Pup</p>
+						<span>
+							<p>Full Stack Developer</p>
+							<p>09/2016-12/2016</p>
+						</span>
+						<p>Developed a web app used to help better prepare and train dog owners through simulating situations based on their own pet’s needs.</p>
+						<a href="projects/pocketpup.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/pokemongo.png">
+					<figcaption>
+						<p class="project_title">PokemonGO Occurrence Patterns</p>
+						<span>
+							<p>Data Analysis/Visualization</p>
+							<p>09/2016-12/2016</p>
+						</span>
+						<p>Ran analysis and visualized data from a set of Pokemon Go occurrence events containing over 300k data points.</p>
+						<a href="projects/pokemongo.html">read more</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="public/images/portfolio.png">
+					<figcaption>
+						<p class="project_title">Architecture Portfolio</p>
+						<span>
+							<p>Architecture, Interior Design</p>
+							<p>2012-2014</p>
+						</span>
+						<p>Selected works from my time studying architecture and interior design.</p>
+						<a href="https://issuu.com/gjmorgan/docs/final_2" target="_blank">view work</a>
+					</figcaption>
+				</figure>
 			</div>
 		</div>
 
-
-		<!-- CONTACT -->
-		<div id="contact" class="row">
-			<div class="col s12 m10 l9 offset-m1 offset-l1">
-				<div class="row section">
-					<div class="row">
-						<h5 class="section_title">Contact</h5>
+		<footer class="main">
+			<h3 class="contact_header section" id="contact">contact</h3>
+			<div class="contact_container section">
+				<form action="mailto:greg@gjmorgan.com" method="post" enctype="text/plain" name="emailForm">
+					<div>
+						<input type="text" name="name" id="name"><p>name</p>
+						<input type="text" name="email" id="email"><p>email</p>
+						<input type="text" name="subject" id="subject"><p>subject</p><br/>
+						<input type="submit" name="submit" id="submit">
 					</div>
-					<div class="row">
-						<div class="col s12">
-							<h6>Please contact me for all inquiries about myself or my dog.</h6><br>
-						</div>
-						<div class="col s12 l8">
-							<a href="mailto:greg@gjmorgan.com"><button class="mail"><i class="fa fa-envelope" aria-hidden="true"></i><em> - greg@gjmorgan.com</em></button></a>
-						</div>
+					<div>
+						<textarea name="message" placeholder="let's connect" id="message"></textarea>
 					</div>
-					<div class="col m12">
-						<div class="col m3 l2">
-							<a href="https://www.linkedin.com/in/gjmorgan/" target="_blank"><button class="linkedin fa fa-linkedin-square foot_icon" aria-hidden="true"></button></a>
-						</div>
-						<div class="col m3 l2">
-							<a href="https://github.com/gjmorgan91" target="_blank"><button class="github fa fa-github foot_icon" aria-hidden="true"></button></a>
-						</div>
-						<div class="col m3 l2">
-							<a href="https://www.facebook.com/greggeronni" target="_blank"><button class="facebook fa fa-facebook-square right foot_icon" aria-hidden="true"></button></a>
-						</div>
-						<div class="col m3 l2">
-							<a href="https://www.instagram.com/gjmorgan/" target="_blank"><button class="instagram fa fa-instagram foot_icon" aria-hidden="true"></button></a>
-						</div>
+				</form>
+				
+				<div class="links">
+					<div>
+						<ul>
+							<p>external links</p>
+							<li><a href="https://linkedin.com/in/gjmorgan" target="_blank">linkedin</a></li>
+							<li><a href="https://github.com/gjmorgan91" target="_blank">github</a></li>
+							<li><a href="https://instagram.com/gjmorgan" target="_blank">instagram</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<p>page navigation</p>
+							<li><a href="#header">top</a></li>
+							<li><a href="#about">about</a></li>
+							<li><a href="#projects">projects</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-
-
-		<footer>
-			<h6>Thank you for viewing my site! It is continually being iterated, and new content is added all the time. Please check back for more.</h6>
+			<div class="contact_background"></div>
 		</footer>
-
-
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb7SwbRhXn9FiIl_9d6xjGqdg7Ktmca2A&libraries=places&callback=initMap" async defer></script>
-		
 	</body>
+	<script type="text/javascript" src="public/js/rellax.min.js"></script>
+	<script type="text/javascript" src="public/js/index.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107685063-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
+	  gtag('config', 'UA-107685063-1');
+	</script>
 </html>
