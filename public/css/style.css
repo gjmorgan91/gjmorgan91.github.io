@@ -3,6 +3,7 @@ html, body {
 	font-family: 'Montserrat';
 	box-sizing: border-box;
 	font-size: 100%;
+	text-overflow: clip;
 }
 
 body {
@@ -23,6 +24,7 @@ h2 {
 
 h3 {
 	text-transform: lowercase;
+	margin-bottom: 3rem;
 }
 
 h4 {
@@ -37,9 +39,9 @@ p, input, textarea, a, li, input, textarea {
 	margin: 0;
 	line-height: 1.5em;
 }
-.projects_container figcaption p, .projects_container figcaption a {
+/*.projects_container figcaption p, .projects_container figcaption a {
 	font-size: 0.8em;
-}
+}*/
 div, section, figure, figcaption, footer, form, input, textarea {
 	font-size: 100%;
 }
@@ -331,7 +333,7 @@ ul li {
 .projects_container figcaption p:nth-child(3) {
 	height: 55%;
 	overflow: hidden;
-	overflow-y: auto;
+	/*overflow-y: auto;*/
 }
 .projects_container figcaption a {
 	display: block;
@@ -539,9 +541,9 @@ footer.about a:hover {
 	margin-top: 0;
 	padding-bottom: 0;
 }
-.page_content h3 {
+/*.page_content h3 {
 	margin-bottom: 3rem;
-}
+}*/
 
 .page_header {
 	/*grid-column: 2;
@@ -667,7 +669,7 @@ footer.about a:hover {
 	padding-bottom: 10rem;
 }
 .skills_content img {
-	width: 100px;
+	width: 80%;
 	height: auto;
 	padding-bottom: 1rem;
 }
@@ -720,16 +722,37 @@ footer.about #submit:hover {
 }*/
 
 @media (max-width: 1000px) {
-	/*h1 {
-		font-size: 172px;
-		line-height: 180px;
-	}*/
-	h3, p, a {
+	h1 {
+		font-size: 12rem;
+		line-height: 16rem;
+	}
+	h2 {
+		font-size: 4rem;
+		line-height: 6rem;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 4rem;
+	}
+	p, input, textarea, a, li, input, textarea {
+		/*font-size: 16px;
+		line-height: 24px;*/
+		font-size: inherit;
+		line-height: inherit;
+	    /*font-size: 200%;
+	    line-height: 150%;*/
+	}
+	figcaption {
+		font-size: 200%;
+		line-height: 150%;
+	}
+	/*h3, p, a {
 		margin-bottom: 2rem;
 	}
 	figcaption p {
 		margin-bottom: 1rem;
-	}
+	}*/
 
 	.header {
 		grid-template-columns: 0.1fr 3fr 0.1fr;
@@ -746,7 +769,7 @@ footer.about #submit:hover {
 		top: 10%;
 	}
 	.header_content .subheader {
-	    margin: 5rem 0;
+	    margin: 12rem 0;
 	}
 	.header nav {
 		display: flex;
@@ -755,8 +778,8 @@ footer.about #submit:hover {
 	}
 	.header nav a {
 		margin: auto;
-		/*font-size: 40px;
-		line-height: 48px;*/
+		font-size: 40px;
+		line-height: 48px;
 	}
 	.header img {
 	    position: absolute;
@@ -785,19 +808,39 @@ footer.about #submit:hover {
 		grid-template-columns: auto;
 		grid-gap: 2rem;
 	}
+	textarea#message {
+		font-size: 40%;
+	}
 
 	.content, footer, .page_content {
-		grid-template-columns: 0.2fr 3.5fr 0.2fr;
-		grid-gap: 0.5rem;
+		grid-template-columns: 4rem 1fr 4rem;
+		grid-gap: 0;
 	}
 
 	.about_background {
 		grid-row: 1 / span 2;
 	}
+	.page_header a {
+		display: block;
+	}
+	.leadership_content div, .education li {
+		margin-bottom: 4rem;
+	}
+	.skills_content {
+		grid-gap: 4rem;
+	}
+	.skills .skills_content figure {
+		font-size: 40%;
+		line-height: 100%;
+		justify-self: start;
+	}
+	.skills li li {
+	    margin-left: 2rem;
+	}
 
 	.section.about_header, .section.projects_header, .section.contact_header {
 		padding-bottom: 0;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 	}
 	.section.about_content, .section.projects_container, .section.contact_container {
 		padding-top: 0;
@@ -806,12 +849,12 @@ footer.about #submit:hover {
 
 	.projects_container {
 		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 2rem;
+		grid-gap: 4rem;
 	}
 	.projects_container figcaption a {
-		top: 0.7rem;
+		/*top: 0.7rem;
     	right: 0.7rem;
-    	bottom: inherit;
+    	bottom: inherit;*/
 	}
 	
 	footer form {
@@ -823,6 +866,8 @@ footer.about #submit:hover {
 		"form_input"
 		"form_message"
 		"form_submit";
+		font-size: 200%;
+		line-height: 150%;
 	}
 	footer form div:first-child {
 		grid-area: form_input;
@@ -845,7 +890,7 @@ footer.about #submit:hover {
 		grid-gap: 2rem;
 	}
 	footer p, footer a {
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 	}
 
 	.page_content {
@@ -860,8 +905,23 @@ footer.about #submit:hover {
 	.page_header {
 		left: 0;
 	}
+	.overview_img {
+		grid-area: header_image;
+	    position: relative;
+	    height: 100vh;
+	    overflow-x: hidden;
+	    overflow-y: hidden;
+	    width: 100%;
+	    grid-column: 1 / span 3;
+	    grid-row: 1 / span 2;
+	    z-index: -1;
+	}
 	#image_1 {
-		position: relative;
+		position: absolute;
+		top: 0;
+		left: -70%;
+		height: 100%;
+    	width: auto;
 	}
 	.education ul {
 		grid-template-columns: 1fr;
