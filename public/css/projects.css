@@ -496,6 +496,17 @@ footer li {
     border-bottom: 1px lightgrey solid;
     transition: all 0.2s ease-out;
 }
+
+.input:invalid:not(:focus):not(:placeholder-shown) {
+    border-bottom: 1px solid red !important;
+}
+.input:invalid:focus:not(:placeholder-shown) {
+	border-color: red !important;
+}
+.input:valid:not(:placeholder-shown) {
+	border-bottom: 1px solid green !important;
+}
+
 #message {
 	border: 1px lightgrey solid;
 	transition: all 0.2s ease-out;

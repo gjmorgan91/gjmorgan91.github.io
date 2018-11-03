@@ -4,6 +4,7 @@ html, body {
 	box-sizing: border-box;
 	font-size: 100%;
 	text-overflow: clip;
+	/*max-width: 1200px;*/
 }
 
 body {
@@ -42,7 +43,7 @@ p, input, textarea, a, li, input, textarea {
 /*.projects_container figcaption p, .projects_container figcaption a {
 	font-size: 0.8em;
 }*/
-div, section, figure, figcaption, footer, form, input, textarea {
+div, section, figcaption, footer, form, input, textarea {
 	font-size: 100%;
 }
 a {
@@ -277,6 +278,7 @@ ul li {
 	background-color: white;
     width: 100%;
     height: 100%;
+    font-size: 90%;
     position: relative;
     overflow: hidden;
     margin: 0;
@@ -469,6 +471,17 @@ footer li {
     border-bottom: 1px lightgrey solid;
     transition: all 0.2s ease-out;
 }
+
+.input:invalid:not(:focus):not(:placeholder-shown) {
+    border-bottom: 1px solid red !important;
+}
+.input:invalid:focus:not(:placeholder-shown) {
+	border-color: red !important;
+}
+.input:valid:not(:placeholder-shown) {
+	border-bottom: 1px solid green !important;
+}
+
 #message {
 	border: 1px lightgrey solid;
 	transition: all 0.2s ease-out;
@@ -769,7 +782,7 @@ footer.about #submit:hover {
 		top: 10%;
 	}
 	.header_content .subheader {
-	    margin: 12rem 0;
+	    margin: 8rem 0;
 	}
 	.header nav {
 		display: flex;
@@ -787,6 +800,9 @@ footer.about #submit:hover {
 	    right: 0;
 	    width: auto;
 	    height: inherit;
+	}
+	.projects_container figure:hover {
+		top: 0;
 	}
 
 	.content {
@@ -882,6 +898,9 @@ footer.about #submit:hover {
 	footer form #message {
 		height: 10rem;
 	}
+	footer form .input, footer form #submit {
+		margin-top: 2rem;
+	}
 	footer .links {
 		grid-area: contact_links;
 		display: grid;
@@ -931,5 +950,14 @@ footer.about #submit:hover {
 	}
 	.skills_content {
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/*TESTING*/
+	.projects_container {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.projects_container figure:hover {
+		grid-column: 1 / span 2;
+		grid-row: span 2;
 	}
 }

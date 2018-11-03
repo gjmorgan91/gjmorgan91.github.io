@@ -150,7 +150,7 @@
 					<figcaption>
 						<p class="project_title">PokemonGO Occurrence Patterns</p>
 						<span>
-							<p>Data Analysis/Visualization</p>
+							<p>Data Analysis / Visualization</p>
 							<p>09/2016-12/2016</p>
 						</span>
 						<p>Ran analysis and visualized data from a set of Pokemon Go occurrence events containing over 300k data points.</p>
@@ -177,13 +177,22 @@
 			<div class="contact_container section">
 				<form action="mailto:greg@gjmorgan.com" method="post" enctype="text/plain" name="emailForm">
 					<div>
-						<input type="text" name="name" id="name"><p>name</p>
-						<input type="text" name="email" id="email"><p>email</p>
-						<input type="text" name="subject" id="subject"><p>subject</p><br/>
+						<div>
+							<input class="input" required type="text" name="name" id="name" placeholder=" ">
+							<label for="name">name</label>
+						</div>
+						<div>
+							<input class="input" required type="email" name="email" id="email" placeholder=" ">
+							<label for="email">email</label>
+						</div>
+						<div>
+							<input class="input" required type="text" name="subject" id="subject" placeholder=" ">
+							<label for="subject">subject</label>
+						</div>
 						<input type="submit" name="submit" id="submit">
 					</div>
 					<div>
-						<textarea name="message" placeholder="let's connect" id="message"></textarea>
+						<textarea required name="message" placeholder="let's connect" id="message"></textarea>
 					</div>
 				</form>
 				
