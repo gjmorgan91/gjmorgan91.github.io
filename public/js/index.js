@@ -1,6 +1,10 @@
+/*RELLAX PARALLAXING INITIALIZATION*/
+
 //initializes the parallax effect used by objects given the class 'rellax'
 var rellax = new Rellax('.rellax');
 
+
+/*GOOGLE MAPS INITIALIZATION*/
 
 //map initialization that I am toying with on the about page
 var map;
@@ -11,18 +15,7 @@ function initMap() {
 	});
 }
 
-// let hideObjects = document.querySelectorAll('.hide');
-
-// function hide(className) {
-// 	let elemClass = '.'+className+' .hide';
-// 	let element = document.querySelector(elemClass);
-// 	if (element.style.height == '100px') {
-// 		element.style.height = '0px';
-// 	} else {
-// 		element.style.height = '100px';
-// 	}
-// }
-
+/*FADE IN EFFECT ON THE HOME SCREEN LINKS*/
 
 //Sets the duration for the animation on the nav links for the cascading effect
 let navLinks = document.querySelectorAll('.header nav a');
@@ -31,47 +24,29 @@ for (let i=0; i<navLinks.length; i++) {
 	navLinks[i].setAttribute('style','animation-duration: '+ (i*0.15 + 2) +'s');
 }
 
-//attempt at working on the card system for the projects section
-/*let projects = document.querySelectorAll('figure');
-console.log(projects);
-for (let elem of projects) {
-	elem.addEventListener('click', function() {
-		
-		let img = this.children[0];
-		let caption = this.children[1];
+/*SMOOTH SCROLL FUNCTION COURTESY OF W3SCHOOLS*/
 
-		console.log(this);
-		console.log(img);
-		console.log(caption);
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-		if (this.style.overflow == 'hidden') {
-			this.style.overflow = 'none';
-			caption.style.display = 'block';
-			caption.style.transform = 'translateY(0%)';
-		} else {
-			this.style.overflow = 'hidden';
-			caption.style.display = 'absolute';
-			caption.style.transform = 'translateY(-100%)';
-		}
-	});
-}
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "" && this.id != 'back') {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-function showContent(index) {
-	console.log('clicked');
-	let img = projects[index].children[0];
-	let caption = projects[index].children[1];
+      // Store hash
+      var hash = this.hash;
 
-	/*console.log('elem: '+elem);
-	console.log('img: '+img);
-	console.log('caption: '+ caption);
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 666, function(){
 
-	if (projects[index].style.overflow == 'hidden') {
-		projects[index].style.overflow = 'none';
-		caption.style.display = 'block';
-		caption.style.transform = 'translateX(0%)';
-	} else {
-		projects[index].style.overflow = 'hidden';
-		caption.style.display = 'absolute';
-		caption.style.transform = 'translateX(100%)';
-	}
-}*/
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});

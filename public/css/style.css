@@ -5,6 +5,7 @@ html, body {
 	font-size: 100%;
 	text-overflow: clip;
 	/*max-width: 1200px;*/
+	/*scroll-behavior: smooth;*/
 }
 
 body {
