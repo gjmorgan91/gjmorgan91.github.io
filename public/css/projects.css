@@ -501,10 +501,13 @@ footer li {
     border-bottom: 1px solid red !important;
 }
 .input:invalid:focus:not(:placeholder-shown) {
-	border-color: red !important;
+	border-color: rgba(200,0,0,1) !important;
 }
 .input:valid:not(:placeholder-shown) {
-	border-bottom: 1px solid green !important;
+	border-bottom: 1px solid rgba(0,200,0,1) !important;
+}
+.input:valid:focus {
+	border: 1px solid rgba(0,200,0,1) !important;
 }
 
 #message {

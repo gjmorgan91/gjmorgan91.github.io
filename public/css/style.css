@@ -476,10 +476,13 @@ footer li {
     border-bottom: 1px solid red !important;
 }
 .input:invalid:focus:not(:placeholder-shown) {
-	border-color: red !important;
+	border-color: rgba(200,0,0,1) !important;
 }
 .input:valid:not(:placeholder-shown) {
-	border-bottom: 1px solid green !important;
+	border-bottom: 1px solid rgba(0,200,0,1) !important;
+}
+.input:valid:focus {
+	border: 1px solid rgba(0,200,0,1) !important;
 }
 
 #message {
@@ -586,15 +589,23 @@ footer.about a:hover {
 	grid-area: overview;
 	padding-top: 10rem;
 }
+.overview_img {
+	grid-column: 2;
+	grid-row: 2 / span 2;
+	position: relative;
+	z-index: -1;
+}
 #image_1 {
-	grid-area: header_image;
+	/*grid-area: header_image;*/
     height: auto;
-    width: 800px;
+    width: 175%;
     /* align-self: center; */
     /* justify-self: end; */
     position: absolute;
-    top: 5rem;
-    left: -10%;
+    /*top: 5rem;
+    left: -10%;*/
+    right: 0;
+    top: -4rem;
     z-index: -1;
 }
 
@@ -779,7 +790,7 @@ footer.about #submit:hover {
 		text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	}
 	.header_content {
-		top: 10%;
+		top: 5%;
 	}
 	.header_content .subheader {
 	    margin: 8rem 0;
