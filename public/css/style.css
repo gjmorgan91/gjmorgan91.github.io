@@ -85,13 +85,15 @@ ul li {
 	align-items: center;
 	grid-template-areas: 
 	". header_content . .";
+	min-height: 120vh;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .header_content {
 	grid-area: header_content;
-	/*grid-column: 2;
-	grid-row: 1;*/
-	position: relative;
-	top: -10rem;
+	position: absolute;
+	top: 20%;
 }
 
 .header nav a {
@@ -148,11 +150,15 @@ ul li {
 
 .header_background {
 	grid-column: 1 / span 4;
-	grid-row: 1;
-	z-index: -2;
-	width: 100%;
-	height: auto;
-	position: relative;
+    grid-row: 1;
+    z-index: -2;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .header_content h1 {
 	margin: 0;
@@ -230,6 +236,7 @@ ul li {
 .section {
 	padding: 5rem 0;
 	margin: 5rem 0;
+	max-width: 1200px;
 }
 
 .about_header {
@@ -478,12 +485,14 @@ footer li {
 }
 .input:invalid:focus:not(:placeholder-shown) {
 	border-color: rgba(200,0,0,1) !important;
+	box-shadow: 0px 0px 1px rgba(200,0,0,1) !important;
 }
 .input:valid:not(:placeholder-shown) {
 	border-bottom: 1px solid rgba(0,200,0,1) !important;
 }
 .input:valid:focus {
 	border: 1px solid rgba(0,200,0,1) !important;
+	box-shadow: 0px 0px 1px rgba(0,200,0,1) !important;
 }
 
 #message {
