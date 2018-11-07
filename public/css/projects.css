@@ -76,7 +76,7 @@ ul ul li {
 }
 figure {
 	margin: 0;
-	font-size: 125%;
+	font-size: 100%;
 }
 figure img {
 	width: 100%;
@@ -208,6 +208,7 @@ header a:last-child:hover {
     right: 0;
     margin: auto;
     opacity: 0.2;
+    transform: scale(2);
 }
 .header_background .background_color {
 	width: 100%;

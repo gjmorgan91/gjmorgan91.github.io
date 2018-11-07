@@ -16,7 +16,7 @@ h1 {
 	font-size: 5.5em;
 	opacity: 1;
 	margin: 0;
-	line-height: 1.5;
+	line-height: 1.2;
 }
 
 h2 {
@@ -553,7 +553,7 @@ header#about #overview {
 
 .page_header {
 	grid-column: span 2;
-	margin-bottom: 2rem;
+	/*margin-bottom: 2rem;*/
 	/*display: inline-block;*/
 }
 .page_header h1, .page_header a {
