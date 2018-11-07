@@ -17,31 +17,14 @@
 
 	<body>
 
-		<div class="content pocketpup">
-
-			<div class="nav_container">
-				<nav>
-					<ul>
-						<p>sections</p>
-						<li><a href="#overview">overview</a></li>
-						<li><a href="#needfinding">needfinding</a></li>
-						<li><a href="#layout">layout</a></li>
-						<li><a href="#interaction">interaction</a></li>
-						<li><a href="#critique">critique</a></li>
-					</ul>
-				</nav>
-			</div>
-
+		<header>
 			<div class="header_background">
-				<div class="img_container">
-					<div class="rellax" data-rellax-speed="2">
-						<img src="../public/images/pocketpup/pp_logo.svg">
-					</div>
-					<div class="background_color"></div>
+				<div class="rellax" data-rellax-speed="2">
+					<img src="../public/images/pocketpup/pp_logo.svg">
 				</div>
+				<div class="background_color"></div>
 			</div>
-
-			<div class="header">
+			<div class="wrapper">
 				<h1>Pocketpup</h1>
 				<h3>Full Stack Developer</h3>
 				<p>Developed a prototype web application to teach pet owners through simulation using a game experience.</p>
@@ -52,128 +35,144 @@
 					<a href="../index.html#projects" id="back">back</a>
 				</span>
 			</div>
+		</header>
 
-			<section class="overview row2" id="overview">
-				<h3>Overview</h3>
-				<div class="grid col2">
-					<p>I developed this project in a team of 3 which relied on a process of interviews with pet owners along with the restraints that the product needed to be a mobile, web app with a gaming component. What we developed was a mobile game, built in-browser, which would allow a pet owner to include their pet and simulate scenarios of pet ownership in order to better educate and prepare them for real-world pet management.</p>
-					<div class="gif_container">
-						<img src="../public/images/pocketpup/iphone.png">
-						<div class="gif">
-							<img src="../public/images/pocketpup/pocketpup_1_login.gif">
+		<div class="main wrapper">
+
+			<nav>
+				<ul>
+					<p>sections</p>
+					<li><a href="#overview">overview</a></li>
+					<li><a href="#needfinding">needfinding</a></li>
+					<li><a href="#layout">layout</a></li>
+					<li><a href="#interaction">interaction</a></li>
+					<li><a href="#critique">critique</a></li>
+				</ul>
+			</nav>
+
+			<div class="content">
+				
+				<section id="overview">
+					<h3>Overview</h3>
+					<div class="grid col2">
+						<p>I developed this project in a team of 3 which relied on a process of interviews with pet owners along with the restraints that the product needed to be a mobile, web app with a gaming component. What we developed was a mobile game, built in-browser, which would allow a pet owner to include their pet and simulate scenarios of pet ownership in order to better educate and prepare them for real-world pet management.</p>
+						<div class="gif_container pocketpup">
+							<img src="../public/images/pocketpup/iphone.png">
+							<div class="gif">
+								<img src="../public/images/pocketpup/pocketpup_1_login.gif">
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="needfinding row3" id="needfinding">
-				<h3>Needfinding</h3>
-				<h4>Interviews</h4>
-				<p>We had established a demographic of dog owners within our area to interview for problem areas to focus on. During this we pulled out 3 main interviews which helped as the personas, for persons and pets, to relate our work to as we designed.</p>
-				<div class="grid col3">
-					<div>
-						<h4>Jamison and Madix</h4>
-						<p>Jamison, age 22, has a 2 year old german shepherd named Madix. Jamison enjoys training his dog, he feels it establishes a better relationship with them. He has problems with his dog towards some smaller ones and wants to break this behavior.</p>
+				<section id="needfinding">
+					<h3>Needfinding</h3>
+					<h4>Interviews</h4>
+					<p>We had established a demographic of dog owners within our area to interview for problem areas to focus on. During this we pulled out 3 main interviews which helped as the personas, for persons and pets, to relate our work to as we designed.</p>
+					<div class="grid col3">
+						<div>
+							<h4>Jamison and Madix</h4>
+							<p>Jamison, age 22, has a 2 year old german shepherd named Madix. Jamison enjoys training his dog, he feels it establishes a better relationship with them. He has problems with his dog towards some smaller ones and wants to break this behavior.</p>
+						</div>
+						<div>
+							<h4>Andrew and Odin</h4>
+							<p>Andrew, age 27, has a 1.5 year old husky named Odin. Odin is less responsive to Andrew's commands and lacking some training. He enjoys playing with his dog and sees less benefit from continuous training.</p>
+						</div>
+						<div>
+							<h4>Kevin and Athena</h4>
+							<p>Kevin, age 42, has a 7 year old doberman named Athena. He is not proficient with using technology, and his dog tends to be rather antisocial. However, she is very responsive to him, and they share a strong bond.</p>
+						</div>
 					</div>
-					<div>
-						<h4>Andrew and Odin</h4>
-						<p>Andrew, age 27, has a 1.5 year old husky named Odin. Odin is less responsive to Andrew's commands and lacking some training. He enjoys playing with his dog and sees less benefit from continuous training.</p>
+					<h4>Results</h4>
+					<p>What we narrowed down from the need finding was a pattern that training takes for the owners and their pets;</p>
+					<ol>
+						<li><p>pet demonstrates an area of need</p></li>
+						<li><p>owner educates themselves</p></li>
+						<li><p>owner implements training</p></li>
+						<li><p>owner evaluates success and repeats</p></li>
+					</ol>
+					<p>Our goal for the app was to change this was to affect the pattern in order to prepare the owners for possible training opportunities before the pet demonstrates the need for training.</p>
+				</section>
+
+				<section id="layout">
+					<h3>layout</h3>
+					<p>The app was designed with a focus on the home, the scenario in which all the training simulations would take place. It had two components, the indoors and outdoors which users would be able to take the pet between. From there, all the resources for training could be found. Completing those tasks would grant the user in-game points which could be spent to customize their space.</p>
+					<img class="img_shadow" src="../public/images/pocketpup/wireframes.svg">
+				</section>
+
+				<section id="interaction">
+					<h3>interaction</h3>
+					<p>The primary source of learning for owners was to be from simulation, the interaction with their virtual pet. This followed our design idea for the project as a whole requiring the users to be exposed to a training opportunity with the virtual pet before it occurs with their real pet.</p>
+					<div class="grid col3">
+						<figure>
+							<img class="img_shadow" src="../public/images/pocketpup/training_1.png">
+							<figcaption>A training opportunity is exposed to the user. In this case, an empty bowl for their pet.</figcaption>
+						</figure>
+						<figure>
+							<img class="img_shadow" src="../public/images/pocketpup/training_3.png">
+							<figcaption>The user completes the task by interacting with the object.</figcaption>
+						</figure>
+						<figure>
+							<img class="img_shadow" src="../public/images/pocketpup/training_2.png">
+							<figcaption>They are then given feedback, based on the needs of their dog.</figcaption>
+						</figure>
 					</div>
-					<div>
-						<h4>Kevin and Athena</h4>
-						<p>Kevin, age 42, has a 7 year old doberman named Athena. He is not proficient with using technology, and his dog tends to be rather antisocial. However, she is very responsive to him, and they share a strong bond.</p>
-					</div>
-				</div>
-				<h4>Results</h4>
-				<p>What we narrowed down from the need finding was a pattern that training takes for the owners and their pets;</p>
-				<ol>
-					<li><p>pet demonstrates an area of need</p></li>
-					<li><p>owner educates themselves</p></li>
-					<li><p>owner implements training</p></li>
-					<li><p>owner evaluates success and repeats</p></li>
-				</ol>
-				<p>Our goal for the app was to change this was to affect the pattern in order to prepare the owners for possible training opportunities before the pet demonstrates the need for training.</p>
-			</section>
+				</section>
 
-			<section class="layout row4" id="layout">
-				<h3>layout</h3>
-				<p>The app was designed with a focus on the home, the scenario in which all the training simulations would take place. It had two components, the indoors and outdoors which users would be able to take the pet between. From there, all the resources for training could be found. Completing those tasks would grant the user in-game points which could be spent to customize their space.</p>
-				<img class="img_shadow" src="../public/images/pocketpup/wireframes.svg">
-			</section>
+				<section id="critique">
+					<h3>critique</h3>
+					<p>The greatest limitation we faced throughout this project was our learning curve as this was the first use of web development practices for our group. However, there were areas of improvement which we could have addressed still.</p>
+					<h4>Information</h4>
+					<p>We wanted to give a resource for the owners to answer any and all questions they may have. This lead us to decisions about adding in aspects like the park finder, training videos, and the training library. While these are important for pet training, they did not become incorporated in the application in a way which fit the context. The training information is demonstrated through event based interactions in the game as the virtual pet faces the challenges real pet owners find themselves in. All our training information should have been integrated in this format.</p>
+					<h4>Interface</h4>
+					<p>A better approach than the tradition UI we adopted would have been to integrate the navigation to the various pages into the environment. This would have allowed us to challenge ourselves to build a smarter system for the UI but also to free space on the screen in order to not occlude the environment which all our primary interactions would take place.</p>
+				</section>
 
-			<section class="interaction row5" id="interaction">
-				<h3>interaction</h3>
-				<p>The primary source of learning for owners was to be from simulation, the interaction with their virtual pet. This followed our design idea for the project as a whole requiring the users to be exposed to a training opportunity with the virtual pet before it occurs with their real pet.</p>
-				<div class="grid col3">
-					<figure>
-						<img class="img_shadow" src="../public/images/pocketpup/training_1.png">
-						<figcaption>A training opportunity is exposed to the user. In this case, an empty bowl for their pet.</figcaption>
-					</figure>
-					<figure>
-						<img class="img_shadow" src="../public/images/pocketpup/training_3.png">
-						<figcaption>The user completes the task by interacting with the object.</figcaption>
-					</figure>
-					<figure>
-						<img class="img_shadow" src="../public/images/pocketpup/training_2.png">
-						<figcaption>They are then given feedback, based on the needs of their dog.</figcaption>
-					</figure>
-				</div>
-			</section>
-
-			<section class="critique row6" id="critique">
-				<h3>critique</h3>
-				<p>The greatest limitation we faced throughout this project was our learning curve as this was the first use of web development practices for our group. However, there were areas of improvement which we could have addressed still.</p>
-				<h4>Information</h4>
-				<p>We wanted to give a resource for the owners to answer any and all questions they may have. This lead us to decisions about adding in aspects like the park finder, training videos, and the training library. While these are important for pet training, they did not become incorporated in the application in a way which fit the context. The training information is demonstrated through event based interactions in the game as the virtual pet faces the challenges real pet owners find themselves in. All our training information should have been integrated in this format.</p>
-				<h4>Interface</h4>
-				<p>A better approach than the tradition UI we adopted would have been to integrate the navigation to the various pages into the environment. This would have allowed us to challenge ourselves to build a smarter system for the UI but also to free space on the screen in order to not occlude the environment which all our primary interactions would take place.</p>
-			</section>
-
-			<div class="background grey row2"></div>
-			<div class="background grey row4"></div>
+			</div>
 
 		</div>
 
-		<footer class="pocketpup">
-			<h3 class="contact_header">contact</h3>
-			<section class="contact_container">
-				<form action="mailto:greg@gjmorgan.com" method="post" enctype="text/plain" name="emailForm">
-					<div>
+		<footer>
+			<div class="wrapper">
+				<h3 class="contact_header" id="contact">contact</h3>
+				<div class="contact_content">
+					<form action="mailto:greg@gjmorgan.com" method="post" enctype="text/plain" name="emailForm">
 						<div>
-							<input class="input" required type="text" name="name" id="name" placeholder=" ">
-							<label for="name">name</label>
+							<div>
+								<input class="input" required type="text" name="name" id="name" placeholder=" ">
+								<label for="name">name</label>
+							</div>
+							<div>
+								<input class="input" required type="email" name="email" id="email" placeholder=" ">
+								<label for="email">email</label>
+							</div>
+							<div>
+								<input class="input" required type="text" name="subject" id="subject" placeholder=" ">
+								<label for="subject">subject</label>
+							</div>
+							<input type="submit" name="submit" id="submit">
 						</div>
 						<div>
-							<input class="input" required type="email" name="email" id="email" placeholder=" ">
-							<label for="email">email</label>
+							<textarea required name="message" placeholder="let's connect" id="message"></textarea>
+						</div>
+					</form>
+					<div class="links">
+						<div>
+							<ul>
+								<p>external links</p>
+								<li><a href="https://linkedin.com/in/gjmorgan" target="_blank">linkedin</a></li>
+								<li><a href="https://github.com/gjmorgan91" target="_blank">github</a></li>
+								<li><a href="https://instagram.com/gjmorgan" target="_blank">instagram</a></li>
+							</ul>
 						</div>
 						<div>
-							<input class="input" required type="text" name="subject" id="subject" placeholder=" ">
-							<label for="subject">subject</label>
+							<ul>
+								<li><a href="../index.html">back to home</a></li>
+							</ul>
 						</div>
-						<input type="submit" name="submit" id="submit">
-					</div>
-					<div>
-						<textarea required name="message" placeholder="let's connect" id="message"></textarea>
-					</div>
-				</form>
-				<div class="links">
-					<div>
-						<ul>
-							<p>external links</p>
-							<li><a href="https://linkedin.com/in/gjmorgan" target="_blank">linkedin</a></li>
-							<li><a href="https://github.com/gjmorgan91" target="_blank">github</a></li>
-							<li><a href="https://instagram.com/gjmorgan" target="_blank">instagram</a></li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li><a href="../index.html">back to home</a></li>
-						</ul>
 					</div>
 				</div>
-			</section>
-			<div class="contact_background"></div>
+			</div>
 		</footer>
 
 	</body>

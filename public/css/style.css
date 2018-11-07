@@ -1,57 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+
 html, body {
 	margin: 0;
 	font-family: 'Montserrat';
 	box-sizing: border-box;
 	font-size: 100%;
 	text-overflow: clip;
-	/*max-width: 1200px;*/
-	/*scroll-behavior: smooth;*/
-}
-
-body {
-	transition: transform 0.1s normal !important;
-	font-size: 100%;
 }
 
 h1 {
-	font-size: 5em;
+	font-size: 5.5em;
 	opacity: 1;
 	margin: 0;
 }
 
 h2 {
-	font-size: 1.4em;
-	opacity: 0.9;
+	font-size: 1.5em;
+	opacity: 1;
+	margin: 0;
 }
 
 h3 {
 	text-transform: lowercase;
+	margin: 0;
 	margin-bottom: 3rem;
 }
 
 h4 {
-	font-size: 0.8em;
-	margin: 0;
-	padding: 0;
-	line-height: 1.5em;
-}
-
-p, input, textarea, a, li, input, textarea {
 	font-size: 1em;
 	margin: 0;
+	padding: 0;
+	line-height: 2.2em;
+}
+
+p, input, textarea, a, li, input, textarea, label {
+	font-size: 0.9em;
+	margin: 0;
 	line-height: 1.5em;
 }
-/*.projects_container figcaption p, .projects_container figcaption a {
-	font-size: 0.8em;
-}*/
-div, section, figcaption, footer, form, input, textarea {
+/*div, section, figcaption, footer, form, input {
 	font-size: 100%;
-}
+}*/
 a {
 	text-decoration: none;
 	color: inherit;
 	display: block;
-	/*width: fit-content;*/
+	width: fit-content;
 	cursor: pointer;
 }
 p a {
@@ -65,6 +59,12 @@ ul, li {
 ul li {
 	list-style: none;
 }
+figure {
+	margin: 0;
+}
+li a {
+	font-size: 100%;
+}
 
 .italic {
 	font-style: italic;
@@ -74,26 +74,87 @@ ul li {
 	font-weight: 600;
 }
 
-.about_header, .projects_header, .contact_header {
-	text-align: left;
+.wrapper {
+	width: 70%;
+	min-width: 960px;
+	max-width: 1600px;
+	margin: auto;
 }
 
-.header {
-	display: grid;
-	grid-template-columns: 0.5fr 2.75fr 1.25fr 0.5fr;
-	grid-template-rows: auto;
-	align-items: center;
-	grid-template-areas: 
-	". header_content . .";
-	min-height: 120vh;
-	position: relative;
-	overflow: hidden;
-	white-space: nowrap;
+
+/*HEADER*/
+
+header {
+	min-height: 100vh;
 }
-.header_content {
-	grid-area: header_content;
-	position: absolute;
-	top: 20%;
+
+header#main {
+	height: 120vh;
+	width: 100%;
+	background-image: url(../svg/desk_illustration_whitebg.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+
+.header_container {
+	padding: 20vh 0 0 0;
+}
+
+.header_container h1 {
+	margin: 0;
+	padding: 0;
+	mix-blend-mode: darken;
+	color: #d72379;
+	animation: slideright 2s ease-in-out;
+	-webkit-animation: slideright 2s ease-in-out;
+	opacity: 1;
+}
+@keyframes slideright {
+	0% {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	66% {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes slideright {
+	0% {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	66% {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+.header_container h1 em{
+	font-style: normal;
+	font-weight: normal;
+}
+
+.header_container .subheader {
+	margin: 3rem 0;
+}
+
+.header_container h2{
+	margin: 1rem 0;
+	padding: 0;
+	mix-blend-mode: darken;
+	color: #d72379;
+	animation: slideright 2s ease-in-out;
+	-webkit-animation: slideright 2s ease-in-out;
 }
 
 .header nav a {
@@ -148,140 +209,62 @@ ul li {
 	}
 }
 
-.header_background {
-	grid-column: 1 / span 4;
-    grid-row: 1;
-    z-index: -2;
-    width: 100%;
-    height: 110%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.header_content h1 {
-	margin: 0;
-	padding: 0;
-	mix-blend-mode: darken;
-	color: #d72379;
-	animation: slideright 2s ease-in-out;
-	-webkit-animation: slideright 2s ease-in-out;
-	opacity: 1;
-}
-@keyframes slideright {
-	0% {
-		transform: translateX(-50px);
-		opacity: 0;
-	}
-	66% {
-		transform: translateX(-50px);
-		opacity: 0;
-	}
-	100% {
-		transform: translateX(0px);
-		opacity: 1;
-	}
-}
-@-webkit-keyframes slideright {
-	0% {
-		transform: translateX(-50px);
-		opacity: 0;
-	}
-	66% {
-		transform: translateX(-50px);
-		opacity: 0;
-	}
-	100% {
-		transform: translateX(0px);
-		opacity: 1;
-	}
-}
+/*PAGE CONTENT*/
 
-.header_content h1 em{
-	font-style: normal;
-	font-weight: normal;
-}
-.header_content .subheader {
-	margin: 3rem 0;
-}
-.header_content .subheader h2{
-	margin: 1rem 0;
-	padding: 0;
-	mix-blend-mode: darken;
-	color: #d72379;
-	animation: slideright 2s ease-in-out;
-	-webkit-animation: slideright 2s ease-in-out;
-}
-
-
-/*/////////////// CONTENT ///////////////*/
-
-
-.content, footer {
+section#about div.wrapper, section#projects div.wrapper, footer div.wrapper {
 	display: grid;
-	grid-template-columns: 0.5fr 0.5fr 3.5fr 0.5fr;
+	grid-template-columns: 1fr 8fr;
+	grid-template-rows: auto;
 	grid-gap: 2rem;
 }
-.content {
-	grid-template-areas: 
-	". about_header about_content ."
-	". project_header project_content .";
-}
 
-.content {
-	grid-template-rows: repeat(2, auto);
-}
-
-.section {
+section, footer {
 	padding: 5rem 0;
 	margin: 5rem 0;
-	max-width: 1200px;
+}
+section#about {
+	margin-bottom: 0;
+	padding-bottom: 10rem;
+}
+footer {
+	margin-top: 0;
+	padding-top: 10rem;
 }
 
-.about_header {
-	grid-area: about_header;
-	/*grid-column-start: 2;
-	grid-row-start: 1;*/
+section #header {
+	justify-self: right;
 }
-.about_content {
-	grid-area: about_content;
-	/*grid-column-start: 3;
-	grid-row-start: 1;*/
-}
-.about_background {
-	grid-column: 1 / span 4;
-	grid-row-start: 1;
+
+
+/*ABOUT*/
+
+
+section#about {
 	box-shadow: 0 4px 6px rgba(50,50,60,0.5);
-	width: 100%;
-	height: 100%;
 }
+
 .about_link {
 	display: block;
 	color: #d72379;
 	mix-blend-mode: multiply;
-	margin: 1rem 0px;
+	margin: 2rem 0 0 0;
 	opacity: 0.5;
 }
 .about_link:hover {
 	opacity: 1;
 }
 
-.projects_header {
-	grid-area: project_header;
-	/*grid-column-start: 2;
-	grid-row-start: 2;*/
-}
+
+/*PROJECTS*/
+
 .projects_container {
-	grid-area: project_content;
-	/*grid-column: 3;
-	grid-row-start: 2;*/
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: auto;
 	grid-gap: 1rem;
 	justify-items: center;
 }
+
 .projects_container figure {
 	background-color: white;
     width: 100%;
@@ -385,33 +368,22 @@ ul li {
 	transition: all 0.5s ease-out;
 }
 
+
+/*CONTACT*/
+
+
 footer {
-	grid-template-rows: auto;
-	grid-template-areas: 
-		". contact_header contact_container ."
+	box-shadow: 0 -4px 6px rgba(50,50,60,0.5);
 }
 
-.contact_header {
-	grid-area: contact_header;
-	/*grid-column: 2;
-	grid-row-start: 1;*/
-}
-.contact_container {
-	grid-area: contact_container;
-	/*grid-column: 3;
-	grid-row-start: 1;*/
+.contact_content {
 	display: grid;
 	grid-template-columns: 1fr 0.3fr;
 	grid-template-rows: auto;
 	grid-gap: 2rem;
 	grid-template-areas: "form links";
 }
-.contact_background {
-	grid-column: 1 / span 4;
-	grid-row: 1;
-	z-index: -1;
-	box-shadow: 0 -4px 6px rgba(50,50,60,0.5);
-}
+
 footer form {
 	grid-area: form;
 	width: 100%;
@@ -440,24 +412,21 @@ footer ul {
 	margin: 0;
 	padding: 0;
 }
-footer.main .links div ul p {
+footer#main .links div ul p {
 	font-weight: 500;
 	transition: all 0.5s ease-out;
 }
-footer.main .links div:hover ul p{
+footer#main .links div:hover ul p{
 	transition: all 0.2s ease-out;
 	color: #d72379;
 }
-footer.about .links div ul p {
+footer#about .links div ul p {
 	font-weight: 500;
 	transition: all 0.5s ease-out;
 }
-footer.about .links div:hover ul p{
+footer#about .links div:hover ul p{
 	transition: all 0.2s ease-out;
 	color: #00c0e8;
-}
-footer .links div:nth-child(2) {
-	margin-top: 1rem;
 }
 input {
 	display: block;
@@ -510,7 +479,7 @@ footer li {
 	border: 1px rgba(0,0,10,0.9) solid;
 	transition: all 0.5s ease-out;
 }
-footer.main #submit {
+footer #submit {
 	position: relative;
 	top: 0;
 	background-color: #d72379;
@@ -523,7 +492,7 @@ footer.main #submit {
 	padding: 8px;
 	color: white;
 }
-footer.main #submit:hover, footer.main #submit:focus {
+footer #submit:hover, footer #submit:focus {
 	top: -5px;
 	box-shadow: 0px 3px 12px #d72379;
 	transition: all 0.2s ease-out;
@@ -540,142 +509,95 @@ a:hover {
 	transition: all 0.2s ease-out;
 	color: #d72379;
 }
-footer.about a:hover {
+footer#about a:hover {
 	text-decoration: line-through;
 	transition: all 0.2s ease-out;
 	color: #00c0e8;
 }
 
 
-/*///////////////ABOUT PAGE///////////////*/
+
+/*ABOUT PAGE*/
 
 
-.page_content {
+
+header#about {
+	box-shadow: 0 4px 6px rgba(50,50,60,0.5);
+	position: relative;
+	background-color: rgba(200,210,255,0.1);
+}
+
+header#about .wrapper {
 	display: grid;
-	grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-	grid-template-rows: repeat(5, auto);
-	grid-template-areas: 
-	". page_header overview ."
-	". header_image overview ."
-	". education education ."
-	". leadership leadership ."
-	". skills skills .";
-	grid-auto-rows: auto;
-	grid-gap: 2rem; 
+	grid-template-columns: repeat(2,1fr);
+	/*margin-top: 5rem;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: fit-content;
 }
-.page_content .section {
-	margin-top: 0;
-	padding-bottom: 0;
+
+header#about #overview {
+	grid-column: 2;
 }
-/*.page_content h3 {
-	margin-bottom: 3rem;
-}*/
 
 .page_header {
-	/*grid-column: 2;
-	grid-row: 1;*/
-	grid-area: page_header;
-	position: relative;
-	left: -5rem;
-	display: inline-block;
-	mix-blend-mode: multiply;
+	grid-column: span 2;
+	margin-bottom: 2rem;
+	/*display: inline-block;*/
 }
+.page_header h1, .page_header a {
+	display: inline-block;
+} 
 .page_header h1 {
-	display: inline-block;
-	color: #00c0e8;;
-	margin-top: 5rem;
-}
-.page_header a {
-	display: inline-block;
-	color: lightgrey;
-}
-.page_header a:hover {
 	color: #00c0e8;
 }
 
-.overview {
-	/*grid-column: 3;
-	grid-row: 1 / span 2;*/
-	grid-area: overview;
-	padding-top: 10rem;
+
+/*EDUCATION*/
+
+
+section#education div.education_content {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 2rem;
 }
-.overview_img {
-	grid-column: 2;
-	grid-row: 2 / span 2;
-	position: relative;
-	z-index: -1;
+.education_content figure {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-gap: 1rem;
 }
-#image_1 {
-	/*grid-area: header_image;*/
-    height: auto;
-    width: 175%;
-    /* align-self: center; */
-    /* justify-self: end; */
-    position: absolute;
-    /*top: 5rem;
-    left: -10%;*/
-    right: 0;
-    top: -4rem;
-    z-index: -1;
+.education_content figure img, .education_content figure figcaption {
+	display: inline;
+}
+.education_content figure img {
+	height: auto;
+	width: 100%;
+	justify-self: center;
 }
 
-.education {
-	/*grid-column: 2 / span 2;
-	grid-row: 3;*/
-	grid-area: education;
-}
-.education div h4 {
+.education_content figure h4 {
 	transition: all 0.3s ease-out;
 }
-.education div:hover h4 {
+.education_content figure:hover h4 {
 	transition: all 0.1s ease-out;
 	color: #00c0e8;
 }
-.education ul {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	grid-template-rows: auto;
-	grid-gap: 1rem;
-}
-.education li {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: 0.15fr 0.85fr;
-	grid-template-rows: auto;
-	grid-gap: 2rem;
-}
-.education li img {
-	width: 100%;
-	height: auto;
-}
 
-/*.map {
-	grid-column: 2 / 4;
-	grid-row: 4;
-}
-.map_container {
-	width: 100%;
-	height: 15rem;
-}
-#map {
-	width: 100%;
-	height: 100%;
-}*/
 
-.leadership {
-	/*grid-column: 2 / 4;
-	grid-row: 4;*/
-	grid-area: leadership;
-}
+/*LEADERSHIP*/
+
+
 .leadership_content {
 	display: grid;
-	grid-template-columns: repeat(2, auto);
-	grid-template-rows: auto auto auto;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(2,1fr);
 	grid-gap: 2rem;
 }
+
 .leadership_content div h4 {
 	transition: all 1s ease-out;
 }
@@ -684,301 +606,185 @@ footer.about a:hover {
 	color: #00c0e8;
 }
 
-.skills {
-	/*grid-column: 2 / 4;
-	grid-row: 5;*/
-	grid-area: skills;
-}
+
+/*SKILLS*/
+
+
 .skills_content {
 	display: grid;
-	grid-template-columns: repeat(6, auto);
-	grid-template-rows: auto;
+	grid-template-columns: repeat(6,1fr);
 	grid-gap: 2rem;
-	align-content: center;
 }
-.section.skills figure {
-	margin: 0;
-}
-.section.skills {
-	padding-bottom: 10rem;
-}
-.skills_content img {
-	width: 80%;
+
+.skills_content figure img {
+	width: 62%;
 	height: auto;
-	padding-bottom: 1rem;
-}
-.skills_content figure, .skills_content img {
 	justify-self: center;
+	margin: auto;
+	margin-bottom: 1rem;
 }
-.skills_content figure .bold {
+
+.skills_content figure h4 {
 	transition: all 1s ease-out;
 }
-.skills_content figure:hover .bold {
+.skills_content figure:hover h4 {
 	color: #00c0e8;
 	transition: all 0.1s ease-out;
 }
-.skills ul {
-	margin: 0;
-	padding: 0;
-}
-.skills li {
-	margin: 0;
-	padding: 0;
-}
-.skills li li {
+
+.skills_content li li {
 	list-style: circle;
-	margin-left: 1.5rem;
+	margin-left: 1rem;
 }
 
-footer.about #submit {
-	position: relative;
-	top: 0;
-	background-color: #00c0e8;
-	box-shadow: 0px 0px 0px #00c0e8;
-	transition: all 0.5s ease-out;
-	cursor: pointer;
-	border: 0px;
-	border-radius: 5px;
-	margin-top: 1.5rem;
-	padding: 8px;
-	color: white;
-}
-footer.about #submit:hover {
-	top: -5px;
-	box-shadow: 0px 3px 12px #00c0e8;
-	transition: all 0.2s ease-out;
-}
 
-/*@media (min-width: 900px) {
-	.content, .footer {
-		grid-template-columns: 0.1fr 0.5fr 3.5fr 0.1fr;
-	}
-}*/
+/*MOBILE*/
+
 
 @media (max-width: 1000px) {
-	h1 {
-		font-size: 12rem;
-		line-height: 16rem;
-	}
-	h2 {
-		font-size: 4rem;
-		line-height: 6rem;
-	}
+	
 	h3 {
-		font-size: 24px;
-		line-height: 36px;
-		margin-bottom: 4rem;
+		font-size: 1.2em;
+		line-height: 2em;
+		margin-bottom: 3rem;
 	}
-	p, input, textarea, a, li, input, textarea {
-		/*font-size: 16px;
-		line-height: 24px;*/
-		font-size: inherit;
-		line-height: inherit;
-	    /*font-size: 200%;
-	    line-height: 150%;*/
-	}
-	figcaption {
-		font-size: 200%;
-		line-height: 150%;
-	}
-	/*h3, p, a {
-		margin-bottom: 2rem;
-	}
-	figcaption p {
-		margin-bottom: 1rem;
-	}*/
 
-	.header {
-		grid-template-columns: 0.1fr 3fr 0.1fr;
-		grid-template-areas: ". header_content .";
-		height: -webkit-fill-available;
-	    position: relative;
-	    overflow: hidden;
-	    grid-gap: 0;
+	p, input, textarea, a, li, input, textarea, label {
+	    font-size: 1em;
+	    margin: 0;
+	    line-height: 1.6em;
 	}
-	.header h1, .header h2 {
-		text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	a {
+		display: block;
 	}
-	.header_content {
-		top: 5%;
+
+	section {
+		min-height: 80vh;
 	}
-	.header_content .subheader {
-	    margin: 8rem 0;
-	}
-	.header nav {
-		display: flex;
-		border-radius: 10px;
-		/*margin-top: 5rem;*/
-	}
-	.header nav a {
+
+	.wrapper {
+		width: 90%;
+		min-width: inherit;
+		max-width: inherit;
 		margin: auto;
-		font-size: 40px;
-		line-height: 48px;
 	}
-	.header img {
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    width: auto;
-	    height: inherit;
+
+
+	header#main {
+		background-position: center;
 	}
-	.projects_container figure:hover {
+
+	.header_container {
+		position: relative;
 		top: 0;
+		bottom: 0;
+		margin: auto;
+		font-size: 220%;
 	}
 
-	.content {
-		grid-template-areas: 
-		". about_header ."
-		". about_content ."
-		". project_header ."
-		". project_content .";
-	}
-	footer {
-		grid-template-areas: 
-		". contact_header ."
-		". contact_container .";
-	}
-	.contact_container {
-		grid-template-areas: 
-		"contact_form"
-		"contact_links";
+	section#about div.wrapper, section#projects div.wrapper, footer div.wrapper {
 		grid-template-columns: auto;
-		grid-gap: 2rem;
-	}
-	textarea#message {
-		font-size: 40%;
-	}
-
-	.content, footer, .page_content {
-		grid-template-columns: 4rem 1fr 4rem;
+		grid-template-rows: repeat(2,auto);
 		grid-gap: 0;
 	}
 
-	.about_background {
-		grid-row: 1 / span 2;
-	}
-	.page_header a {
-		display: block;
-	}
-	.leadership_content div, .education li {
-		margin-bottom: 4rem;
-	}
-	.skills_content {
-		grid-gap: 4rem;
-	}
-	.skills .skills_content figure {
-		font-size: 40%;
-		line-height: 100%;
-		justify-self: start;
-	}
-	.skills li li {
-	    margin-left: 2rem;
-	}
-
-	.section.about_header, .section.projects_header, .section.contact_header {
-		padding-bottom: 0;
-		margin-bottom: 4rem;
-	}
-	.section.about_content, .section.projects_container, .section.contact_container {
-		padding-top: 0;
-		margin-top: 0;
+	.about_link {
+		margin-top: 3rem;
 	}
 
 	.projects_container {
-		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 4rem;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(5,auto);
 	}
-	.projects_container figcaption a {
-		/*top: 0.7rem;
-    	right: 0.7rem;
-    	bottom: inherit;*/
+
+	.projects_container figure {
+		font-size: 125%;
 	}
-	
-	footer form {
-		grid-area: contact_form;
-		grid-gap: 0rem;
-		grid-template-columns: auto;
-		grid-template-rows: repeat(3,auto);
+
+	.contact_content {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2,auto);
 		grid-template-areas: 
-		"form_input"
-		"form_message"
-		"form_submit";
+		"form"
+		"links";
+	}
+
+	footer form {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2,auto);
+		font-size: 120%;
+	}
+	footer form div:first-child {
+		grid-row: 2;
+	}
+	input, label {
 		font-size: 200%;
-		line-height: 150%;
 	}
-	footer form div:first-child {
-		grid-area: form_input;
-		margin-top: 1rem;
+	input {
+		margin-bottom: 1rem;
 	}
-	footer form div:first-child {
-		grid-area: form_message;
+	label {
+		margin-bottom: 2rem;
 	}
-	footer form #submit {
-		grid-area: form_submit;
+	input#submit {
+		margin: 2rem 0 1rem 0;
 	}
-	footer form #message {
-		height: 10rem;
+
+	#email, #subject, #name {
+		border-bottom: 1px grey solid;
 	}
-	footer form .input, footer form #submit {
-		margin-top: 2rem;
+	#message {
+		height: 20rem;
+		border-color: grey;
+		font-size: 200%;
 	}
-	footer .links {
-		grid-area: contact_links;
+
+	.contact_content .links {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2,1fr);
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
-	footer p, footer a {
-		margin-bottom: 1rem;
-	}
 
-	.page_content {
-		grid-template-areas: 
-		". page_header ."
-		". header_image ."
-		". overview ."
-		". education ."
-		". leadership ."
-		". skills .";
+
+	/*ABOUT*/
+
+	header#about .wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2,auto);
+		font-size: 150%;
+		position: relative;
+		padding: 5rem 0 10rem 0;
 	}
 	.page_header {
-		left: 0;
+		grid-column: inherit;
 	}
-	.overview_img {
-		grid-area: header_image;
-	    position: relative;
-	    height: 100vh;
-	    overflow-x: hidden;
-	    overflow-y: hidden;
-	    width: 100%;
-	    grid-column: 1 / span 3;
-	    grid-row: 1 / span 2;
-	    z-index: -1;
-	}
-	#image_1 {
-		position: absolute;
-		top: 0;
-		left: -70%;
-		height: 100%;
-    	width: auto;
-	}
-	.education ul {
-		grid-template-columns: 1fr;
-	}
-	.leadership_content {
-		grid-template-columns: 1fr;
-	}
-	.skills_content {
-		grid-template-columns: repeat(3, 1fr);
+	header#about #overview {
+		grid-column: inherit;
 	}
 
-	/*TESTING*/
-	.projects_container {
-		grid-template-columns: repeat(2,1fr);
+	.education_content {
+		grid-template-columns: 1fr !important;
+		grid-template-rows: repeat(2,auto);
+		grid-gap: 3rem;
 	}
-	.projects_container figure:hover {
-		grid-column: 1 / span 2;
-		grid-row: span 2;
+
+	.leadership_content {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4,auto);
+		grid-gap: 3rem;
+	}
+
+	.skills_content {
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(2,1fr);
+	}
+
+	.skills_content figcaption {
+		font-size: 90%;
+	}
+
+	.skills_content li li {
+	    margin-left: 2rem;
 	}
 }

@@ -17,32 +17,16 @@
 
 	<body>
 
-		<div class="content pokemongo">
-
-			<div class="nav_container">
-				<nav>
-					<ul>
-						<p>sections</p>
-						<li><a href="#overview">overview</a></li>
-						<li><a href="#introduction">introduction</a></li>
-						<li><a href="#setting">setting</a></li>
-						<li><a href="#environment">environment</a></li>
-						<li><a href="#cooccurrence">co-occurrence</a></li>
-						<li><a href="#conclusion">conclusion</a></li>
-					</ul>
-				</nav>
-			</div>
-
+		<header>
 			<div class="header_background">
-				<div class="img_container">
-					<div class="rellax" data-rellax-speed="2">
-						<img src="../public/images/pokemongo/PGOP4.svg">
-					</div>
-					<div class="background_color"></div>
+				<div class="header_background">
+				<div class="rellax" data-rellax-speed="2">
+					<img src="../public/images/pokemongo/PGOP4.svg">
 				</div>
+				<div class="background_color"></div>
 			</div>
-			
-			<div class="header">
+			</div>
+			<div class="wrapper">
 				<h1>Understanding PokemonGO Occurrence Patterns</h1>
 				<h3>Data Analysis, Data Visualization</h3>
 				<p>Analyzed and developed visualizations for a data set of over 300k data point from a set of PokemonGO encounters.</p>
@@ -51,125 +35,143 @@
 					<a href="../index.html#projects" id="back">back</a>
 				</span>
 			</div>
+		</header>
 
-			<section class="overview row2" id="overview">
-				<h3>The Challenge</h3>
-				<p>My team and I acquired a data set with the task of running analysis on it, testing questions we decided on based on aspects of the set.</p>
-				<div class="grid col2">
-					<div>
-						<h4>The Data Set</h4>
-						<p>Consisting of over 300,000 data points, each a single occurrence within PokemonGO by a player, our data set involved information about where the occurrence took play, the time of day, which Pokemon occurred, the weather at the time, a categorization of the environment the occurrence took place in, and data about whether a co-occurrence took place.</p>
-						<p>resources: <a href="https://www.kaggle.com/semioniy/predictemall/home" target="_blank">https://www.kaggle.com/semioniy/predictemall</a>
-						<a href="https://www.pokego.org/rare-pokemon-list/" target="_blank">https://www.pokego.org/rare-pokemon-list/</a></p>
+		<div class="main wrapper">
+
+			<nav>
+				<ul>
+					<p>sections</p>
+					<li><a href="#overview">overview</a></li>
+					<li><a href="#introduction">introduction</a></li>
+					<li><a href="#setting">setting</a></li>
+					<li><a href="#environment">environment</a></li>
+					<li><a href="#cooccurrence">co-occurrence</a></li>
+					<li><a href="#conclusion">conclusion</a></li>
+				</ul>
+			</nav>
+
+			<div class="content">
+				
+				<section id="overview">
+					<h3>The Challenge</h3>
+					<p>My team and I acquired a data set with the task of running analysis on it, testing questions we decided on based on aspects of the set.</p>
+					<div class="grid col2">
+						<div>
+							<h4>The Data Set</h4>
+							<p>Consisting of over 300,000 data points, each a single occurrence within PokemonGO by a player, our data set involved information about where the occurrence took play, the time of day, which Pokemon occurred, the weather at the time, a categorization of the environment the occurrence took place in, and data about whether a co-occurrence took place.</p>
+							<p>resources: <a href="https://www.kaggle.com/semioniy/predictemall/home" target="_blank">https://www.kaggle.com/semioniy/predictemall</a>
+							<a href="https://www.pokego.org/rare-pokemon-list/" target="_blank">https://www.pokego.org/rare-pokemon-list/</a></p>
+						</div>
+						<div>
+							<h4>The Visualizations</h4>
+							<p>The visualizations chosen were meant to aid us as we conveyed our findings. In most of the cases, we adopted conventional visualizations (histograms, scatter plots, and heat maps. However, with our co-occurrence data we had two graphs expressing two main ideas of the data which became the basis for a custom visualization.</p>
+						</div>
 					</div>
-					<div>
-						<h4>The Visualizations</h4>
-						<p>The visualizations chosen were meant to aid us as we conveyed our findings. In most of the cases, we adopted conventional visualizations (histograms, scatter plots, and heat maps. However, with our co-occurrence data we had two graphs expressing two main ideas of the data which became the basis for a custom visualization.</p>
+					<img class="img_shadow" src="../public/images/pokemongo/PGOP.svg">
+				</section>
+
+				<section id="introduction">
+
+					<h3>Introduction</h3>
+					<div class="grid col2">
+						<div>
+							<h4>Questions</h4>
+							<ul>
+								<li><p class="italic">"Does the distribution of Pokemon differ based on the setting or terrain of where they encountered?"</p></li>
+								<li><p class="italic">"Can one classify the rarity of the Pokemon based on environmental conditions (temperature, pressure, and wind speed)?"</p></li>
+								<li><p class="italic">"Which Pokemon co-occurr the most?"</p></li>
+							</ul>
+						</div>
+						<div>
+							<p>We aimed to gain an understanding of what the data consisted of. To do this, we counted the total occurrences of all the pokemon, getting the number of occurrences per pokemon in the set. As we were interested in predicting pokemon occurrences, we had to be able to determine if it was not just because a pokemon occurs frequently.</p>
+							<p>The first figure shows the results of counting every pokemon and then visualizing them in relation to one another. Pidgey, the most common pokemon in the data set appears in relation to the frequency of the other 150 in the set.</p>
+						</div>
 					</div>
-				</div>
-				<img class="img_shadow" src="../public/images/pokemongo/PGOP.svg">
-			</section>
+					<img class="img_shadow" src="../public/images/pokemongo/PGOP1.svg">
 
-			<section class="introduction row3" id="introduction">
+				</section>
 
-				<h3>Introduction</h3>
-				<div class="grid col2">
-					<div>
-						<h4>Questions</h4>
-						<ul>
-							<li><p class="italic">"Does the distribution of Pokemon differ based on the setting or terrain of where they encountered?"</p></li>
-							<li><p class="italic">"Can one classify the rarity of the Pokemon based on environmental conditions (temperature, pressure, and wind speed)?"</p></li>
-							<li><p class="italic">"Which Pokemon co-occurr the most?"</p></li>
-						</ul>
-					</div>
-					<div>
-						<p>We aimed to gain an understanding of what the data consisted of. To do this, we counted the total occurrences of all the pokemon, getting the number of occurrences per pokemon in the set. As we were interested in predicting pokemon occurrences, we had to be able to determine if it was not just because a pokemon occurs frequently.</p>
-						<p>The first figure shows the results of counting every pokemon and then visualizing them in relation to one another. Pidgey, the most common pokemon in the data set appears in relation to the frequency of the other 150 in the set.</p>
-					</div>
-				</div>
-				<img class="img_shadow" src="../public/images/pokemongo/PGOP1.svg">
+				<section id="setting">
 
-			</section>
+					<h3>Setting Analysis</h3>
+					<p>We aimed to determine whether the setting (difference between urban areas to forest and oceans, etc) would effect the occurrence patterns we see. To do so, we categorized the data between the setting features. We compared the totals from all of the categories to one another (left) while also normalizing the data to see the proportion of occurrences in comparison to each setting feature (right).</p>
+					<img class="img_shadow" src="../public/images/pokemongo/PGOP2.svg">
 
-			<section class="setting row4" id="setting">
+				</section>
 
-				<h3>Setting Analysis</h3>
-				<p>We aimed to determine whether the setting (difference between urban areas to forest and oceans, etc) would effect the occurrence patterns we see. To do so, we categorized the data between the setting features. We compared the totals from all of the categories to one another (left) while also normalizing the data to see the proportion of occurrences in comparison to each setting feature (right).</p>
-				<img class="img_shadow" src="../public/images/pokemongo/PGOP2.svg">
+				<section id="environment">
 
-			</section>
+					<h3>Environmental Analysis</h3>
+					<p>The set contained various features of environmental data at the time and place the occurrence happened at. We aimed to understand the effect this data could have by comparing the distribution frequencies against these factors.</p>
+					<p>In an additional attempt to understand it, we gathered data on the rarity as a categorization based on the developers. We then attempted to utilize the environmental data we had to recreate the rarity classification.</p>
+					<img class="img_shadow" src="../public/images/pokemongo/PGOP3.svg">
 
-			<section class="environment row5" id="environment">
+				</section>
 
-				<h3>Environmental Analysis</h3>
-				<p>The set contained various features of environmental data at the time and place the occurrence happened at. We aimed to understand the effect this data could have by comparing the distribution frequencies against these factors.</p>
-				<p>In an additional attempt to understand it, we gathered data on the rarity as a categorization based on the developers. We then attempted to utilize the environmental data we had to recreate the rarity classification.</p>
-				<img class="img_shadow" src="../public/images/pokemongo/PGOP3.svg">
+				<section id="cooccurrence">
 
-			</section>
+					<h3>Co-occurrence Analysis</h3>
+					<p>A co-occurrence is defined as two pokemongo occurrences taking place within 100m and within 24 hours of taking place. Each occurrence had boolean data of all the pokemon which co-occurred with it as part of features of the data point.
+					We determined whether any two pokemon co-occurred with one another as boolean data within a matrix (left). To understand the frequency of each pair of co-occurrers, we compared the frequencies of each pair to the total number of co-occurrences (right).</p> 
+					<p>With these two visualizations of the data, we wanted to develop a new visualization to understand this. Taking inspiration from neural network visualizations, we place each pokemon on the outside of a circle, for every co-occurrence there is an arch connecting the two pokemon. If a at least one co-occurrence takes place, then an arch exists (boolean data), however the arcs are then categorized based on how many take place (frequency data).</p>
+					<img class="img_shadow" src="../public/images/pokemongo/PGOP4.svg">
 
-			<section class="cooccurrence row6" id="cooccurrence">
+				</section>
 
-				<h3>Co-occurrence Analysis</h3>
-				<p>A co-occurrence is defined as two pokemongo occurrences taking place within 100m and within 24 hours of taking place. Each occurrence had boolean data of all the pokemon which co-occurred with it as part of features of the data point.
-				We determined whether any two pokemon co-occurred with one another as boolean data within a matrix (left). To understand the frequency of each pair of co-occurrers, we compared the frequencies of each pair to the total number of co-occurrences (right).</p> 
-				<p>With these two visualizations of the data, we wanted to develop a new visualization to understand this. Taking inspiration from neural network visualizations, we place each pokemon on the outside of a circle, for every co-occurrence there is an arch connecting the two pokemon. If a at least one co-occurrence takes place, then an arch exists (boolean data), however the arcs are then categorized based on how many take place (frequency data).</p>
-				<img class="img_shadow" src="../public/images/pokemongo/PGOP4.svg">
+				<section id="conclusion">
 
-			</section>
+					<h3>Conclusion</h3>
+					<p>The long story short is that we did not find any strong enough evidence to accept our hypthesis that frequency can change based on setting or environment. The distributions we saw all reflected our initial summations of the data. Pokemon, regardless of setting or environment, just occur at certain frequencies giving a standardized distribution across all factors. With co-occurrece information, this seemed to remain true as the ones which had the highest number of co-occurrences were also the ones which just occurred the most.</p>
+					<img class="img_shadow" src="../public/images/pokemongo/PGOP5.svg">
 
-			<div class="background"></div>
+				</section>
 
-			<section class="conclusion section row7" id="conclusion">
-
-				<h3>Conclusion</h3>
-				<p>The long story short is that we did not find any strong enough evidence to accept our hypthesis that frequency can change based on setting or environment. The distributions we saw all reflected our initial summations of the data. Pokemon, regardless of setting or environment, just occur at certain frequencies giving a standardized distribution across all factors. With co-occurrece information, this seemed to remain true as the ones which had the highest number of co-occurrences were also the ones which just occurred the most.</p>
-				<img class="img_shadow" src="../public/images/pokemongo/PGOP5.svg">
-
-			</section>
+			</div>
 
 		</div>
 
-		<footer class="pokemongo">
-			<h3 class="contact_header">contact</h3>
-			<section class="contact_container">
-				<form action="mailto:greg@gjmorgan.com" method="post" enctype="text/plain" name="emailForm">
-					<div>
+		<footer>
+			<div class="wrapper">
+				<h3 class="contact_header" id="contact">contact</h3>
+				<div class="contact_content">
+					<form action="mailto:greg@gjmorgan.com" method="post" enctype="text/plain" name="emailForm">
 						<div>
-							<input class="input" required type="text" name="name" id="name" placeholder=" ">
-							<label for="name">name</label>
+							<div>
+								<input class="input" required type="text" name="name" id="name" placeholder=" ">
+								<label for="name">name</label>
+							</div>
+							<div>
+								<input class="input" required type="email" name="email" id="email" placeholder=" ">
+								<label for="email">email</label>
+							</div>
+							<div>
+								<input class="input" required type="text" name="subject" id="subject" placeholder=" ">
+								<label for="subject">subject</label>
+							</div>
+							<input type="submit" name="submit" id="submit">
 						</div>
 						<div>
-							<input class="input" required type="email" name="email" id="email" placeholder=" ">
-							<label for="email">email</label>
+							<textarea required name="message" placeholder="let's connect" id="message"></textarea>
+						</div>
+					</form>
+					<div class="links">
+						<div>
+							<ul>
+								<p>external links</p>
+								<li><a href="https://linkedin.com/in/gjmorgan" target="_blank">linkedin</a></li>
+								<li><a href="https://github.com/gjmorgan91" target="_blank">github</a></li>
+								<li><a href="https://instagram.com/gjmorgan" target="_blank">instagram</a></li>
+							</ul>
 						</div>
 						<div>
-							<input class="input" required type="text" name="subject" id="subject" placeholder=" ">
-							<label for="subject">subject</label>
+							<ul>
+								<li><a href="../index.html">back to home</a></li>
+							</ul>
 						</div>
-						<input type="submit" name="submit" id="submit">
-					</div>
-					<div>
-						<textarea required name="message" placeholder="let's connect" id="message"></textarea>
-					</div>
-				</form>
-				<div class="links">
-					<div>
-						<ul>
-							<p>external links</p>
-							<li><a href="https://linkedin.com/in/gjmorgan" target="_blank">linkedin</a></li>
-							<li><a href="https://github.com/gjmorgan91" target="_blank">github</a></li>
-							<li><a href="https://instagram.com/gjmorgan" target="_blank">instagram</a></li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li><a href="../index.html">back to home</a></li>
-						</ul>
 					</div>
 				</div>
-			</section>
-			<div class="contact_background"></div>
+			</div>
 		</footer>
 
 	</body>
