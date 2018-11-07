@@ -78,6 +78,7 @@ ul ul li {
 }
 figure {
 	margin: 0;
+	font-size: 125%;
 }
 figure img {
 	width: 100%;
@@ -126,7 +127,6 @@ header h1 {
 	mix-blend-mode: multiply;
 	animation: header-in 1s ease-out;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-	overflow-wrap: break-word;
 }
 @keyframes header-in {
 	0% {
@@ -195,17 +195,21 @@ header a:last-child:hover {
 	mix-blend-mode: multiply;
 	overflow: hidden;
 }
+.header_background div:first-child {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
 .header_background img {
-	height: auto;
-    width: 100%;
-    position: relative;
-    top: -5rem;
+	height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     opacity: 0.2;
-    transform: scale(1.1);
 }
 .header_background .background_color {
 	width: 100%;
@@ -560,6 +564,10 @@ a:hover {
 
 @media (max-width: 1000px) {
 
+	html {
+		font-size: 100%;
+	}
+
 	h3 {
 		font-size: 1.2em;
 		line-height: 2em;
@@ -595,22 +603,27 @@ a:hover {
 
 	header {
 		min-height: 80vh;
+		box-shadow: 0 8px 12px rgba(50,50,60,0.5);
 	}
 	.header_background img {
-		transform: scale(3.1);
+		transform: scale(1.5);
 	}
 	header .wrapper {
-		padding-top: 15vh;
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	    height: fit-content;
+	    left: 0;
+	    right: 0;
+	    font-size: 200%;
 	}
 	header p {
 		margin-bottom: 3rem;
 	}
-	header span {
-		font-size: 200%;
-	}
 
 	figure figcaption {
-		font-size: 118%;
+		font-size: 90%;
 	}
 
 	.content .gif_container {
@@ -642,6 +655,9 @@ a:hover {
 		"links";
 	}
 
+	footer {
+		box-shadow: 0 -8px 12px rgba(50,50,60,0.5);
+	}
 	footer form {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2,auto);
