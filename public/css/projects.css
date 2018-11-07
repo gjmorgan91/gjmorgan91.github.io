@@ -3,29 +3,26 @@
 html, body {
 	margin: 0;
 	font-family: 'Montserrat';
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
 	box-sizing: border-box;
 	font-size: 100%;
 	text-overflow: clip;
-}
-
-body {
-	display: grid;
-	grid-template-areas: 
-	"header"
-	"about"
-	"projects"
-	"contact";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-	font-size: 5em;
+	font-size: 5.5em;
 	opacity: 1;
 	margin: 0;
+	line-height: 1.5;
 }
 
 h2 {
-	font-size: 1.4em;
-	opacity: 0.9;
+	font-size: 1.5em;
+	line-height: 1.5;
+	opacity: 1;
 	margin: 0;
 }
 
@@ -33,19 +30,20 @@ h3 {
 	text-transform: lowercase;
 	margin: 0;
 	margin-bottom: 3rem;
+	line-height: 1.5;
 }
 
 h4 {
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
-	line-height: 2.2em;
+	line-height: 2.2;
 }
 
-p, input, textarea, a, li, input, textarea, label, figcaption {
-	font-size: 0.8em;
-	line-height: 1.5em;
-	/*margin: 0;*/
+p, input, textarea, a, li, input, textarea, label {
+	font-size: 0.9em;
+	margin: 0;
+	line-height: 1.5;
 }
 p, a, li {
 	margin: 0 0 1rem 0;
@@ -565,18 +563,22 @@ a:hover {
 @media (max-width: 1000px) {
 
 	html {
-		font-size: 100%;
+		/*font-size: 100%;*/
+	}
+
+	h1 {
+		font-size: 3.5em;
 	}
 
 	h3 {
 		font-size: 1.2em;
-		line-height: 2em;
+		line-height: 2;
 		margin-bottom: 3rem;
 	}
 
 	p, input, textarea, a, li, input, textarea, label {
 	    font-size: 1em;
-	    line-height: 1.6em;
+	    line-height: 1.6;
 	}
 	a {
 		display: block;
@@ -584,6 +586,10 @@ a:hover {
 
 	section {
 		min-height: 80vh;
+	}
+
+	figure {
+		margin-bottom: 2rem;
 	}
 
 	.wrapper {
@@ -685,7 +691,7 @@ a:hover {
 	#message {
 		height: 20rem;
 		border-color: grey;
-		font-size: 200%;
+		font-size: 150%;
 	}
 
 	.contact_content .links {
