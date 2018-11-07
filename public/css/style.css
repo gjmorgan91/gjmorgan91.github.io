@@ -6,6 +6,8 @@ html, body {
 	box-sizing: border-box;
 	font-size: 100%;
 	text-overflow: clip;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
