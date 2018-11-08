@@ -16,7 +16,7 @@ h1 {
 	font-size: 5.5em;
 	opacity: 1;
 	margin: 0;
-	line-height: 1.5;
+	line-height: 1;
 }
 
 h2 {
@@ -60,7 +60,7 @@ a {
 }
 p a {
 	color: inherit;
-	display: inline-block;
+	display: block;
 }
 ul {
 	margin: 0 0 1rem 0;
@@ -74,6 +74,9 @@ ul ul li {
 	list-style: circle;
 	margin-left: 1rem;
 }
+li p {
+		margin: 0;
+	}
 figure {
 	margin: 0;
 	font-size: 100%;
@@ -91,7 +94,7 @@ li a {
 
 .italic {
 	font-style: italic;
-	color: darkgrey;
+	color: grey;
 }
 .bold {
 	font-weight: 600;
@@ -208,7 +211,7 @@ header a:last-child:hover {
     right: 0;
     margin: auto;
     opacity: 0.2;
-    transform: scale(2);
+    transform: scale(3);
 }
 .header_background .background_color {
 	width: 100%;
@@ -227,7 +230,7 @@ header a:last-child:hover {
 	display: grid;
 	grid-template-columns: 8fr 1fr;
 	grid-template-rows: auto;
-	grid-gap: 2rem;
+	grid-gap: 1.5rem;
 	position: relative;
 }
 
@@ -279,10 +282,16 @@ img.img_shadow {
 }
 
 .gif_container.wanderlust .gif {
-	width: 73.5%;
-    top: 8%;
-    left: 13.2%;
+	width: 71.5%;
+    top: 13%;
+    left: 14.2%;
+    height: 65%;
+    box-shadow: 1px 1px 5px black;
 }
+.gif_container.wanderlust .gif img {
+	height: 100%;
+}
+
 .gif_container.pocketpup .gif {
 	width: 88%;
     top: 11.5%;
@@ -460,6 +469,7 @@ footer #submit {
 	margin-top: 1.5rem;
 	padding: 8px;
 	color: white;
+	text-transform: lowercase;
 }
 footer #submit:hover, footer #submit:focus {
 	top: -5px;
@@ -557,6 +567,10 @@ a:hover {
 	grid-row: 4 / span 3;
 }
 
+.mobile {
+	display: none;
+}
+
 
 /*MOBILE*/
 
@@ -569,6 +583,7 @@ a:hover {
 
 	h1 {
 		font-size: 3.5em;
+		line-height: 1;
 	}
 
 	h3 {
@@ -576,21 +591,50 @@ a:hover {
 		line-height: 2;
 		margin-bottom: 3rem;
 	}
+	section h3 {
+		position: sticky;
+	    top: 0;
+	    background-color: white;
+	    width: 100%;
+	    margin-bottom: 3rem;
+	    padding: 0.5rem 0;
+	    z-index: 10;
+	}
+	section h3::before {
+		width: 3rem;
+		display: block;
+	}
+	h4 {
+		color: rgba(75,75,100,1.0);
+	}
 
 	p, input, textarea, a, li, input, textarea, label {
 	    font-size: 1em;
 	    line-height: 1.6;
 	}
+	p, a, li {
+		margin: 0 0 2rem 0;
+	}
 	a {
 		display: block;
 	}
+	p a {
+		font-size: 200%;
+	}
+	ul ul li {
+		margin-left: 2rem;
+	}
 
 	section {
-		min-height: 80vh;
+		min-height: 60vh;
 	}
 
 	figure {
 		margin-bottom: 2rem;
+	}
+
+	.mobile {
+		display: block;
 	}
 
 	.wrapper {
@@ -628,13 +672,19 @@ a:hover {
 	header p {
 		margin-bottom: 3rem;
 	}
+	header a {
+		font-weight: bold;
+	}
 
 	figure figcaption {
 		font-size: 90%;
 	}
 
-	.content .gif_container {
+	.content .gif_container.wanderlust {
 		width: 100%;
+	}
+	.content .gif_container.pocketpup {
+		width: 80%;
 	}
 
 	.grid img, .grid p {
@@ -672,6 +722,9 @@ a:hover {
 	}
 	footer form div:first-child {
 		grid-row: 2;
+	}
+	footer a {
+		width: -webkit-fill-available;
 	}
 	input, label {
 		font-size: 200%;
