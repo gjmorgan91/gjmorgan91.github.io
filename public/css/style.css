@@ -75,10 +75,14 @@ li a {
 
 .italic {
 	font-style: italic;
-	color: darkgrey;
+	color: grey;
 }
 .bold {
 	font-weight: 600;
+}
+.disclaimer {
+	font-style: normal;
+	color: grey;
 }
 
 .wrapper {
@@ -671,6 +675,10 @@ section#education div.education_content {
 	margin-left: 1rem;
 }
 
+.mobile {
+	display: none;
+}
+
 
 /*MOBILE*/
 
@@ -725,6 +733,10 @@ section#education div.education_content {
 		margin: auto;
 	}
 
+	.mobile {
+		display: block;
+	}
+
 
 	header#main {
 		background-position: center;
@@ -743,6 +755,84 @@ section#education div.education_content {
 		font-size: 220%;
 		height: fit-content;
 		padding: 0 0 10vh 0;
+	}
+	.header_container nav {
+		display: none;
+	}
+
+	nav.mobile {
+		/*position: fixed;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 10rem;
+	    bottom: 5vh;
+	    right: 2rem;
+	    background-color: #d72379;
+	    mix-blend-mode: darken;
+	    z-index: 100;
+	    font-size: 5rem;
+		line-height: 1;*/
+	}
+
+	nav.mobile figure {
+		/*position: relative;*/
+		position: fixed;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 10rem;
+	    bottom: 5vh;
+	    right: 2rem;
+	    background-color: #d72379;
+	    mix-blend-mode: darken;
+	    z-index: 100;
+	    font-size: 5rem;
+		line-height: 1;
+	}
+	nav.mobile:hover span {
+		transform: scale(0);
+	}
+	nav.mobile:hover figcaption {
+		transform: translateY(0);
+		transition: all 0.2s ease-in-out;
+		transition-delay: 0.2s;
+		height: 60vh;
+	}
+	nav.mobile figure span {
+		color: white;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	    left: 0;
+	    right: 0;
+	    width: fit-content;
+	    height: fit-content;
+	    font-size: 8rem;
+	    transition: all 0.2s ease-in;
+	}
+	nav.mobile figcaption {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		transform: translateY(200%);
+		transition: all 0.5s ease-in;
+		transition-delay: 0.2s;
+		background-color: #d72379;
+		color: white;
+		font-weight: bold;
+	}
+	nav.mobile figcaption a{
+		line-height: 3.5;
+		text-align: center;
+		width: 100%;
+	}
+	nav.mobile figcaption a:hover {
+		color: initial;
+		text-decoration: initial;
 	}
 
 	section#about div.wrapper, section#projects div.wrapper, footer div.wrapper {

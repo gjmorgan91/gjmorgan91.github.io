@@ -15,6 +15,12 @@ function initMap() {
 	});
 }
 
+
+/*NAVBAR TOGGLE FOR MOBILE*/
+
+let navButton = document.querySelector('nav.mobile');
+//navButton.click();
+
 /*FADE IN EFFECT ON THE HOME SCREEN LINKS*/
 
 //Sets the duration for the animation on the nav links for the cascading effect
