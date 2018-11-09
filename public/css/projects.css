@@ -319,7 +319,7 @@ nav ul p {
 	mix-blend-mode: multiply;
 }
 nav ul:hover p {
-	color: #d72379;
+	color: #00c0e8;
 }
 nav ul li a{
 	margin: 0;
@@ -401,7 +401,7 @@ footer .links div ul p {
 }
 footer .links div:hover ul p{
 	transition: all 0.2s ease-out;
-	color: #d72379;
+	color: #00c0e8;
 }
 footer .links div:nth-child(2) {
 	margin-top: 1rem;
@@ -460,8 +460,8 @@ footer li {
 footer #submit {
 	position: relative;
 	top: 0;
-	background-color: #d72379;
-	box-shadow: 0px 0px 0px #d72379;
+	background-color: #00c0e8;
+	box-shadow: 0px 0px 0px #00c0e8;
 	transition: all 0.5s ease-out;
 	cursor: pointer;
 	border: 0px;
@@ -473,7 +473,7 @@ footer #submit {
 }
 footer #submit:hover, footer #submit:focus {
 	top: -5px;
-	box-shadow: 0px 3px 12px #d72379;
+	box-shadow: 0px 3px 12px #00c0e8;
 	transition: all 0.2s ease-out;
 }
 
@@ -486,7 +486,7 @@ a {
 a:hover {
 	text-decoration: line-through;
 	transition: all 0.2s ease-out;
-	color: #d72379;
+	color: #00c0e8;
 }
 
 /*GRID*/
@@ -619,7 +619,7 @@ a:hover {
 		display: block;
 	}
 	p a {
-		font-size: 200%;
+		font-size: 75%;
 	}
 	ul ul li {
 		margin-left: 2rem;
@@ -650,6 +650,90 @@ a:hover {
 
 	nav {
 		display: none;
+	}
+		nav.mobile {
+		/*position: fixed;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 10rem;
+	    bottom: 5vh;
+	    right: 2rem;
+	    background-color: #d72379;
+	    mix-blend-mode: darken;
+	    z-index: 100;
+	    font-size: 5rem;
+		line-height: 1;*/
+	}
+
+	nav.mobile figure {
+		/*position: relative;*/
+		position: fixed;
+		height: 10vh;
+		width: 10vh;
+		border-radius: 10vh;
+	    bottom: 3vh;
+	    right: 3vh;
+	    background-color: #d72379;
+	    mix-blend-mode: darken;
+	    z-index: 100;
+	    font-size: 5rem;
+		line-height: 1;
+		box-shadow: 0 6px 24px #d72379;
+	}
+	nav.mobile.show span {
+		transform: scale(0);
+	}
+	nav.mobile.show figcaption {
+		transform: translateY(0);
+		transition: all 0.2s ease-in-out;
+		transition-delay: 0.2s;
+	}
+	nav.mobile figure span {
+		color: white;
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	    left: 0;
+	    right: 0;
+	    width: fit-content;
+	    width: -moz-fit-content;
+	    height: fit-content;
+	    height: -moz-fit-content;
+	    font-size: 8rem;
+	    transition: all 0.2s ease-in;
+	    line-height: 0.9;
+	}
+	nav.mobile figcaption {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		min-height: 75vh;
+		transform: translateY(200%);
+		transition: all 0.5s ease-in;
+		transition-delay: 0.2s;
+		background-color: #d72379;
+		color: white;
+		font-weight: bold;
+	}
+	nav.mobile figcaption a {
+		font-size: 5vh;
+		line-height: 1.6;
+		text-align: center;
+		width: 100%;
+	}
+	nav.mobile figcaption a:last-child {
+	    text-align: end;
+	    position: absolute;
+	    right: 5vh;
+	    bottom: 0;
+	    width: fit-content;
+	}
+	nav.mobile figcaption a:hover {
+		color: initial;
+		text-decoration: initial;
 	}
 
 	header {

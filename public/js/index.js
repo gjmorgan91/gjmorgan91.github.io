@@ -18,8 +18,11 @@ function initMap() {
 
 /*NAVBAR TOGGLE FOR MOBILE*/
 
-let navButton = document.querySelector('nav.mobile');
-//navButton.click();
+function toggleNav() {
+	console.log(document.getElementById('mobileNav').classList);
+	document.getElementById('mobileNav').classList.toggle("show");
+	console.log(document.getElementById('mobileNav').classList);
+}
 
 /*FADE IN EFFECT ON THE HOME SCREEN LINKS*/
 

@@ -348,7 +348,7 @@ section#about {
     background-color: #d72379;
     mix-blend-mode: darken;
     transition: all 0.3s ease-in;
-    transition: opacity 0s normal;
+    transition: opacity 0s ease-in-out;
     color: white;
 }
 .projects_container figcaption span p {
@@ -385,7 +385,7 @@ section#about {
 }
 .projects_container figure:hover  figcaption{
 	transition: all 0.5s ease-out;
-	transition: opacity 0s normal;
+	transition: opacity 0s ease-in-out;
 	opacity: 0.9;
 	top: 0;
 }
@@ -699,7 +699,7 @@ section#education div.education_content {
 		line-height: 1.5;
 	}
 
-		h3 {
+	h3 {
 		text-transform: lowercase;
 		font-size: 1.2em;
 		line-height: 1.5;
@@ -714,7 +714,7 @@ section#education div.education_content {
 	}
 
 	p, input, textarea, a, li, input, textarea, label {
-	    font-size: 1em;
+	    font-size: 1rem;
 	    margin: 0;
 	    line-height: 1.5;
 	}
@@ -754,6 +754,7 @@ section#education div.education_content {
 		margin: auto;
 		font-size: 220%;
 		height: fit-content;
+		height: -moz-fit-content;
 		padding: 0 0 10vh 0;
 	}
 	.header_container nav {
@@ -777,40 +778,41 @@ section#education div.education_content {
 	nav.mobile figure {
 		/*position: relative;*/
 		position: fixed;
-		height: 10rem;
-		width: 10rem;
-		border-radius: 10rem;
-	    bottom: 5vh;
-	    right: 2rem;
+		height: 10vh;
+		width: 10vh;
+		border-radius: 10vh;
+	    bottom: 3vh;
+	    right: 3vh;
 	    background-color: #d72379;
 	    mix-blend-mode: darken;
 	    z-index: 100;
 	    font-size: 5rem;
 		line-height: 1;
+		box-shadow: 0 6px 24px #d72379;
 	}
-	nav.mobile:hover span {
+	nav.mobile.show span {
 		transform: scale(0);
 	}
-	nav.mobile:hover figcaption {
+	nav.mobile.show figcaption {
 		transform: translateY(0);
 		transition: all 0.2s ease-in-out;
 		transition-delay: 0.2s;
-		height: 60vh;
 	}
 	nav.mobile figure span {
 		color: white;
 		position: absolute;
-		height: 100%;
-		width: 100%;
 	    top: 0;
 	    bottom: 0;
 	    margin: auto;
 	    left: 0;
 	    right: 0;
 	    width: fit-content;
+	    width: -moz-fit-content;
 	    height: fit-content;
+	    height: -moz-fit-content;
 	    font-size: 8rem;
 	    transition: all 0.2s ease-in;
+	    line-height: 0.9;
 	}
 	nav.mobile figcaption {
 		position: fixed;
@@ -818,6 +820,7 @@ section#education div.education_content {
 		left: 0;
 		right: 0;
 		width: 100%;
+		min-height: 75vh;
 		transform: translateY(200%);
 		transition: all 0.5s ease-in;
 		transition-delay: 0.2s;
@@ -825,10 +828,19 @@ section#education div.education_content {
 		color: white;
 		font-weight: bold;
 	}
-	nav.mobile figcaption a{
-		line-height: 3.5;
+	nav.mobile figcaption a {
+		font-size: 5vh;
+		line-height: 2;
 		text-align: center;
 		width: 100%;
+	}
+	nav.mobile figcaption a:last-child {
+	    text-align: end;
+	    position: absolute;
+	    right: 5vh;
+	    bottom: 5vh;
+	    width: fit-content;
+	    line-height: 1;
 	}
 	nav.mobile figcaption a:hover {
 		color: initial;
