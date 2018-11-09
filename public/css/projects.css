@@ -648,6 +648,13 @@ a:hover {
 		grid-template-columns: 1fr;
 	}
 
+	@-moz-document url-prefix() {
+	    header .wrapper {
+	        font-size: 75% !important;
+	        padding-top: 10vh;
+	    }
+	}
+
 	nav {
 		display: none;
 	}
@@ -682,6 +689,11 @@ a:hover {
 	}
 	nav.mobile.show span {
 		transform: scale(0);
+	}
+	@-moz-document url-prefix() {
+	    nav.mobile figure span {
+	        font-size: 90% !important;
+	    }
 	}
 	nav.mobile.show figcaption {
 		transform: translateY(0);
@@ -804,6 +816,11 @@ a:hover {
 		grid-template-rows: repeat(2,auto);
 		font-size: 120%;
 	}
+	@-moz-document url-prefix() {
+	    footer form {
+	        font-size: initial;
+	    }
+	}
 	footer form div:first-child {
 		grid-row: 2;
 	}
@@ -812,6 +829,11 @@ a:hover {
 	}
 	input, label {
 		font-size: 200%;
+	}
+	@-moz-document url-prefix() {
+	    input, label {
+	        font-size: initial;
+	    }
 	}
 	input {
 		margin-bottom: 1rem;

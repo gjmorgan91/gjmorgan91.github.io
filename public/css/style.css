@@ -1,5 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**/
+
 html, body {
 	margin: 0;
 	font-family: 'Montserrat';
@@ -120,6 +171,7 @@ header#main {
 	animation: slideright 2s ease-in-out;
 	-webkit-animation: slideright 2s ease-in-out;
 	opacity: 1;
+	font-weight: bold;
 }
 @keyframes slideright {
 	0% {
@@ -166,6 +218,7 @@ header#main {
 	color: #d72379;
 	animation: slideright 2s ease-in-out;
 	-webkit-animation: slideright 2s ease-in-out;
+	font-weight: 500;
 }
 
 .header nav a {
@@ -320,6 +373,7 @@ section#about {
     border-radius: 1rem;
     background-color: #d72379;
     text-align: -webkit-center;
+    text-align: center;
     vertical-align: middle;
     color: white;
     font-weight: bold;
@@ -691,6 +745,11 @@ section#education div.education_content {
 		margin: 0;
 		line-height: 1;
 	}
+	/*@-moz-document url-prefix() {
+	    h1 {
+	        font-size: 170%;
+	    }
+	}*/
 
 	h2 {
 		font-size: 1.5em;
@@ -698,6 +757,12 @@ section#education div.education_content {
 		margin: 0;
 		line-height: 1.5;
 	}
+
+	/*@-moz-document url-prefix() {
+	    h2 {
+	        font-size: 50%;
+	    }
+	}*/
 
 	h3 {
 		text-transform: lowercase;
@@ -757,6 +822,12 @@ section#education div.education_content {
 		height: -moz-fit-content;
 		padding: 0 0 10vh 0;
 	}
+	@-moz-document url-prefix() {
+	    .header_container {
+	        font-size: 75%;
+	        padding-top: 10vh;
+	    }
+	}
 	.header_container nav {
 		display: none;
 	}
@@ -792,6 +863,11 @@ section#education div.education_content {
 	}
 	nav.mobile.show span {
 		transform: scale(0);
+	}
+	@-moz-document url-prefix() {
+	    nav.mobile figure span {
+	        font-size: 90% !important;
+	    }
 	}
 	nav.mobile.show figcaption {
 		transform: translateY(0);
@@ -866,6 +942,11 @@ section#education div.education_content {
 	.projects_container figure {
 		font-size: 200%;
 	}
+	@-moz-document url-prefix() {
+	    .projects_container figure {
+	        font-size: initial;
+	    }
+	}
 	.projects_container figure:hover {
 		grid-column: 1 / span 2;
 		grid-row: span 2;
@@ -873,6 +954,15 @@ section#education div.education_content {
 
 	.projects_container span.plus {
 		display: block;
+	}
+	@-moz-document url-prefix() {
+	    .projects_container span.plus {
+	        font-size: 90%;
+	        width: 1rem;
+	        height: 1rem;
+	        top: 0.5rem;
+	        right: 0.5rem;
+	    }
 	}
 
 	.contact_content {
@@ -888,11 +978,21 @@ section#education div.education_content {
 		grid-template-rows: repeat(2,auto);
 		font-size: 120%;
 	}
+	@-moz-document url-prefix() {
+	    footer form {
+	        font-size: initial;
+	    }
+	}
 	footer form div:first-child {
 		grid-row: 2;
 	}
 	input, label {
 		font-size: 200%;
+	}
+	@-moz-document url-prefix() {
+	    input, label {
+	        font-size: initial;
+	    }
 	}
 	input {
 		margin-bottom: 1rem;
