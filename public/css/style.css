@@ -748,7 +748,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    html {
-	        font-size: 150%;
+	        font-size: 200%;
 	    }
 	}
 
@@ -964,6 +964,11 @@ section#education div.education_content {
 
 	.projects_container figure p, .projects_container figure a{
 		font-size: 200%;
+	}
+	@-moz-document url-prefix() {
+	    .projects_container figure {
+	        font-size: initial;
+	    }
 	}
 	.projects_container figure:hover {
 		grid-column: 1 / span 2;
