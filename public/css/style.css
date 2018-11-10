@@ -82,6 +82,7 @@ h3 {
 	margin: 0;
 	margin-bottom: 3rem;
 	line-height: 1.5;
+	font-weight: bold;
 }
 
 h4 {
@@ -745,14 +746,14 @@ section#education div.education_content {
 		margin: 0;
 		line-height: 1;
 	}
-	/*@-moz-document url-prefix() {
-	    h1 {
-	        font-size: 170%;
+	@-moz-document url-prefix() {
+	    html {
+	        font-size: 150%;
 	    }
-	}*/
+	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.75em;
 		opacity: 1;
 		margin: 0;
 		line-height: 1.5;
@@ -961,13 +962,8 @@ section#education div.education_content {
 		grid-template-rows: repeat(5,auto);
 	}
 
-	.projects_container figure {
+	.projects_container figure p, .projects_container figure a{
 		font-size: 200%;
-	}
-	@-moz-document url-prefix() {
-	    .projects_container figure {
-	        font-size: initial;
-	    }
 	}
 	.projects_container figure:hover {
 		grid-column: 1 / span 2;
@@ -985,6 +981,11 @@ section#education div.education_content {
 	        top: 0.5rem;
 	        right: 0.5rem;
 	    }
+	}
+	.projects_container figure:hover {
+		top: 0px;
+		box-shadow: 0px 3px 12px #d72379;
+		transition: all 0.5s ease-out;
 	}
 
 	.contact_content {
