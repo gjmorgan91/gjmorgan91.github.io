@@ -582,7 +582,7 @@ a:hover {
 	}
 	@-moz-document url-prefix() {
 	    html {
-	        font-size: 80% !important;
+	        font-size: 400%;
 	    }
 	}
 
@@ -655,7 +655,7 @@ a:hover {
 
 	@-moz-document url-prefix() {
 	    header .wrapper {
-	        font-size: 75% !important;
+	        /*font-size: 75% !important;*/
 	        padding-top: 20vw;
 	    }
 	}
@@ -699,7 +699,7 @@ a:hover {
 	}
 	@-moz-document url-prefix() {
 	    nav.mobile figure span {
-	        font-size: 80% !important;
+	        /*font-size: 80% !important;*/
 	    }
 	}
 	nav.mobile.show figcaption, nav.mobile.show figure:after {
@@ -845,7 +845,7 @@ a:hover {
 	}
 	@-moz-document url-prefix() {
 	    footer form {
-	        font-size: initial;
+	        /*font-size: initial;*/
 	    }
 	}
 	footer form div:first-child {
@@ -859,7 +859,7 @@ a:hover {
 	}
 	@-moz-document url-prefix() {
 	    input, label {
-	        font-size: initial;
+	        /*font-size: initial;*/
 	    }
 	}
 	input {

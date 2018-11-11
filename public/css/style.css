@@ -144,6 +144,67 @@ li a {
 	margin: auto;
 }
 
+/*CONTRAST TOGGLE*/
+
+.contrast {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2,auto);
+	grid-template-rows: auto;
+	grid-gap: 0.25rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.5rem;
+	background-color: white;
+	border: 1px solid grey;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.contrast input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.contrast span {
+	grid-column: 1;
+	grid-row: 1;
+	color: grey;
+	width: 1rem;
+	height: 1rem;
+	background-color: lightgrey;
+	padding: 0;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 1rem;
+	border: 1px solid grey;
+	border-top: 2px solid grey;
+	border-bottom: 1px solid grey;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+
+.contrast input:hover ~ span {
+	background-color: darkgrey;
+}
+
+.contrast input:checked ~ span {
+	border-bottom: 2px solid grey;
+	border-top: 1px solid grey;
+	background-color: rgba(180,180,210,1);
+}
+
+.contrast input:checled ~ .header_container h1 {
+	mix-blend-mode: normal !important;
+}
 
 /*HEADER*/
 
@@ -173,6 +234,14 @@ header#main {
 	-webkit-animation: slideright 2s ease-in-out;
 	opacity: 1;
 	font-weight: bold;
+}
+.high_contrast.header_container h1, .high_contrast.header_container h2 {
+	mix-blend-mode: normal !important;
+	color: #3d3539 !important;
+}
+.high_contrast nav a {
+	mix-blend-mode: normal !important;
+	background-color: #3d3539 !important;
 }
 @keyframes slideright {
 	0% {
@@ -748,7 +817,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    html {
-	        font-size: 200%;
+	        font-size: 400%;
 	    }
 	}
 
@@ -826,7 +895,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    .header_container {
-	        font-size: 75%;
+	        /*font-size: 75%;*/
 	        padding-top: 20vw;
 	    }
 	}
@@ -967,7 +1036,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    .projects_container figure {
-	        font-size: initial;
+	        /*font-size: initial;*/
 	    }
 	}
 	.projects_container figure:hover {
@@ -980,7 +1049,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    .projects_container span.plus {
-	        font-size: 90%;
+	        /*font-size: 90%;*/
 	        width: 1rem;
 	        height: 1rem;
 	        top: 0.5rem;
@@ -1019,7 +1088,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    input, label {
-	        font-size: initial;
+	        /*font-size: initial;*/
 	    }
 	}
 	input {

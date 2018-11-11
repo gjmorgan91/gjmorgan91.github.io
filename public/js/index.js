@@ -24,6 +24,12 @@ function toggleNav() {
 	console.log(document.getElementById('mobileNav').classList);
 }
 
+/*CONTRAST TOGGLE*/
+
+$(".contrast").click( function() {
+	$(".header_container")[0].classList.toggle("high_contrast");
+});
+
 /*FADE IN EFFECT ON THE HOME SCREEN LINKS*/
 
 //Sets the duration for the animation on the nav links for the cascading effect
