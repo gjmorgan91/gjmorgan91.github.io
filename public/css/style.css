@@ -434,6 +434,7 @@ section#about {
     right: 0;
     opacity: 1;
     transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
     transform: scale(1.0);
 }
 .projects_container span.plus {
@@ -457,6 +458,7 @@ section#about {
     line-height: 1;
     opacity: 1;
     transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
 }
 .projects_container figcaption {
     position: absolute;
@@ -472,7 +474,8 @@ section#about {
     background-color: #d72379;
     mix-blend-mode: darken;
     transition: all 0.3s ease-in;
-    transition: opacity 0s ease-in-out;
+    -webkit-transition: all 0.3s ease-in;
+    /*transition: opacity 0s ease-in-out;*/
     color: white;
 }
 .projects_container figcaption span p {
@@ -501,6 +504,7 @@ section#about {
 }
 .projects_container figcaption a:hover {
 	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
 	text-decoration: none;
 	background-color: white;
 	color: #d72379;
@@ -509,12 +513,13 @@ section#about {
 }
 .projects_container figure:hover  figcaption{
 	transition: all 0.5s ease-out;
-	transition: opacity 0s ease-in-out;
+	-webkit-transition: all 0.5s ease-out;
 	opacity: 0.9;
 	top: 0;
 }
 .projects_container figure:hover img {
 	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
 	opacity: 0.25;
 	transform: scale(1);
 }
@@ -522,6 +527,7 @@ section#about {
 	top: -5px;
 	box-shadow: 0px 3px 12px #d72379;
 	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
 }
 
 .projects_container figure:hover span.plus {
@@ -589,6 +595,9 @@ footer#about .links div:hover ul p{
 	transition: all 0.2s ease-out;
 	color: #00c0e8;
 }
+footer .links div:last-child {
+	padding-top: 1rem;
+}
 input {
 	display: block;
 	padding: 5px;
@@ -643,8 +652,6 @@ footer li {
 footer #submit {
 	position: relative;
 	top: 0;
-	background-color: #d72379;
-	box-shadow: 0px 0px 0px #d72379;
 	transition: all 0.5s ease-out;
 	cursor: pointer;
 	border: 0px;
@@ -653,6 +660,21 @@ footer #submit {
 	padding: 8px;
 	color: white;
 	text-transform: lowercase;
+	box-shadow: 0px 0px 0px white;
+}
+footer#main #submit {
+	background-color: #d72379;
+}
+footer#main #submit:hover {
+	background-color: #d72379;
+	box-shadow: 0px 3px 12px #d72379;
+}
+footer#about #submit {
+	background-color: #00c0e8;
+}
+footer#about #submit:hover {
+	background-color: #00c0e8;
+	box-shadow: 0px 3px 12px #00c0e8;
 }
 footer #submit:hover, footer #submit:focus {
 	top: -5px;
@@ -704,6 +726,11 @@ header#about .wrapper {
 
 header#about #overview {
 	grid-column: 2;
+	padding-bottom: 2rem;
+}
+
+header#about #overview p {
+	margin-bottom: 1rem;
 }
 
 .page_header {
@@ -716,6 +743,7 @@ header#about #overview {
 } 
 .page_header h1 {
 	color: #00c0e8;
+	font-weight: bold;
 }
 
 
@@ -774,19 +802,11 @@ section#education div.education_content {
 
 .skills_content {
 	display: grid;
-	grid-template-columns: repeat(6,1fr);
+	grid-template-columns: repeat(3,1fr);
 	grid-gap: 2rem;
 }
 
-.skills_content figure img {
-	width: 62%;
-	height: auto;
-	justify-self: center;
-	margin: auto;
-	margin-bottom: 1rem;
-}
-
-.skills_content figure h4 {
+.skill_content figure h4 {
 	transition: all 1s ease-out;
 }
 .skills_content figure:hover h4 {
@@ -797,6 +817,57 @@ section#education div.education_content {
 .skills_content li li {
 	list-style: circle;
 	margin-left: 1rem;
+}
+
+.skill_container {
+	/*width: 100%;*/
+	display: grid;
+	grid-template-columns: 1fr 10fr;
+	/*grid-template-rows: repeat(2,auto);*/
+	grid-template-areas: 
+	"logo name"
+	"logo bar";
+	grid-gap: 0 1rem;
+	/*padding-left: 1rem;*/
+	margin: 1rem 0;
+	grid-auto-flow: row;
+}
+.skill_container img {
+	grid-area: logo;
+	width: 90%;
+	height: auto;
+	justify-self: center;
+	align-self: center;
+	opacity: 0.7;
+}
+.skill_container p {
+	grid-area: name;
+}
+.skill_container progress {
+	grid-area: bar;
+	width: 100%;
+}
+
+/*PROGRESS BAR*/
+
+progress {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+   height: 0.5rem;
+}
+
+.skill_container progress::-webkit-progress-bar {
+  background-color: lightgrey;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  opacity: 0.8;
+}
+
+.skill_container progress::-webkit-progress-value {
+  background-color: #00c0e8;
+  border-radius: 1rem;
+  box-shadow: 0 0 2px #00c0e8;
 }
 
 .mobile {
@@ -1116,6 +1187,9 @@ section#education div.education_content {
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
+	footer .links div:last-child {
+	padding-top: 0;
+}
 
 
 	/*ABOUT*/
