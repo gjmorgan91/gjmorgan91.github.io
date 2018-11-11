@@ -817,7 +817,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    html {
-	        font-size: 400%;
+	        font-size: 200%;
 	    }
 	}
 
@@ -895,7 +895,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    .header_container {
-	        /*font-size: 75%;*/
+	        font-size: 75%;
 	        padding-top: 20vw;
 	    }
 	}
@@ -1036,7 +1036,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    .projects_container figure {
-	        /*font-size: initial;*/
+	        font-size: initial;
 	    }
 	}
 	.projects_container figure:hover {
@@ -1049,7 +1049,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    .projects_container span.plus {
-	        /*font-size: 90%;*/
+	        font-size: 90%;
 	        width: 1rem;
 	        height: 1rem;
 	        top: 0.5rem;
@@ -1088,7 +1088,7 @@ section#education div.education_content {
 	}
 	@-moz-document url-prefix() {
 	    input, label {
-	        /*font-size: initial;*/
+	        font-size: initial;
 	    }
 	}
 	input {
