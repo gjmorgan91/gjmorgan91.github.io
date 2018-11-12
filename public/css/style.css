@@ -946,7 +946,7 @@ progress {
 
 	header#main {
 		background-position: center;
-		height: 240vw;
+		height: 220vw;
 	}
 
 	.wrapper.header {
@@ -962,7 +962,7 @@ progress {
 		font-size: 220%;
 		height: fit-content;
 		height: -moz-fit-content;
-		padding: 0 0 0vw 0;
+		padding: 0 0 10vw 0;
 	}
 	@-moz-document url-prefix() {
 	    .header_container {
@@ -1103,7 +1103,7 @@ progress {
 	}
 
 	.projects_container figure p, .projects_container figure a{
-		font-size: 200%;
+		font-size: 250%;
 	}
 	@-moz-document url-prefix() {
 	    .projects_container figure {
@@ -1148,7 +1148,7 @@ progress {
 	}
 	@-moz-document url-prefix() {
 	    footer form {
-	        font-size: initial;
+	        /*font-size: initial;*/
 	    }
 	}
 	footer form div:first-child {
@@ -1159,7 +1159,7 @@ progress {
 	}
 	@-moz-document url-prefix() {
 	    input, label {
-	        font-size: initial;
+	        /*font-size: initial;*/
 	    }
 	}
 	input {
@@ -1170,6 +1170,10 @@ progress {
 	}
 	input#submit {
 		margin: 2rem 0 1rem 0;
+	}
+
+	footer #submit {
+		border-radius: 10px;
 	}
 
 	#email, #subject, #name {
@@ -1209,6 +1213,10 @@ progress {
 		grid-column: inherit;
 	}
 
+	#back {
+		font-size: 150%;
+	}
+
 	.education_content {
 		grid-template-columns: 1fr !important;
 		grid-template-rows: repeat(2,auto);
@@ -1222,15 +1230,16 @@ progress {
 	}
 
 	.skills_content {
-		grid-template-columns: repeat(3,1fr);
-		grid-template-rows: repeat(2,1fr);
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: auto;
 	}
 
-	.skills_content figcaption {
-		font-size: 90%;
+	.skill_container img {
+		width: 100%;
 	}
 
-	.skills_content li li {
-	    margin-left: 2rem;
+	.skill_container progress {
+		height: 0.75rem;
 	}
+
 }
