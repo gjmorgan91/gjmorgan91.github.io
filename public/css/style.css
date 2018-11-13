@@ -954,7 +954,7 @@ progress {
 
 	header#main {
 		background-position: center;
-		height: 110vh;
+		height: 100%;
 	}
 
 	.wrapper.header {
@@ -1194,7 +1194,7 @@ progress {
 	#message {
 		height: 20rem;
 		border-color: grey;
-		font-size: 150%;
+		font-size: 100%;
 	}
 	@-moz-document url-prefix() {
 	    #message {
