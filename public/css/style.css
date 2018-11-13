@@ -97,9 +97,12 @@ p, input, textarea, a, li, input, textarea, label {
 	margin: 0;
 	line-height: 1.5;
 }
-/*div, section, figcaption, footer, form, input {
-	font-size: 100%;
-}*/
+p {
+	margin-bottom: 1rem;
+}
+figcaption p {
+	margin-bottom: 0;
+}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -714,6 +717,7 @@ header#about {
 header#about .wrapper {
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
+	grid-gap: 2rem;
 	/*margin-top: 5rem;*/
 	position: absolute;
 	top: 0;
@@ -724,8 +728,11 @@ header#about .wrapper {
 	height: fit-content;
 }
 
+header h2 {
+	margin-bottom: 1rem;
+}
+
 header#about #overview {
-	grid-column: 2;
 	padding-bottom: 2rem;
 }
 
@@ -842,6 +849,7 @@ section#education div.education_content {
 }
 .skill_container p {
 	grid-area: name;
+	margin-bottom: 0;
 }
 .skill_container progress {
 	grid-area: bar;
