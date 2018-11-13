@@ -845,7 +845,7 @@ a:hover {
 	}
 	@-moz-document url-prefix() {
 	    footer form {
-	        font-size: initial;
+	        font-size: 50%;
 	    }
 	}
 	footer form div:first-child {
@@ -859,7 +859,7 @@ a:hover {
 	}
 	@-moz-document url-prefix() {
 	    input, label {
-	        font-size: initial;
+	        font-size: 50%;
 	    }
 	}
 	input {
@@ -879,6 +879,10 @@ a:hover {
 		height: 20rem;
 		border-color: grey;
 		font-size: 150%;
+	}
+	footer .links div:nth-child(2) {
+		padding-top: 0;
+		margin-top: 0;
 	}
 
 	.contact_content .links {

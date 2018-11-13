@@ -946,11 +946,11 @@ progress {
 
 	header#main {
 		background-position: center;
-		height: 220vw;
+		height: 110vh;
 	}
 
 	.wrapper.header {
-		height: 200vw;
+		height: 100%;
 		position: relative;
 	}
 
@@ -962,7 +962,7 @@ progress {
 		font-size: 220%;
 		height: fit-content;
 		height: -moz-fit-content;
-		padding: 0 0 10vw 0;
+		padding: 0 0 10% 0;
 	}
 	@-moz-document url-prefix() {
 	    .header_container {
@@ -991,11 +991,11 @@ progress {
 	nav.mobile figure {
 		/*position: relative;*/
 		position: fixed;
-		height: 20vw;
-		width: 20vw;
-		border-radius: 10vw;
-	    bottom: 6vw;
-	    right: 6vw;
+		height: 12rem;
+		width: 12rem;
+		border-radius: 12rem;
+	    bottom: 4rem;
+	    right: 4rem;
 	    background-color: #d72379;
 	    mix-blend-mode: darken;
 	    z-index: 100;
@@ -1003,15 +1003,19 @@ progress {
 		line-height: 1;
 		box-shadow: 0 6px 24px #d72379;
 	}
+	@-moz-document url-prefix() {
+	    nav.mobile figure {
+	        height: 6rem;
+	        width: 6rem;
+	        bottom: 2rem;
+	        right: 2rem;
+	        border-radius: 6rem;
+	    }
+	}
 	nav.mobile.show span {
 		transform: rotate(45deg);
-		top: -1px;
-		right: -3px;
-	}
-	@-moz-document url-prefix() {
-	    nav.mobile figure span {
-	        font-size: 90% !important;
-	    }
+		/*top: -1px;*/
+		right: 18px;
 	}
 	nav.mobile.show figcaption, nav.mobile.show figure:after {
 		transform: translateY(0);
@@ -1033,15 +1037,10 @@ progress {
 	    width: -moz-fit-content;
 	    height: fit-content;
 	    height: -moz-fit-content;
-	    font-size: 9rem;
+	    font-size: 12rem;
 	    transition: all 0.2s ease-in;
 	    line-height: 0.9;
 	    z-index: 100;
-	}
-	@-moz-document url-prefix() {
-	    nav.mobile figure span {
-	        top: 4px;
-	    }
 	}
 	nav.mobile figcaption {
 		position: fixed;
@@ -1074,6 +1073,11 @@ progress {
 		transform: translateY(200%);
 		transition: all 0.5s ease-in;
 		transition-delay: 0.2s;
+	}
+	@-moz-document url-prefix() {
+	    nav.mobile figure span {
+	        font-size: 6rem;
+	    }
 	}
 	nav.mobile figcaption a {
 		font-size: 10vw;
@@ -1120,7 +1124,7 @@ progress {
 	}
 	@-moz-document url-prefix() {
 	    .projects_container span.plus {
-	        font-size: 90%;
+	        font-size: 1rem;
 	        width: 1rem;
 	        height: 1rem;
 	        top: 0.5rem;
@@ -1159,7 +1163,7 @@ progress {
 	}
 	@-moz-document url-prefix() {
 	    input, label {
-	        /*font-size: initial;*/
+	        font-size: 100%;
 	    }
 	}
 	input {
@@ -1184,6 +1188,11 @@ progress {
 		border-color: grey;
 		font-size: 150%;
 	}
+	@-moz-document url-prefix() {
+	    #message {
+	        font-size: 125%;
+	    }
+	}
 
 	.contact_content .links {
 		display: grid;
@@ -1191,9 +1200,10 @@ progress {
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
-	footer .links div:last-child {
-	padding-top: 0;
-}
+	footer .links div:nth-child(2) {
+		padding-top: 0;
+		margin-top: 0;
+	}
 
 
 	/*ABOUT*/
