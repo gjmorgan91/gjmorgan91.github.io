@@ -64,7 +64,7 @@ html, body {
 }
 
 h1 {
-	font-size: 5.5em;
+	font-size: 6em;
 	opacity: 1;
 	margin: 0;
 	line-height: 1;
@@ -226,18 +226,23 @@ header#main {
 
 .header_container {
 	padding: 20vh 0 0 0;
-	text-shadow: 0 0 12px rgba(255,255,255,0.5);
+	text-shadow: 0 0 4px rgba(255,240,230,0.5);
+}
+.header_container h1, .header_container h2, .header_container nav a {
+	mix-blend-mode: multiply;
+}
+.header_container h1, .header_container h2 {
+	color: #d72379;
 }
 
 .header_container h1 {
 	margin: 0;
 	padding: 0;
-	/*mix-blend-mode: darken;*/
-	color: #d72379;
 	animation: slideright 2s ease-in-out;
 	-webkit-animation: slideright 2s ease-in-out;
 	opacity: 1;
 	font-weight: bold;
+	/*-webkit-text-stroke: 1px white;*/
 }
 .high_contrast.header_container h1, .high_contrast.header_container h2 {
 	mix-blend-mode: normal !important;
@@ -288,8 +293,6 @@ header#main {
 .header_container h2{
 	margin: 1rem 0;
 	padding: 0;
-	/*mix-blend-mode: darken;*/
-	color: #d72379;
 	animation: slideright 2s ease-in-out;
 	-webkit-animation: slideright 2s ease-in-out;
 	font-weight: 600;
@@ -301,7 +304,6 @@ header#main {
     background-color: #d72379;
     padding: 0.25rem 1.5rem;
     border-radius: 5px;
-    /*mix-blend-mode: darken;*/
     color: white;
     font-weight: 500;
     position: relative;
