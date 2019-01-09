@@ -26,9 +26,9 @@ function toggleNav() {
 
 /*CONTRAST TOGGLE*/
 
-$(".contrast").click( function() {
-	$(".header_container")[0].classList.toggle("high_contrast");
-});
+//$(".contrast").click( function() {
+//	$(".header_container")[0].classList.toggle("high_contrast");
+//});
 
 /*FADE IN EFFECT ON THE HOME SCREEN LINKS*/
 
