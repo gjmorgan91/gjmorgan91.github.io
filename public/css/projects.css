@@ -107,6 +107,10 @@ li a {
 	max-width: 1600px;
 	margin: auto;
 }
+.disclaimer {
+	font-style: normal;
+	color: grey;
+}
 
 
 /*HEADER*/
